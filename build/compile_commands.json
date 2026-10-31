@@ -30,6 +30,18 @@
   "output": "CMakeFiles/test_game_state.dir/tests/test_game_state.cpp.o"
 },
 {
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/poker_cli.dir/src/app/main.cpp.o -c /Users/aaryangharat/Desktop/Project_Poker/src/app/main.cpp",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/src/app/main.cpp",
+  "output": "CMakeFiles/poker_cli.dir/src/app/main.cpp.o"
+},
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/src -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -o CMakeFiles/test_agents.dir/tests/test_agents.cpp.o -c /Users/aaryangharat/Desktop/Project_Poker/tests/test_agents.cpp",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/tests/test_agents.cpp",
+  "output": "CMakeFiles/test_agents.dir/tests/test_agents.cpp.o"
+},
+{
   "directory": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-build/googlemock",
   "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/include -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "file": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/src/gmock-all.cc",

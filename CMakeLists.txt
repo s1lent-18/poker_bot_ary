@@ -41,3 +41,13 @@ target_link_libraries(poker_engine PUBLIC poker_eval)
 add_executable(test_game_state tests/test_game_state.cpp)
 target_link_libraries(test_game_state PRIVATE poker_engine GTest::gtest_main)
 gtest_discover_tests(test_game_state)
+
+add_library(poker_agents INTERFACE)
+target_link_libraries(poker_agents INTERFACE poker_engine)
+
+add_executable(poker_cli src/app/main.cpp)
+target_link_libraries(poker_cli PRIVATE poker_agents)
+
+add_executable(test_agents tests/test_agents.cpp)
+target_link_libraries(test_agents PRIVATE poker_agents GTest::gtest_main)
+gtest_discover_tests(test_agents)

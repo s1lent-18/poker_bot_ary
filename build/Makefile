@@ -237,6 +237,32 @@ test_game_state/fast:
 .PHONY : test_game_state/fast
 
 #=============================================================================
+# Target rules for targets named poker_cli
+
+# Build rule for target.
+poker_cli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poker_cli
+.PHONY : poker_cli
+
+# fast build rule for target.
+poker_cli/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_cli.dir/build.make CMakeFiles/poker_cli.dir/build
+.PHONY : poker_cli/fast
+
+#=============================================================================
+# Target rules for targets named test_agents
+
+# Build rule for target.
+test_agents: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_agents
+.PHONY : test_agents
+
+# fast build rule for target.
+test_agents/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agents.dir/build.make CMakeFiles/test_agents.dir/build
+.PHONY : test_agents/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -288,6 +314,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/app/main.o: src/app/main.cpp.o
+.PHONY : src/app/main.o
+
+# target to build an object file
+src/app/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_cli.dir/build.make CMakeFiles/poker_cli.dir/src/app/main.cpp.o
+.PHONY : src/app/main.cpp.o
+
+src/app/main.i: src/app/main.cpp.i
+.PHONY : src/app/main.i
+
+# target to preprocess a source file
+src/app/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_cli.dir/build.make CMakeFiles/poker_cli.dir/src/app/main.cpp.i
+.PHONY : src/app/main.cpp.i
+
+src/app/main.s: src/app/main.cpp.s
+.PHONY : src/app/main.s
+
+# target to generate assembly for a file
+src/app/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_cli.dir/build.make CMakeFiles/poker_cli.dir/src/app/main.cpp.s
+.PHONY : src/app/main.cpp.s
+
 src/engine/game_state.o: src/engine/game_state.cpp.o
 .PHONY : src/engine/game_state.o
 
@@ -335,6 +385,30 @@ src/eval/hand_evaluator.s: src/eval/hand_evaluator.cpp.s
 src/eval/hand_evaluator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/src/eval/hand_evaluator.cpp.s
 .PHONY : src/eval/hand_evaluator.cpp.s
+
+tests/test_agents.o: tests/test_agents.cpp.o
+.PHONY : tests/test_agents.o
+
+# target to build an object file
+tests/test_agents.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agents.dir/build.make CMakeFiles/test_agents.dir/tests/test_agents.cpp.o
+.PHONY : tests/test_agents.cpp.o
+
+tests/test_agents.i: tests/test_agents.cpp.i
+.PHONY : tests/test_agents.i
+
+# target to preprocess a source file
+tests/test_agents.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agents.dir/build.make CMakeFiles/test_agents.dir/tests/test_agents.cpp.i
+.PHONY : tests/test_agents.cpp.i
+
+tests/test_agents.s: tests/test_agents.cpp.s
+.PHONY : tests/test_agents.s
+
+# target to generate assembly for a file
+tests/test_agents.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agents.dir/build.make CMakeFiles/test_agents.dir/tests/test_agents.cpp.s
+.PHONY : tests/test_agents.cpp.s
 
 tests/test_cards.o: tests/test_cards.cpp.o
 .PHONY : tests/test_cards.o
@@ -425,17 +499,25 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... poker_cli"
 	@echo "... poker_engine"
 	@echo "... poker_eval"
+	@echo "... test_agents"
 	@echo "... test_cards"
 	@echo "... test_evaluator"
 	@echo "... test_game_state"
+	@echo "... src/app/main.o"
+	@echo "... src/app/main.i"
+	@echo "... src/app/main.s"
 	@echo "... src/engine/game_state.o"
 	@echo "... src/engine/game_state.i"
 	@echo "... src/engine/game_state.s"
 	@echo "... src/eval/hand_evaluator.o"
 	@echo "... src/eval/hand_evaluator.i"
 	@echo "... src/eval/hand_evaluator.s"
+	@echo "... tests/test_agents.o"
+	@echo "... tests/test_agents.i"
+	@echo "... tests/test_agents.s"
 	@echo "... tests/test_cards.o"
 	@echo "... tests/test_cards.i"
 	@echo "... tests/test_cards.s"
