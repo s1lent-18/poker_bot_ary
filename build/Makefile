@@ -185,6 +185,58 @@ test_cards/fast:
 .PHONY : test_cards/fast
 
 #=============================================================================
+# Target rules for targets named poker_eval
+
+# Build rule for target.
+poker_eval: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poker_eval
+.PHONY : poker_eval
+
+# fast build rule for target.
+poker_eval/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/build
+.PHONY : poker_eval/fast
+
+#=============================================================================
+# Target rules for targets named test_evaluator
+
+# Build rule for target.
+test_evaluator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_evaluator
+.PHONY : test_evaluator
+
+# fast build rule for target.
+test_evaluator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/build
+.PHONY : test_evaluator/fast
+
+#=============================================================================
+# Target rules for targets named poker_engine
+
+# Build rule for target.
+poker_engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poker_engine
+.PHONY : poker_engine
+
+# fast build rule for target.
+poker_engine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_engine.dir/build.make CMakeFiles/poker_engine.dir/build
+.PHONY : poker_engine/fast
+
+#=============================================================================
+# Target rules for targets named test_game_state
+
+# Build rule for target.
+test_game_state: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_game_state
+.PHONY : test_game_state
+
+# fast build rule for target.
+test_game_state/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/build
+.PHONY : test_game_state/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -236,6 +288,54 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/engine/game_state.o: src/engine/game_state.cpp.o
+.PHONY : src/engine/game_state.o
+
+# target to build an object file
+src/engine/game_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_engine.dir/build.make CMakeFiles/poker_engine.dir/src/engine/game_state.cpp.o
+.PHONY : src/engine/game_state.cpp.o
+
+src/engine/game_state.i: src/engine/game_state.cpp.i
+.PHONY : src/engine/game_state.i
+
+# target to preprocess a source file
+src/engine/game_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_engine.dir/build.make CMakeFiles/poker_engine.dir/src/engine/game_state.cpp.i
+.PHONY : src/engine/game_state.cpp.i
+
+src/engine/game_state.s: src/engine/game_state.cpp.s
+.PHONY : src/engine/game_state.s
+
+# target to generate assembly for a file
+src/engine/game_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_engine.dir/build.make CMakeFiles/poker_engine.dir/src/engine/game_state.cpp.s
+.PHONY : src/engine/game_state.cpp.s
+
+src/eval/hand_evaluator.o: src/eval/hand_evaluator.cpp.o
+.PHONY : src/eval/hand_evaluator.o
+
+# target to build an object file
+src/eval/hand_evaluator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/src/eval/hand_evaluator.cpp.o
+.PHONY : src/eval/hand_evaluator.cpp.o
+
+src/eval/hand_evaluator.i: src/eval/hand_evaluator.cpp.i
+.PHONY : src/eval/hand_evaluator.i
+
+# target to preprocess a source file
+src/eval/hand_evaluator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/src/eval/hand_evaluator.cpp.i
+.PHONY : src/eval/hand_evaluator.cpp.i
+
+src/eval/hand_evaluator.s: src/eval/hand_evaluator.cpp.s
+.PHONY : src/eval/hand_evaluator.s
+
+# target to generate assembly for a file
+src/eval/hand_evaluator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/src/eval/hand_evaluator.cpp.s
+.PHONY : src/eval/hand_evaluator.cpp.s
+
 tests/test_cards.o: tests/test_cards.cpp.o
 .PHONY : tests/test_cards.o
 
@@ -260,6 +360,54 @@ tests/test_cards.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cards.dir/build.make CMakeFiles/test_cards.dir/tests/test_cards.cpp.s
 .PHONY : tests/test_cards.cpp.s
 
+tests/test_evaluator.o: tests/test_evaluator.cpp.o
+.PHONY : tests/test_evaluator.o
+
+# target to build an object file
+tests/test_evaluator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/tests/test_evaluator.cpp.o
+.PHONY : tests/test_evaluator.cpp.o
+
+tests/test_evaluator.i: tests/test_evaluator.cpp.i
+.PHONY : tests/test_evaluator.i
+
+# target to preprocess a source file
+tests/test_evaluator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/tests/test_evaluator.cpp.i
+.PHONY : tests/test_evaluator.cpp.i
+
+tests/test_evaluator.s: tests/test_evaluator.cpp.s
+.PHONY : tests/test_evaluator.s
+
+# target to generate assembly for a file
+tests/test_evaluator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/tests/test_evaluator.cpp.s
+.PHONY : tests/test_evaluator.cpp.s
+
+tests/test_game_state.o: tests/test_game_state.cpp.o
+.PHONY : tests/test_game_state.o
+
+# target to build an object file
+tests/test_game_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/tests/test_game_state.cpp.o
+.PHONY : tests/test_game_state.cpp.o
+
+tests/test_game_state.i: tests/test_game_state.cpp.i
+.PHONY : tests/test_game_state.i
+
+# target to preprocess a source file
+tests/test_game_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/tests/test_game_state.cpp.i
+.PHONY : tests/test_game_state.cpp.i
+
+tests/test_game_state.s: tests/test_game_state.cpp.s
+.PHONY : tests/test_game_state.s
+
+# target to generate assembly for a file
+tests/test_game_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/tests/test_game_state.cpp.s
+.PHONY : tests/test_game_state.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -277,10 +425,26 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... poker_engine"
+	@echo "... poker_eval"
 	@echo "... test_cards"
+	@echo "... test_evaluator"
+	@echo "... test_game_state"
+	@echo "... src/engine/game_state.o"
+	@echo "... src/engine/game_state.i"
+	@echo "... src/engine/game_state.s"
+	@echo "... src/eval/hand_evaluator.o"
+	@echo "... src/eval/hand_evaluator.i"
+	@echo "... src/eval/hand_evaluator.s"
 	@echo "... tests/test_cards.o"
 	@echo "... tests/test_cards.i"
 	@echo "... tests/test_cards.s"
+	@echo "... tests/test_evaluator.o"
+	@echo "... tests/test_evaluator.i"
+	@echo "... tests/test_evaluator.s"
+	@echo "... tests/test_game_state.o"
+	@echo "... tests/test_game_state.i"
+	@echo "... tests/test_game_state.s"
 .PHONY : help
 
 

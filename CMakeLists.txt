@@ -23,7 +23,21 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 include(GoogleTest)
 
-add_executable(test_cards tests/test_cards.cpp)
+add_executable(test_cards tests/test_cards.cpp
+  src/eval/hand_evaluator.h)
 target_link_libraries(test_cards PRIVATE poker_core GTest::gtest_main)
 gtest_discover_tests(test_cards)
 
+add_library(poker_eval STATIC src/eval/hand_evaluator.cpp)
+target_link_libraries(poker_eval PUBLIC poker_core)
+
+add_executable(test_evaluator tests/test_evaluator.cpp)
+target_link_libraries(test_evaluator PRIVATE poker_eval GTest::gtest_main)
+gtest_discover_tests(test_evaluator)
+
+add_library(poker_engine STATIC src/engine/game_state.cpp)
+target_link_libraries(poker_engine PUBLIC poker_eval)
+
+add_executable(test_game_state tests/test_game_state.cpp)
+target_link_libraries(test_game_state PRIVATE poker_engine GTest::gtest_main)
+gtest_discover_tests(test_game_state)

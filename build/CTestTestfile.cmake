@@ -5,4 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 include("/Users/aaryangharat/Desktop/Project_Poker/build/test_cards_e3b0c442_include.cmake")
+include("/Users/aaryangharat/Desktop/Project_Poker/build/test_evaluator_e3b0c442_include.cmake")
+include("/Users/aaryangharat/Desktop/Project_Poker/build/test_game_state_e3b0c442_include.cmake")
 subdirs("_deps/googletest-build")

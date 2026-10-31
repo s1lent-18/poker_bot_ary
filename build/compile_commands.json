@@ -6,6 +6,30 @@
   "output": "CMakeFiles/test_cards.dir/tests/test_cards.cpp.o"
 },
 {
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/poker_eval.dir/src/eval/hand_evaluator.cpp.o -c /Users/aaryangharat/Desktop/Project_Poker/src/eval/hand_evaluator.cpp",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/src/eval/hand_evaluator.cpp",
+  "output": "CMakeFiles/poker_eval.dir/src/eval/hand_evaluator.cpp.o"
+},
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/src -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -o CMakeFiles/test_evaluator.dir/tests/test_evaluator.cpp.o -c /Users/aaryangharat/Desktop/Project_Poker/tests/test_evaluator.cpp",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/tests/test_evaluator.cpp",
+  "output": "CMakeFiles/test_evaluator.dir/tests/test_evaluator.cpp.o"
+},
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/poker_engine.dir/src/engine/game_state.cpp.o -c /Users/aaryangharat/Desktop/Project_Poker/src/engine/game_state.cpp",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/src/engine/game_state.cpp",
+  "output": "CMakeFiles/poker_engine.dir/src/engine/game_state.cpp.o"
+},
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/src -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -o CMakeFiles/test_game_state.dir/tests/test_game_state.cpp.o -c /Users/aaryangharat/Desktop/Project_Poker/tests/test_game_state.cpp",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/tests/test_game_state.cpp",
+  "output": "CMakeFiles/test_game_state.dir/tests/test_game_state.cpp.o"
+},
+{
   "directory": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-build/googlemock",
   "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/include -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "file": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/src/gmock-all.cc",

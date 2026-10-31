@@ -64,11 +64,19 @@ CMAKE_BINARY_DIR = /Users/aaryangharat/Desktop/Project_Poker/build
 
 # The main recursive "all" target.
 all: CMakeFiles/test_cards.dir/all
+all: CMakeFiles/poker_eval.dir/all
+all: CMakeFiles/test_evaluator.dir/all
+all: CMakeFiles/poker_engine.dir/all
+all: CMakeFiles/test_game_state.dir/all
 all: _deps/googletest-build/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/test_cards.dir/codegen
+codegen: CMakeFiles/poker_eval.dir/codegen
+codegen: CMakeFiles/test_evaluator.dir/codegen
+codegen: CMakeFiles/poker_engine.dir/codegen
+codegen: CMakeFiles/test_game_state.dir/codegen
 codegen: _deps/googletest-build/codegen
 .PHONY : codegen
 
@@ -78,6 +86,10 @@ preinstall: _deps/googletest-build/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/test_cards.dir/clean
+clean: CMakeFiles/poker_eval.dir/clean
+clean: CMakeFiles/test_evaluator.dir/clean
+clean: CMakeFiles/poker_engine.dir/clean
+clean: CMakeFiles/test_game_state.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
 
@@ -155,7 +167,7 @@ CMakeFiles/test_cards.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtes
 CMakeFiles/test_cards.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cards.dir/build.make CMakeFiles/test_cards.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cards.dir/build.make CMakeFiles/test_cards.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=9,10 "Built target test_cards"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=13,14 "Built target test_cards"
 .PHONY : CMakeFiles/test_cards.dir/all
 
 # Build rule for subdir invocation for target.
@@ -172,13 +184,146 @@ test_cards: CMakeFiles/test_cards.dir/rule
 # codegen rule for target.
 CMakeFiles/test_cards.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cards.dir/build.make CMakeFiles/test_cards.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=9,10 "Finished codegen for target test_cards"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=13,14 "Finished codegen for target test_cards"
 .PHONY : CMakeFiles/test_cards.dir/codegen
 
 # clean rule for target.
 CMakeFiles/test_cards.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cards.dir/build.make CMakeFiles/test_cards.dir/clean
 .PHONY : CMakeFiles/test_cards.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/poker_eval.dir
+
+# All Build rule for target.
+CMakeFiles/poker_eval.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=11,12 "Built target poker_eval"
+.PHONY : CMakeFiles/poker_eval.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/poker_eval.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/poker_eval.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles 0
+.PHONY : CMakeFiles/poker_eval.dir/rule
+
+# Convenience name for target.
+poker_eval: CMakeFiles/poker_eval.dir/rule
+.PHONY : poker_eval
+
+# codegen rule for target.
+CMakeFiles/poker_eval.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=11,12 "Finished codegen for target poker_eval"
+.PHONY : CMakeFiles/poker_eval.dir/codegen
+
+# clean rule for target.
+CMakeFiles/poker_eval.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_eval.dir/build.make CMakeFiles/poker_eval.dir/clean
+.PHONY : CMakeFiles/poker_eval.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_evaluator.dir
+
+# All Build rule for target.
+CMakeFiles/test_evaluator.dir/all: CMakeFiles/poker_eval.dir/all
+CMakeFiles/test_evaluator.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_evaluator.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=15,16 "Built target test_evaluator"
+.PHONY : CMakeFiles/test_evaluator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_evaluator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_evaluator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_evaluator.dir/rule
+
+# Convenience name for target.
+test_evaluator: CMakeFiles/test_evaluator.dir/rule
+.PHONY : test_evaluator
+
+# codegen rule for target.
+CMakeFiles/test_evaluator.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=15,16 "Finished codegen for target test_evaluator"
+.PHONY : CMakeFiles/test_evaluator.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_evaluator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/clean
+.PHONY : CMakeFiles/test_evaluator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/poker_engine.dir
+
+# All Build rule for target.
+CMakeFiles/poker_engine.dir/all: CMakeFiles/poker_eval.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_engine.dir/build.make CMakeFiles/poker_engine.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_engine.dir/build.make CMakeFiles/poker_engine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=9,10 "Built target poker_engine"
+.PHONY : CMakeFiles/poker_engine.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/poker_engine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/poker_engine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles 0
+.PHONY : CMakeFiles/poker_engine.dir/rule
+
+# Convenience name for target.
+poker_engine: CMakeFiles/poker_engine.dir/rule
+.PHONY : poker_engine
+
+# codegen rule for target.
+CMakeFiles/poker_engine.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_engine.dir/build.make CMakeFiles/poker_engine.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=9,10 "Finished codegen for target poker_engine"
+.PHONY : CMakeFiles/poker_engine.dir/codegen
+
+# clean rule for target.
+CMakeFiles/poker_engine.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_engine.dir/build.make CMakeFiles/poker_engine.dir/clean
+.PHONY : CMakeFiles/poker_engine.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_game_state.dir
+
+# All Build rule for target.
+CMakeFiles/test_game_state.dir/all: CMakeFiles/poker_eval.dir/all
+CMakeFiles/test_game_state.dir/all: CMakeFiles/poker_engine.dir/all
+CMakeFiles/test_game_state.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_game_state.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=17,18 "Built target test_game_state"
+.PHONY : CMakeFiles/test_game_state.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_game_state.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_game_state.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_game_state.dir/rule
+
+# Convenience name for target.
+test_game_state: CMakeFiles/test_game_state.dir/rule
+.PHONY : test_game_state
+
+# codegen rule for target.
+CMakeFiles/test_game_state.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles --progress-num=17,18 "Finished codegen for target test_game_state"
+.PHONY : CMakeFiles/test_game_state.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_game_state.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/clean
+.PHONY : CMakeFiles/test_game_state.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir

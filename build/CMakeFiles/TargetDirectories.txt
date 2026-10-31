@@ -1,4 +1,8 @@
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/test_cards.dir
+/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/poker_eval.dir
+/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/test_evaluator.dir
+/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/poker_engine.dir
+/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/test_game_state.dir
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/test.dir
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/edit_cache.dir
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/rebuild_cache.dir
