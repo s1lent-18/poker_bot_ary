@@ -1,0 +1,5 @@
+if(EXISTS "/Users/aaryangharat/Desktop/Project_Poker/build/test_cards_e3b0c442_tests.cmake")
+  include("/Users/aaryangharat/Desktop/Project_Poker/build/test_cards_e3b0c442_tests.cmake")
+else()
+  add_test(test_cards_NOT_BUILT test_cards_NOT_BUILT)
+endif()

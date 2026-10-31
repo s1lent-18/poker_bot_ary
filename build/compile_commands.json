@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/src -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -o CMakeFiles/test_cards.dir/tests/test_cards.cpp.o -c /Users/aaryangharat/Desktop/Project_Poker/tests/test_cards.cpp",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/tests/test_cards.cpp",
+  "output": "CMakeFiles/test_cards.dir/tests/test_cards.cpp.o"
+},
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/include -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/c++  -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/c++  -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+}
+]

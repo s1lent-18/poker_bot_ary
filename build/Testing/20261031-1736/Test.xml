@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261031-1736-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.4.5"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="macOS"
+	Hostname="Aaryans-MacBook-Air-3.local"
+	OSRelease="26.5.1"
+	OSVersion="25F80"
+	OSPlatform="arm64"
+	Is64Bits="1"
+	VendorString="Apple"
+	VendorID="Apple"
+	FamilyID="0"
+	ModelID="0"
+	ModelName="Apple M5"
+	ProcessorCacheSize="131072"
+	NumberOfLogicalCPU="10"
+	NumberOfPhysicalCPU="10"
+	TotalVirtualMemory="1024"
+	TotalPhysicalMemory="16384"
+	LogicalProcessorsPerPhysical="10"
+	ProcessorClockFrequency="0.000000"
+	>
+	<Testing>
+		<StartDateTime>Oct 31 23:06 IST</StartDateTime>
+		<StartTestTime>1793468183</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 31 23:06 IST</EndDateTime>
+		<EndTestTime>1793468183</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

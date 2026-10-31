@@ -3,8 +3,11 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
-            ],
+    "${workspaceFolder}/**",
+    "${workspaceFolder}/src",
+    "${workspaceFolder}/build/_deps/**"
+],
+
             "defines": [],
             "macFrameworkPath": [],
             "compilerPath": "/usr/bin/clang",
