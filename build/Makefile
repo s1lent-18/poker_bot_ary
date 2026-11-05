@@ -315,6 +315,32 @@ test_kuhn/fast:
 .PHONY : test_kuhn/fast
 
 #=============================================================================
+# Target rules for targets named leduc_solver
+
+# Build rule for target.
+leduc_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leduc_solver
+.PHONY : leduc_solver
+
+# fast build rule for target.
+leduc_solver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leduc_solver.dir/build.make CMakeFiles/leduc_solver.dir/build
+.PHONY : leduc_solver/fast
+
+#=============================================================================
+# Target rules for targets named test_cfr
+
+# Build rule for target.
+test_cfr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cfr
+.PHONY : test_cfr
+
+# fast build rule for target.
+test_cfr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cfr.dir/build.make CMakeFiles/test_cfr.dir/build
+.PHONY : test_cfr/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -413,6 +439,30 @@ src/app/kuhn_main.s: src/app/kuhn_main.cpp.s
 src/app/kuhn_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuhn_solver.dir/build.make CMakeFiles/kuhn_solver.dir/src/app/kuhn_main.cpp.s
 .PHONY : src/app/kuhn_main.cpp.s
+
+src/app/leduc_main.o: src/app/leduc_main.cpp.o
+.PHONY : src/app/leduc_main.o
+
+# target to build an object file
+src/app/leduc_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leduc_solver.dir/build.make CMakeFiles/leduc_solver.dir/src/app/leduc_main.cpp.o
+.PHONY : src/app/leduc_main.cpp.o
+
+src/app/leduc_main.i: src/app/leduc_main.cpp.i
+.PHONY : src/app/leduc_main.i
+
+# target to preprocess a source file
+src/app/leduc_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leduc_solver.dir/build.make CMakeFiles/leduc_solver.dir/src/app/leduc_main.cpp.i
+.PHONY : src/app/leduc_main.cpp.i
+
+src/app/leduc_main.s: src/app/leduc_main.cpp.s
+.PHONY : src/app/leduc_main.s
+
+# target to generate assembly for a file
+src/app/leduc_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leduc_solver.dir/build.make CMakeFiles/leduc_solver.dir/src/app/leduc_main.cpp.s
+.PHONY : src/app/leduc_main.cpp.s
 
 src/app/main.o: src/app/main.cpp.o
 .PHONY : src/app/main.o
@@ -534,6 +584,30 @@ tests/test_cards.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cards.dir/build.make CMakeFiles/test_cards.dir/tests/test_cards.cpp.s
 .PHONY : tests/test_cards.cpp.s
 
+tests/test_cfr.o: tests/test_cfr.cpp.o
+.PHONY : tests/test_cfr.o
+
+# target to build an object file
+tests/test_cfr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cfr.dir/build.make CMakeFiles/test_cfr.dir/tests/test_cfr.cpp.o
+.PHONY : tests/test_cfr.cpp.o
+
+tests/test_cfr.i: tests/test_cfr.cpp.i
+.PHONY : tests/test_cfr.i
+
+# target to preprocess a source file
+tests/test_cfr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cfr.dir/build.make CMakeFiles/test_cfr.dir/tests/test_cfr.cpp.i
+.PHONY : tests/test_cfr.cpp.i
+
+tests/test_cfr.s: tests/test_cfr.cpp.s
+.PHONY : tests/test_cfr.s
+
+# target to generate assembly for a file
+tests/test_cfr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cfr.dir/build.make CMakeFiles/test_cfr.dir/tests/test_cfr.cpp.s
+.PHONY : tests/test_cfr.cpp.s
+
 tests/test_equity.o: tests/test_equity.cpp.o
 .PHONY : tests/test_equity.o
 
@@ -648,12 +722,14 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... kuhn_solver"
+	@echo "... leduc_solver"
 	@echo "... poker_ai"
 	@echo "... poker_cli"
 	@echo "... poker_engine"
 	@echo "... poker_eval"
 	@echo "... test_agents"
 	@echo "... test_cards"
+	@echo "... test_cfr"
 	@echo "... test_equity"
 	@echo "... test_evaluator"
 	@echo "... test_game_state"
@@ -664,6 +740,9 @@ help:
 	@echo "... src/app/kuhn_main.o"
 	@echo "... src/app/kuhn_main.i"
 	@echo "... src/app/kuhn_main.s"
+	@echo "... src/app/leduc_main.o"
+	@echo "... src/app/leduc_main.i"
+	@echo "... src/app/leduc_main.s"
 	@echo "... src/app/main.o"
 	@echo "... src/app/main.i"
 	@echo "... src/app/main.s"
@@ -679,6 +758,9 @@ help:
 	@echo "... tests/test_cards.o"
 	@echo "... tests/test_cards.i"
 	@echo "... tests/test_cards.s"
+	@echo "... tests/test_cfr.o"
+	@echo "... tests/test_cfr.i"
+	@echo "... tests/test_cfr.s"
 	@echo "... tests/test_equity.o"
 	@echo "... tests/test_equity.i"
 	@echo "... tests/test_equity.s"

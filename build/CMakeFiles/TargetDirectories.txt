@@ -9,6 +9,8 @@
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/test_equity.dir
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/kuhn_solver.dir
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/test_kuhn.dir
+/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/leduc_solver.dir
+/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/test_cfr.dir
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/test.dir
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/edit_cache.dir
 /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/rebuild_cache.dir
