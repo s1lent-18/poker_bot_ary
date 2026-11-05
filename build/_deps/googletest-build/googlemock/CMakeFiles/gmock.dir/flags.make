@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/include -I/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest
 
-CXX_FLAGSarm64 = -O3 -DNDEBUG -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1  
+CXX_FLAGSarm64 = -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1  
 
-CXX_FLAGS = -O3 -DNDEBUG -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1  
+CXX_FLAGS = -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1  
 

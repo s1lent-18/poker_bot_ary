@@ -59,3 +59,13 @@ target_link_libraries(poker_agents INTERFACE poker_ai)
 add_executable(test_equity tests/test_equity.cpp)
 target_link_libraries(test_equity PRIVATE poker_agents GTest::gtest_main)
 gtest_discover_tests(test_equity)
+
+add_library(poker_cfr INTERFACE)
+target_link_libraries(poker_cfr INTERFACE poker_core)
+
+add_executable(kuhn_solver src/app/kuhn_main.cpp)
+target_link_libraries(kuhn_solver PRIVATE poker_cfr)
+
+add_executable(test_kuhn tests/test_kuhn.cpp)
+target_link_libraries(test_kuhn PRIVATE poker_cfr GTest::gtest_main)
+gtest_discover_tests(test_kuhn)

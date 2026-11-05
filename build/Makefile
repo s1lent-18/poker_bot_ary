@@ -289,6 +289,32 @@ test_equity/fast:
 .PHONY : test_equity/fast
 
 #=============================================================================
+# Target rules for targets named kuhn_solver
+
+# Build rule for target.
+kuhn_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kuhn_solver
+.PHONY : kuhn_solver
+
+# fast build rule for target.
+kuhn_solver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuhn_solver.dir/build.make CMakeFiles/kuhn_solver.dir/build
+.PHONY : kuhn_solver/fast
+
+#=============================================================================
+# Target rules for targets named test_kuhn
+
+# Build rule for target.
+test_kuhn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_kuhn
+.PHONY : test_kuhn
+
+# fast build rule for target.
+test_kuhn/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kuhn.dir/build.make CMakeFiles/test_kuhn.dir/build
+.PHONY : test_kuhn/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -363,6 +389,30 @@ src/ai/equity.s: src/ai/equity.cpp.s
 src/ai/equity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_ai.dir/build.make CMakeFiles/poker_ai.dir/src/ai/equity.cpp.s
 .PHONY : src/ai/equity.cpp.s
+
+src/app/kuhn_main.o: src/app/kuhn_main.cpp.o
+.PHONY : src/app/kuhn_main.o
+
+# target to build an object file
+src/app/kuhn_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuhn_solver.dir/build.make CMakeFiles/kuhn_solver.dir/src/app/kuhn_main.cpp.o
+.PHONY : src/app/kuhn_main.cpp.o
+
+src/app/kuhn_main.i: src/app/kuhn_main.cpp.i
+.PHONY : src/app/kuhn_main.i
+
+# target to preprocess a source file
+src/app/kuhn_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuhn_solver.dir/build.make CMakeFiles/kuhn_solver.dir/src/app/kuhn_main.cpp.i
+.PHONY : src/app/kuhn_main.cpp.i
+
+src/app/kuhn_main.s: src/app/kuhn_main.cpp.s
+.PHONY : src/app/kuhn_main.s
+
+# target to generate assembly for a file
+src/app/kuhn_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuhn_solver.dir/build.make CMakeFiles/kuhn_solver.dir/src/app/kuhn_main.cpp.s
+.PHONY : src/app/kuhn_main.cpp.s
 
 src/app/main.o: src/app/main.cpp.o
 .PHONY : src/app/main.o
@@ -556,6 +606,30 @@ tests/test_game_state.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/tests/test_game_state.cpp.s
 .PHONY : tests/test_game_state.cpp.s
 
+tests/test_kuhn.o: tests/test_kuhn.cpp.o
+.PHONY : tests/test_kuhn.o
+
+# target to build an object file
+tests/test_kuhn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kuhn.dir/build.make CMakeFiles/test_kuhn.dir/tests/test_kuhn.cpp.o
+.PHONY : tests/test_kuhn.cpp.o
+
+tests/test_kuhn.i: tests/test_kuhn.cpp.i
+.PHONY : tests/test_kuhn.i
+
+# target to preprocess a source file
+tests/test_kuhn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kuhn.dir/build.make CMakeFiles/test_kuhn.dir/tests/test_kuhn.cpp.i
+.PHONY : tests/test_kuhn.cpp.i
+
+tests/test_kuhn.s: tests/test_kuhn.cpp.s
+.PHONY : tests/test_kuhn.s
+
+# target to generate assembly for a file
+tests/test_kuhn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_kuhn.dir/build.make CMakeFiles/test_kuhn.dir/tests/test_kuhn.cpp.s
+.PHONY : tests/test_kuhn.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -573,6 +647,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... kuhn_solver"
 	@echo "... poker_ai"
 	@echo "... poker_cli"
 	@echo "... poker_engine"
@@ -582,9 +657,13 @@ help:
 	@echo "... test_equity"
 	@echo "... test_evaluator"
 	@echo "... test_game_state"
+	@echo "... test_kuhn"
 	@echo "... src/ai/equity.o"
 	@echo "... src/ai/equity.i"
 	@echo "... src/ai/equity.s"
+	@echo "... src/app/kuhn_main.o"
+	@echo "... src/app/kuhn_main.i"
+	@echo "... src/app/kuhn_main.s"
 	@echo "... src/app/main.o"
 	@echo "... src/app/main.i"
 	@echo "... src/app/main.s"
@@ -609,6 +688,9 @@ help:
 	@echo "... tests/test_game_state.o"
 	@echo "... tests/test_game_state.i"
 	@echo "... tests/test_game_state.s"
+	@echo "... tests/test_kuhn.o"
+	@echo "... tests/test_kuhn.i"
+	@echo "... tests/test_kuhn.s"
 .PHONY : help
 
 
