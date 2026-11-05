@@ -3,7 +3,10 @@
 #include <memory>
 #include <random>
 #include <string>
+#include <cmath>
+#include <algorithm>
 
+#include "agents/equity_agent.h"
 #include "agents/human_cli_agent.h"
 #include "agents/match.h"
 #include "agents/random_agent.h"
@@ -15,14 +18,16 @@ using namespace poker;
 
 struct Args {
     std::string bot = "rule";
+    std::string hero = "rule";
     uint64_t seed = std::random_device{}();
     int sim = 0;
 };
 
 static void usage() {
-    std::cout << "Usage: poker_cli [--bot rule|random] [--seed N] [--sim HANDS]\n"
-                 "  (no flags)        play against the bot\n"
-                 "  --sim N --bot X   RuleBot vs bot X for N hands, print results\n";
+    std::cout << "Usage: poker_cli [--bot rule|random|equity] [--hero rule|random|equity]\n"
+                 "                 [--seed N] [--sim HANDS]\n"
+                 "  (no flags)                      play against the bot\n"
+                 "  --sim N --hero X --bot Y        X vs Y for N hands, print results\n";
 }
 
 static Args parse(int argc, char** argv) {
@@ -34,6 +39,7 @@ static Args parse(int argc, char** argv) {
             return argv[++i];
         };
         if (k == "--bot") a.bot = next();
+        else if (k == "--hero") a.hero = next();
         else if (k == "--seed") a.seed = std::stoull(next());
         else if (k == "--sim") a.sim = std::stoi(next());
         else if (k == "--help") { usage(); std::exit(0); }
@@ -45,6 +51,7 @@ static Args parse(int argc, char** argv) {
 static std::unique_ptr<Agent> make_agent(const std::string& name, uint64_t seed) {
     if (name == "random") return std::make_unique<RandomAgent>(seed);
     if (name == "rule") return std::make_unique<RuleAgent>(seed);
+    if (name == "equity") return std::make_unique<EquityAgent>(seed);
     std::cerr << "unknown bot: " << name << "\n";
     std::exit(1);
 }
@@ -53,19 +60,26 @@ static void run_sim(const Args& args) {
     GameConfig cfg;
     Rng rng(args.seed);
     Deck deck;
-    RuleAgent hero(args.seed + 1);
+    auto hero = make_agent(args.hero, args.seed + 1);
     auto villain = make_agent(args.bot, args.seed + 2);
 
-    long long total = 0;
+    double sum = 0, sumsq = 0;
     for (int h = 0; h < args.sim; ++h) {
         deck.shuffle(rng);
         GameState s(cfg, h % 2, deck);  // alternate the button
-        total += play_hand(s, {&hero, villain.get()})[0];
+        const double bb = double(play_hand(s, {hero.get(), villain.get()})[0]) / cfg.big_blind;
+        sum += bb;
+        sumsq += bb * bb;
     }
-    std::cout << "RuleBot vs " << villain->name() << " over " << args.sim << " hands\n"
-              << "  RuleBot net: " << total << " chips\n"
-              << "  = " << double(total) / args.sim / cfg.big_blind << " big blinds / hand\n";
+    const double n = args.sim, mean = sum / n;
+    const double var = std::max(0.0, (sumsq - n * mean * mean) / std::max(1.0, n - 1));
+    const double se = std::sqrt(var / n);
+    std::cout << hero->name() << " vs " << villain->name() << " over " << args.sim << " hands\n"
+              << "  " << hero->name() << ": " << mean << " bb/hand  (95% CI +/- " << 1.96 * se
+              << ")\n"
+              << "  = " << 100 * mean << " bb/100\n";
 }
+
 
 static void play_interactive(const Args& args) {
     GameConfig cfg;

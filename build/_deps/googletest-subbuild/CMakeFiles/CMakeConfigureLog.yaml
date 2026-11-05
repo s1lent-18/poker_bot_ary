@@ -32,6 +32,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/uname"
       - "/usr/local/bin/uname"
@@ -51,6 +54,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "message-v1"
     backtrace:
@@ -90,6 +97,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -109,5 +119,9 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...

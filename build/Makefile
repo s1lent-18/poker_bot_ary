@@ -263,6 +263,32 @@ test_agents/fast:
 .PHONY : test_agents/fast
 
 #=============================================================================
+# Target rules for targets named poker_ai
+
+# Build rule for target.
+poker_ai: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poker_ai
+.PHONY : poker_ai
+
+# fast build rule for target.
+poker_ai/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_ai.dir/build.make CMakeFiles/poker_ai.dir/build
+.PHONY : poker_ai/fast
+
+#=============================================================================
+# Target rules for targets named test_equity
+
+# Build rule for target.
+test_equity: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_equity
+.PHONY : test_equity
+
+# fast build rule for target.
+test_equity/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_equity.dir/build.make CMakeFiles/test_equity.dir/build
+.PHONY : test_equity/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -313,6 +339,30 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+src/ai/equity.o: src/ai/equity.cpp.o
+.PHONY : src/ai/equity.o
+
+# target to build an object file
+src/ai/equity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_ai.dir/build.make CMakeFiles/poker_ai.dir/src/ai/equity.cpp.o
+.PHONY : src/ai/equity.cpp.o
+
+src/ai/equity.i: src/ai/equity.cpp.i
+.PHONY : src/ai/equity.i
+
+# target to preprocess a source file
+src/ai/equity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_ai.dir/build.make CMakeFiles/poker_ai.dir/src/ai/equity.cpp.i
+.PHONY : src/ai/equity.cpp.i
+
+src/ai/equity.s: src/ai/equity.cpp.s
+.PHONY : src/ai/equity.s
+
+# target to generate assembly for a file
+src/ai/equity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_ai.dir/build.make CMakeFiles/poker_ai.dir/src/ai/equity.cpp.s
+.PHONY : src/ai/equity.cpp.s
 
 src/app/main.o: src/app/main.cpp.o
 .PHONY : src/app/main.o
@@ -434,6 +484,30 @@ tests/test_cards.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cards.dir/build.make CMakeFiles/test_cards.dir/tests/test_cards.cpp.s
 .PHONY : tests/test_cards.cpp.s
 
+tests/test_equity.o: tests/test_equity.cpp.o
+.PHONY : tests/test_equity.o
+
+# target to build an object file
+tests/test_equity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_equity.dir/build.make CMakeFiles/test_equity.dir/tests/test_equity.cpp.o
+.PHONY : tests/test_equity.cpp.o
+
+tests/test_equity.i: tests/test_equity.cpp.i
+.PHONY : tests/test_equity.i
+
+# target to preprocess a source file
+tests/test_equity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_equity.dir/build.make CMakeFiles/test_equity.dir/tests/test_equity.cpp.i
+.PHONY : tests/test_equity.cpp.i
+
+tests/test_equity.s: tests/test_equity.cpp.s
+.PHONY : tests/test_equity.s
+
+# target to generate assembly for a file
+tests/test_equity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_equity.dir/build.make CMakeFiles/test_equity.dir/tests/test_equity.cpp.s
+.PHONY : tests/test_equity.cpp.s
+
 tests/test_evaluator.o: tests/test_evaluator.cpp.o
 .PHONY : tests/test_evaluator.o
 
@@ -499,13 +573,18 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... poker_ai"
 	@echo "... poker_cli"
 	@echo "... poker_engine"
 	@echo "... poker_eval"
 	@echo "... test_agents"
 	@echo "... test_cards"
+	@echo "... test_equity"
 	@echo "... test_evaluator"
 	@echo "... test_game_state"
+	@echo "... src/ai/equity.o"
+	@echo "... src/ai/equity.i"
+	@echo "... src/ai/equity.s"
 	@echo "... src/app/main.o"
 	@echo "... src/app/main.i"
 	@echo "... src/app/main.s"
@@ -521,6 +600,9 @@ help:
 	@echo "... tests/test_cards.o"
 	@echo "... tests/test_cards.i"
 	@echo "... tests/test_cards.s"
+	@echo "... tests/test_equity.o"
+	@echo "... tests/test_equity.i"
+	@echo "... tests/test_equity.s"
 	@echo "... tests/test_evaluator.o"
 	@echo "... tests/test_evaluator.i"
 	@echo "... tests/test_evaluator.s"

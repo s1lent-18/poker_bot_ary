@@ -32,6 +32,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/uname"
       - "/usr/local/bin/uname"
@@ -51,6 +54,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "message-v1"
     backtrace:
@@ -91,6 +98,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/gmake"
       - "/usr/local/bin/gmake"
@@ -104,6 +114,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
       - "/pkg/env/global/bin/gmake"
       - "/opt/homebrew/bin/gmake"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/gmake"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/gmake"
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/make"
       - "/usr/local/bin/make"
       - "/System/Cryptexes/App/usr/bin/make"
@@ -122,6 +135,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -160,6 +177,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/c++"
       - "/usr/local/bin/c++"
@@ -179,6 +199,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -218,6 +242,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "message-v1"
     backtrace:
@@ -313,6 +341,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
@@ -328,6 +359,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -360,6 +395,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
@@ -375,6 +413,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -407,6 +449,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
@@ -422,6 +467,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -454,6 +503,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
@@ -469,6 +521,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -501,6 +557,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
@@ -516,6 +575,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -548,6 +611,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
@@ -563,6 +629,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -595,6 +665,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/usr/bin/objcopy"
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/objcopy"
@@ -608,6 +681,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
       - "/pkg/env/global/bin/objcopy"
       - "/opt/homebrew/bin/objcopy"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/objcopy"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/objcopy"
     found: false
     search_context:
       ENV{PATH}:
@@ -623,6 +699,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -655,6 +735,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/usr/bin/readelf"
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/readelf"
@@ -668,6 +751,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
       - "/pkg/env/global/bin/readelf"
       - "/opt/homebrew/bin/readelf"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/readelf"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/readelf"
     found: false
     search_context:
       ENV{PATH}:
@@ -683,6 +769,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -715,6 +805,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/usr/bin/dlltool"
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/dlltool"
@@ -728,6 +821,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
       - "/pkg/env/global/bin/dlltool"
       - "/opt/homebrew/bin/dlltool"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/dlltool"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/dlltool"
     found: false
     search_context:
       ENV{PATH}:
@@ -743,6 +839,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -775,6 +875,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/usr/bin/addr2line"
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/addr2line"
@@ -788,6 +891,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
       - "/pkg/env/global/bin/addr2line"
       - "/opt/homebrew/bin/addr2line"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/addr2line"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/addr2line"
     found: false
     search_context:
       ENV{PATH}:
@@ -803,6 +909,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -835,6 +945,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/usr/bin/tapi"
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/tapi"
@@ -848,6 +961,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
       - "/pkg/env/global/bin/tapi"
       - "/opt/homebrew/bin/tapi"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/tapi"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -863,6 +979,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
   -
     kind: "find-v1"
     backtrace:
@@ -895,6 +1015,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
       - "/opt/homebrew/bin/"
+      - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
+      - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim/"
     searched_directories:
       - "/Library/Frameworks/Python.framework/Versions/3.15/bin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -914,6 +1037,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
       CMAKE_INSTALL_PREFIX: "/usr/local"
   -
     kind: "try_compile-v1"
@@ -924,8 +1051,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-5tl1A3"
-      binary: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-5tl1A3"
+      source: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-2qX0wz"
+      binary: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-2qX0wz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -939,19 +1066,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-5tl1A3'
+        Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-2qX0wz'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dade9/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dade9.dir/build.make CMakeFiles/cmTC_dade9.dir/build
-        Building CXX object CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c25d9/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c25d9.dir/build.make CMakeFiles/cmTC_c25d9.dir/build
+        Building CXX object CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 21.0.0 (clang-2100.1.1.101)
         Target: arm64-apple-darwin25.5.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-5tl1A3 -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-5tl1A3 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-2qX0wz -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-2qX0wz -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.5.0
         ignoring nonexistent directory "/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
@@ -965,13 +1092,13 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_dade9
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dade9.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_c25d9
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c25d9.dir/link.txt --verbose=1
         Apple clang version 21.0.0 (clang-2100.1.1.101)
         Target: arm64-apple-darwin25.5.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_dade9 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_c25d9 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1267
         BUILD 16:38:58 Jun  8 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -983,7 +1110,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_dade9
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c25d9
         
       exitCode: 0
   -
@@ -1027,19 +1154,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-5tl1A3']
+        ignore line: [Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-2qX0wz']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dade9/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dade9.dir/build.make CMakeFiles/cmTC_dade9.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c25d9/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c25d9.dir/build.make CMakeFiles/cmTC_c25d9.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
         ignore line: [Target: arm64-apple-darwin25.5.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-5tl1A3 -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-5tl1A3 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-2qX0wz -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-2qX0wz -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.5.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
@@ -1053,14 +1180,14 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_dade9]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dade9.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_c25d9]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c25d9.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
         ignore line: [Target: arm64-apple-darwin25.5.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_dade9 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> linker [/Library/Developer/CommandLineTools/usr/bin/ld]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_dade9 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_c25d9 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> linker [/Library/Developer/CommandLineTools/usr/bin/ld]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_c25d9 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1077,12 +1204,12 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_dade9] ==> ignore
+          arg [cmTC_c25d9] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_dade9.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_c25d9.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
@@ -1158,6 +1285,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -1214,6 +1345,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -1312,8 +1447,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-v8xD8M"
-      binary: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-v8xD8M"
+      source: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-SDv2zc"
+      binary: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-SDv2zc"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -1326,18 +1461,18 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-v8xD8M'
+        Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-SDv2zc'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c678/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c678.dir/build.make CMakeFiles/cmTC_6c678.dir/build
-        Building C object CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4e3fd/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4e3fd.dir/build.make CMakeFiles/cmTC_4e3fd.dir/build
+        Building C object CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Apple clang version 21.0.0 (clang-2100.1.1.101)
         Target: arm64-apple-darwin25.5.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-v8xD8M -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-v8xD8M -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-SDv2zc -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-SDv2zc -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.5.0
         ignoring nonexistent directory "/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
@@ -1350,13 +1485,13 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        Linking C executable cmTC_6c678
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c678.dir/link.txt --verbose=1
+        Linking C executable cmTC_4e3fd
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e3fd.dir/link.txt --verbose=1
         Apple clang version 21.0.0 (clang-2100.1.1.101)
         Target: arm64-apple-darwin25.5.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_6c678 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_4e3fd -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1267
         BUILD 16:38:58 Jun  8 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -1368,7 +1503,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -o cmTC_6c678
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -o cmTC_4e3fd
         
       exitCode: 0
   -
@@ -1410,18 +1545,18 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-v8xD8M']
+        ignore line: [Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-SDv2zc']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c678/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6c678.dir/build.make CMakeFiles/cmTC_6c678.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4e3fd/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4e3fd.dir/build.make CMakeFiles/cmTC_4e3fd.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
         ignore line: [Target: arm64-apple-darwin25.5.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-v8xD8M -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-v8xD8M -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-SDv2zc -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-SDv2zc -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.5.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
@@ -1434,14 +1569,14 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_6c678]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c678.dir/link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_4e3fd]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e3fd.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
         ignore line: [Target: arm64-apple-darwin25.5.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_6c678 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> linker [/Library/Developer/CommandLineTools/usr/bin/ld]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_6c678 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_4e3fd -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> linker [/Library/Developer/CommandLineTools/usr/bin/ld]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_4e3fd -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1458,12 +1593,12 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_6c678] ==> ignore
+          arg [cmTC_4e3fd] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_6c678.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_4e3fd.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld 
@@ -1562,6 +1697,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
         - "/opt/homebrew/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.15/bin"
+        - "/Users/aaryangharat/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/aaryangharat/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/copilot-shim"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -1591,8 +1730,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-HejsGT"
-      binary: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-HejsGT"
+      source: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-vfxDVl"
+      binary: "/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-vfxDVl"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -1605,15 +1744,15 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-HejsGT'
+        Change Dir: '/Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-vfxDVl'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e8ee1/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e8ee1.dir/build.make CMakeFiles/cmTC_e8ee1.dir/build
-        Building C object CMakeFiles/cmTC_e8ee1.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -MD -MT CMakeFiles/cmTC_e8ee1.dir/src.c.o -MF CMakeFiles/cmTC_e8ee1.dir/src.c.o.d -o CMakeFiles/cmTC_e8ee1.dir/src.c.o -c /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-HejsGT/src.c
-        Linking C executable cmTC_e8ee1
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8ee1.dir/link.txt --verbose=1
-        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e8ee1.dir/src.c.o -o cmTC_e8ee1
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_611c0/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_611c0.dir/build.make CMakeFiles/cmTC_611c0.dir/build
+        Building C object CMakeFiles/cmTC_611c0.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -MD -MT CMakeFiles/cmTC_611c0.dir/src.c.o -MF CMakeFiles/cmTC_611c0.dir/src.c.o.d -o CMakeFiles/cmTC_611c0.dir/src.c.o -c /Users/aaryangharat/Desktop/Project_Poker/build/CMakeFiles/CMakeScratch/TryCompile-vfxDVl/src.c
+        Linking C executable cmTC_611c0
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_611c0.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_611c0.dir/src.c.o -o cmTC_611c0
         
       exitCode: 0
 ...

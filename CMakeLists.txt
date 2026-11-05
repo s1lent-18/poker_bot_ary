@@ -51,3 +51,11 @@ target_link_libraries(poker_cli PRIVATE poker_agents)
 add_executable(test_agents tests/test_agents.cpp)
 target_link_libraries(test_agents PRIVATE poker_agents GTest::gtest_main)
 gtest_discover_tests(test_agents)
+
+add_library(poker_ai STATIC src/ai/equity.cpp)
+target_link_libraries(poker_ai PUBLIC poker_eval)
+target_link_libraries(poker_agents INTERFACE poker_ai)
+
+add_executable(test_equity tests/test_equity.cpp)
+target_link_libraries(test_equity PRIVATE poker_agents GTest::gtest_main)
+gtest_discover_tests(test_equity)

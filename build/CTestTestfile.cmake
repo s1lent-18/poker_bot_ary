@@ -8,4 +8,5 @@ include("/Users/aaryangharat/Desktop/Project_Poker/build/test_cards_e3b0c442_inc
 include("/Users/aaryangharat/Desktop/Project_Poker/build/test_evaluator_e3b0c442_include.cmake")
 include("/Users/aaryangharat/Desktop/Project_Poker/build/test_game_state_e3b0c442_include.cmake")
 include("/Users/aaryangharat/Desktop/Project_Poker/build/test_agents_e3b0c442_include.cmake")
+include("/Users/aaryangharat/Desktop/Project_Poker/build/test_equity_e3b0c442_include.cmake")
 subdirs("_deps/googletest-build")
