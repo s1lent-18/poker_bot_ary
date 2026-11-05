@@ -76,3 +76,10 @@ target_link_libraries(leduc_solver PRIVATE poker_cfr)
 add_executable(test_cfr tests/test_cfr.cpp)
 target_link_libraries(test_cfr PRIVATE poker_cfr GTest::gtest_main)
 gtest_discover_tests(test_cfr)
+
+add_executable(leduc_bench src/app/leduc_bench_main.cpp)
+target_link_libraries(leduc_bench PRIVATE poker_cfr)
+
+add_executable(test_flat_cfr tests/test_flat_cfr.cpp)
+target_link_libraries(test_flat_cfr PRIVATE poker_cfr GTest::gtest_main)
+gtest_discover_tests(test_flat_cfr)

@@ -341,6 +341,32 @@ test_cfr/fast:
 .PHONY : test_cfr/fast
 
 #=============================================================================
+# Target rules for targets named leduc_bench
+
+# Build rule for target.
+leduc_bench: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 leduc_bench
+.PHONY : leduc_bench
+
+# fast build rule for target.
+leduc_bench/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leduc_bench.dir/build.make CMakeFiles/leduc_bench.dir/build
+.PHONY : leduc_bench/fast
+
+#=============================================================================
+# Target rules for targets named test_flat_cfr
+
+# Build rule for target.
+test_flat_cfr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_flat_cfr
+.PHONY : test_flat_cfr
+
+# fast build rule for target.
+test_flat_cfr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_flat_cfr.dir/build.make CMakeFiles/test_flat_cfr.dir/build
+.PHONY : test_flat_cfr/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -439,6 +465,30 @@ src/app/kuhn_main.s: src/app/kuhn_main.cpp.s
 src/app/kuhn_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kuhn_solver.dir/build.make CMakeFiles/kuhn_solver.dir/src/app/kuhn_main.cpp.s
 .PHONY : src/app/kuhn_main.cpp.s
+
+src/app/leduc_bench_main.o: src/app/leduc_bench_main.cpp.o
+.PHONY : src/app/leduc_bench_main.o
+
+# target to build an object file
+src/app/leduc_bench_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leduc_bench.dir/build.make CMakeFiles/leduc_bench.dir/src/app/leduc_bench_main.cpp.o
+.PHONY : src/app/leduc_bench_main.cpp.o
+
+src/app/leduc_bench_main.i: src/app/leduc_bench_main.cpp.i
+.PHONY : src/app/leduc_bench_main.i
+
+# target to preprocess a source file
+src/app/leduc_bench_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leduc_bench.dir/build.make CMakeFiles/leduc_bench.dir/src/app/leduc_bench_main.cpp.i
+.PHONY : src/app/leduc_bench_main.cpp.i
+
+src/app/leduc_bench_main.s: src/app/leduc_bench_main.cpp.s
+.PHONY : src/app/leduc_bench_main.s
+
+# target to generate assembly for a file
+src/app/leduc_bench_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leduc_bench.dir/build.make CMakeFiles/leduc_bench.dir/src/app/leduc_bench_main.cpp.s
+.PHONY : src/app/leduc_bench_main.cpp.s
 
 src/app/leduc_main.o: src/app/leduc_main.cpp.o
 .PHONY : src/app/leduc_main.o
@@ -656,6 +706,30 @@ tests/test_evaluator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_evaluator.dir/build.make CMakeFiles/test_evaluator.dir/tests/test_evaluator.cpp.s
 .PHONY : tests/test_evaluator.cpp.s
 
+tests/test_flat_cfr.o: tests/test_flat_cfr.cpp.o
+.PHONY : tests/test_flat_cfr.o
+
+# target to build an object file
+tests/test_flat_cfr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_flat_cfr.dir/build.make CMakeFiles/test_flat_cfr.dir/tests/test_flat_cfr.cpp.o
+.PHONY : tests/test_flat_cfr.cpp.o
+
+tests/test_flat_cfr.i: tests/test_flat_cfr.cpp.i
+.PHONY : tests/test_flat_cfr.i
+
+# target to preprocess a source file
+tests/test_flat_cfr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_flat_cfr.dir/build.make CMakeFiles/test_flat_cfr.dir/tests/test_flat_cfr.cpp.i
+.PHONY : tests/test_flat_cfr.cpp.i
+
+tests/test_flat_cfr.s: tests/test_flat_cfr.cpp.s
+.PHONY : tests/test_flat_cfr.s
+
+# target to generate assembly for a file
+tests/test_flat_cfr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_flat_cfr.dir/build.make CMakeFiles/test_flat_cfr.dir/tests/test_flat_cfr.cpp.s
+.PHONY : tests/test_flat_cfr.cpp.s
+
 tests/test_game_state.o: tests/test_game_state.cpp.o
 .PHONY : tests/test_game_state.o
 
@@ -722,6 +796,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... kuhn_solver"
+	@echo "... leduc_bench"
 	@echo "... leduc_solver"
 	@echo "... poker_ai"
 	@echo "... poker_cli"
@@ -732,6 +807,7 @@ help:
 	@echo "... test_cfr"
 	@echo "... test_equity"
 	@echo "... test_evaluator"
+	@echo "... test_flat_cfr"
 	@echo "... test_game_state"
 	@echo "... test_kuhn"
 	@echo "... src/ai/equity.o"
@@ -740,6 +816,9 @@ help:
 	@echo "... src/app/kuhn_main.o"
 	@echo "... src/app/kuhn_main.i"
 	@echo "... src/app/kuhn_main.s"
+	@echo "... src/app/leduc_bench_main.o"
+	@echo "... src/app/leduc_bench_main.i"
+	@echo "... src/app/leduc_bench_main.s"
 	@echo "... src/app/leduc_main.o"
 	@echo "... src/app/leduc_main.i"
 	@echo "... src/app/leduc_main.s"
@@ -767,6 +846,9 @@ help:
 	@echo "... tests/test_evaluator.o"
 	@echo "... tests/test_evaluator.i"
 	@echo "... tests/test_evaluator.s"
+	@echo "... tests/test_flat_cfr.o"
+	@echo "... tests/test_flat_cfr.i"
+	@echo "... tests/test_flat_cfr.s"
 	@echo "... tests/test_game_state.o"
 	@echo "... tests/test_game_state.i"
 	@echo "... tests/test_game_state.s"
