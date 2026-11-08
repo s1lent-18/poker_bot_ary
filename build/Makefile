@@ -367,6 +367,45 @@ test_flat_cfr/fast:
 .PHONY : test_flat_cfr/fast
 
 #=============================================================================
+# Target rules for targets named poker_holdem
+
+# Build rule for target.
+poker_holdem: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poker_holdem
+.PHONY : poker_holdem
+
+# fast build rule for target.
+poker_holdem/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/build
+.PHONY : poker_holdem/fast
+
+#=============================================================================
+# Target rules for targets named holdem_train
+
+# Build rule for target.
+holdem_train: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 holdem_train
+.PHONY : holdem_train
+
+# fast build rule for target.
+holdem_train/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/holdem_train.dir/build.make CMakeFiles/holdem_train.dir/build
+.PHONY : holdem_train/fast
+
+#=============================================================================
+# Target rules for targets named test_holdem
+
+# Build rule for target.
+test_holdem: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_holdem
+.PHONY : test_holdem
+
+# fast build rule for target.
+test_holdem/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_holdem.dir/build.make CMakeFiles/test_holdem.dir/build
+.PHONY : test_holdem/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -418,6 +457,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/ai/bucketer.o: src/ai/bucketer.cpp.o
+.PHONY : src/ai/bucketer.o
+
+# target to build an object file
+src/ai/bucketer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/bucketer.cpp.o
+.PHONY : src/ai/bucketer.cpp.o
+
+src/ai/bucketer.i: src/ai/bucketer.cpp.i
+.PHONY : src/ai/bucketer.i
+
+# target to preprocess a source file
+src/ai/bucketer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/bucketer.cpp.i
+.PHONY : src/ai/bucketer.cpp.i
+
+src/ai/bucketer.s: src/ai/bucketer.cpp.s
+.PHONY : src/ai/bucketer.s
+
+# target to generate assembly for a file
+src/ai/bucketer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/bucketer.cpp.s
+.PHONY : src/ai/bucketer.cpp.s
+
 src/ai/equity.o: src/ai/equity.cpp.o
 .PHONY : src/ai/equity.o
 
@@ -441,6 +504,78 @@ src/ai/equity.s: src/ai/equity.cpp.s
 src/ai/equity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_ai.dir/build.make CMakeFiles/poker_ai.dir/src/ai/equity.cpp.s
 .PHONY : src/ai/equity.cpp.s
+
+src/ai/holdem_mccfr.o: src/ai/holdem_mccfr.cpp.o
+.PHONY : src/ai/holdem_mccfr.o
+
+# target to build an object file
+src/ai/holdem_mccfr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/holdem_mccfr.cpp.o
+.PHONY : src/ai/holdem_mccfr.cpp.o
+
+src/ai/holdem_mccfr.i: src/ai/holdem_mccfr.cpp.i
+.PHONY : src/ai/holdem_mccfr.i
+
+# target to preprocess a source file
+src/ai/holdem_mccfr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/holdem_mccfr.cpp.i
+.PHONY : src/ai/holdem_mccfr.cpp.i
+
+src/ai/holdem_mccfr.s: src/ai/holdem_mccfr.cpp.s
+.PHONY : src/ai/holdem_mccfr.s
+
+# target to generate assembly for a file
+src/ai/holdem_mccfr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/holdem_mccfr.cpp.s
+.PHONY : src/ai/holdem_mccfr.cpp.s
+
+src/ai/holdem_strategy.o: src/ai/holdem_strategy.cpp.o
+.PHONY : src/ai/holdem_strategy.o
+
+# target to build an object file
+src/ai/holdem_strategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/holdem_strategy.cpp.o
+.PHONY : src/ai/holdem_strategy.cpp.o
+
+src/ai/holdem_strategy.i: src/ai/holdem_strategy.cpp.i
+.PHONY : src/ai/holdem_strategy.i
+
+# target to preprocess a source file
+src/ai/holdem_strategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/holdem_strategy.cpp.i
+.PHONY : src/ai/holdem_strategy.cpp.i
+
+src/ai/holdem_strategy.s: src/ai/holdem_strategy.cpp.s
+.PHONY : src/ai/holdem_strategy.s
+
+# target to generate assembly for a file
+src/ai/holdem_strategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_holdem.dir/build.make CMakeFiles/poker_holdem.dir/src/ai/holdem_strategy.cpp.s
+.PHONY : src/ai/holdem_strategy.cpp.s
+
+src/app/holdem_train_main.o: src/app/holdem_train_main.cpp.o
+.PHONY : src/app/holdem_train_main.o
+
+# target to build an object file
+src/app/holdem_train_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/holdem_train.dir/build.make CMakeFiles/holdem_train.dir/src/app/holdem_train_main.cpp.o
+.PHONY : src/app/holdem_train_main.cpp.o
+
+src/app/holdem_train_main.i: src/app/holdem_train_main.cpp.i
+.PHONY : src/app/holdem_train_main.i
+
+# target to preprocess a source file
+src/app/holdem_train_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/holdem_train.dir/build.make CMakeFiles/holdem_train.dir/src/app/holdem_train_main.cpp.i
+.PHONY : src/app/holdem_train_main.cpp.i
+
+src/app/holdem_train_main.s: src/app/holdem_train_main.cpp.s
+.PHONY : src/app/holdem_train_main.s
+
+# target to generate assembly for a file
+src/app/holdem_train_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/holdem_train.dir/build.make CMakeFiles/holdem_train.dir/src/app/holdem_train_main.cpp.s
+.PHONY : src/app/holdem_train_main.cpp.s
 
 src/app/kuhn_main.o: src/app/kuhn_main.cpp.o
 .PHONY : src/app/kuhn_main.o
@@ -754,6 +889,30 @@ tests/test_game_state.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_game_state.dir/build.make CMakeFiles/test_game_state.dir/tests/test_game_state.cpp.s
 .PHONY : tests/test_game_state.cpp.s
 
+tests/test_holdem.o: tests/test_holdem.cpp.o
+.PHONY : tests/test_holdem.o
+
+# target to build an object file
+tests/test_holdem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_holdem.dir/build.make CMakeFiles/test_holdem.dir/tests/test_holdem.cpp.o
+.PHONY : tests/test_holdem.cpp.o
+
+tests/test_holdem.i: tests/test_holdem.cpp.i
+.PHONY : tests/test_holdem.i
+
+# target to preprocess a source file
+tests/test_holdem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_holdem.dir/build.make CMakeFiles/test_holdem.dir/tests/test_holdem.cpp.i
+.PHONY : tests/test_holdem.cpp.i
+
+tests/test_holdem.s: tests/test_holdem.cpp.s
+.PHONY : tests/test_holdem.s
+
+# target to generate assembly for a file
+tests/test_holdem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_holdem.dir/build.make CMakeFiles/test_holdem.dir/tests/test_holdem.cpp.s
+.PHONY : tests/test_holdem.cpp.s
+
 tests/test_kuhn.o: tests/test_kuhn.cpp.o
 .PHONY : tests/test_kuhn.o
 
@@ -795,6 +954,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... holdem_train"
 	@echo "... kuhn_solver"
 	@echo "... leduc_bench"
 	@echo "... leduc_solver"
@@ -802,6 +962,7 @@ help:
 	@echo "... poker_cli"
 	@echo "... poker_engine"
 	@echo "... poker_eval"
+	@echo "... poker_holdem"
 	@echo "... test_agents"
 	@echo "... test_cards"
 	@echo "... test_cfr"
@@ -809,10 +970,23 @@ help:
 	@echo "... test_evaluator"
 	@echo "... test_flat_cfr"
 	@echo "... test_game_state"
+	@echo "... test_holdem"
 	@echo "... test_kuhn"
+	@echo "... src/ai/bucketer.o"
+	@echo "... src/ai/bucketer.i"
+	@echo "... src/ai/bucketer.s"
 	@echo "... src/ai/equity.o"
 	@echo "... src/ai/equity.i"
 	@echo "... src/ai/equity.s"
+	@echo "... src/ai/holdem_mccfr.o"
+	@echo "... src/ai/holdem_mccfr.i"
+	@echo "... src/ai/holdem_mccfr.s"
+	@echo "... src/ai/holdem_strategy.o"
+	@echo "... src/ai/holdem_strategy.i"
+	@echo "... src/ai/holdem_strategy.s"
+	@echo "... src/app/holdem_train_main.o"
+	@echo "... src/app/holdem_train_main.i"
+	@echo "... src/app/holdem_train_main.s"
 	@echo "... src/app/kuhn_main.o"
 	@echo "... src/app/kuhn_main.i"
 	@echo "... src/app/kuhn_main.s"
@@ -852,6 +1026,9 @@ help:
 	@echo "... tests/test_game_state.o"
 	@echo "... tests/test_game_state.i"
 	@echo "... tests/test_game_state.s"
+	@echo "... tests/test_holdem.o"
+	@echo "... tests/test_holdem.i"
+	@echo "... tests/test_holdem.s"
 	@echo "... tests/test_kuhn.o"
 	@echo "... tests/test_kuhn.i"
 	@echo "... tests/test_kuhn.s"

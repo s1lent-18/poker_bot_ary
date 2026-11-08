@@ -83,3 +83,14 @@ target_link_libraries(leduc_bench PRIVATE poker_cfr)
 add_executable(test_flat_cfr tests/test_flat_cfr.cpp)
 target_link_libraries(test_flat_cfr PRIVATE poker_cfr GTest::gtest_main)
 gtest_discover_tests(test_flat_cfr)
+
+add_library(poker_holdem STATIC src/ai/bucketer.cpp src/ai/holdem_strategy.cpp src/ai/holdem_mccfr.cpp)
+target_link_libraries(poker_holdem PUBLIC poker_engine poker_ai)
+target_link_libraries(poker_agents INTERFACE poker_holdem)
+
+add_executable(holdem_train src/app/holdem_train_main.cpp)
+target_link_libraries(holdem_train PRIVATE poker_holdem)
+
+add_executable(test_holdem tests/test_holdem.cpp)
+target_link_libraries(test_holdem PRIVATE poker_agents GTest::gtest_main)
+gtest_discover_tests(test_holdem)

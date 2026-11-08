@@ -49,11 +49,15 @@ private:
             return idx;
         }
 
-                      const std::vector<int> acts = s.actions();
+        const std::vector<int> acts = s.actions();
         const int n = static_cast<int>(acts.size());
         if (n < 1 || n > 255) throw std::logic_error("FlatGame: bad child count");
         if (!s.is_chance() && n > kFlatMaxActions)
             throw std::logic_error("FlatGame: too many actions at a decision node");
+
+        const int base = static_cast<int>(child.size());
+        child.resize(base + n, -1);
+        prob.resize(base + n, 0.0);
 
         Kind kind;
         int8_t player = -1;

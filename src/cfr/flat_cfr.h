@@ -70,13 +70,34 @@ enum class CfrVariant { Vanilla, Plus };
 class FlatCfr : public FlatSolverBase {
 public:
     explicit FlatCfr(const FlatGame& g, CfrVariant v = CfrVariant::Vanilla)
-        : FlatSolverBase(g), plus_(v == CfrVariant::Plus) {}
+        : FlatSolverBase(g), plus_(v == CfrVariant::Plus) {
+        if (plus_) {
+            info_player_.assign(g.info_keys.size(), -1);
+            for (const auto& nd : g.nodes) {
+                if (nd.kind == FlatGame::Decision) info_player_[nd.info] = nd.player;
+            }
+        }
+    }
     FlatCfr(FlatGame&&, CfrVariant = CfrVariant::Vanilla) = delete;  // would dangle
 
     void iterate() {
         if (plus_) {
             const int upd = static_cast<int>(iterations_ % 2);
-            walk(0, 1.0, 1.0, 1.0, upd, static_cast<double>(iterations_ / 2 + 1));
+            const double w = static_cast<double>(iterations_ / 2 + 1);
+            walk(0, 1.0, 1.0, 1.0, upd, 0.0);
+            for (size_t i = 0; i < g_.info_keys.size(); ++i) {
+                if (info_player_[i] == upd) {
+                    double* reg = &regret_[i * kFlatMaxActions];
+                    double* ss = &strat_sum_[i * kFlatMaxActions];
+                    const int n = g_.info_actions[i];
+                    double st[kFlatMaxActions];
+                    regret_matching(reg, n, st);
+                    for (int a = 0; a < n; ++a) {
+                        ss[a] += w * st[a];
+                        reg[a] = std::max(0.0, reg[a]);
+                    }
+                }
+            }
         } else {
             walk(0, 1.0, 1.0, 1.0, -1, 1.0);
         }
@@ -112,8 +133,8 @@ private:
         const double reach_self = pl == 0 ? p0 : p1;
         const double reach_cf = (pl == 0 ? p1 : p0) * pc;  // opponent AND chance reach
         const bool learn = (upd < 0 || upd == pl);
-        if (learn)
-            for (int a = 0; a < n; ++a) ss[a] += w * reach_self * strat[a];
+        if (!plus_ && learn)
+            for (int a = 0; a < n; ++a) ss[a] += reach_self * strat[a];
 
         const double sign = pl == 0 ? 1.0 : -1.0;
         double util[kFlatMaxActions];  // utilities for the acting player
@@ -128,13 +149,13 @@ private:
         if (learn) {
             for (int a = 0; a < n; ++a) {
                 reg[a] += reach_cf * (util[a] - node_util);
-                if (plus_) reg[a] = std::max(0.0, reg[a]);
             }
         }
         return sign * node_util;
     }
 
     bool plus_;
+    std::vector<int8_t> info_player_;
 };
 
 // ---------------------------------------------------------------------------------------
