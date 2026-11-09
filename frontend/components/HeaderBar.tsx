@@ -1,6 +1,6 @@
 import React from "react";
 import { BotOption, SessionStats } from "@/lib/types";
-import { Volume2, VolumeX, RotateCcw, Cpu, History } from "lucide-react";
+import { Volume2, VolumeX, RotateCcw, Cpu, History, Eye, EyeOff, Coins } from "lucide-react";
 
 interface HeaderBarProps {
   bots: BotOption[];
@@ -18,6 +18,10 @@ interface HeaderBarProps {
   historyCount: number;
   onToggleHistory: () => void;
   isHistoryOpen: boolean;
+  botCheckEnabled: boolean;
+  onToggleBotCheck: () => void;
+  autoRebuy: boolean;
+  onToggleAutoRebuy: () => void;
 }
 
 export const HeaderBar: React.FC<HeaderBarProps> = ({
@@ -36,6 +40,10 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
   historyCount,
   onToggleHistory,
   isHistoryOpen,
+  botCheckEnabled,
+  onToggleBotCheck,
+  autoRebuy,
+  onToggleAutoRebuy,
 }) => {
   const currentBot = bots.find((b) => b.id === selectedBotId);
   const versions = currentBot?.versions || [];
@@ -94,12 +102,12 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
         </div>
       </div>
 
-      {/* Session Telemetry */}
+      {/* Session Telemetry & Bankroll */}
       <div className="flex items-center gap-3 text-xs font-mono">
         {/* Hold'em Fallback Metric */}
         {selectedBotId === "cfr" && (
           <div
-            className="hidden md:flex items-center gap-1.5 bg-zinc-900 border border-zinc-800 rounded px-2.5 py-1 text-zinc-400"
+            className="hidden lg:flex items-center gap-1.5 bg-zinc-900 border border-zinc-800 rounded px-2.5 py-1 text-zinc-400"
             title="Info sets training never reached. Bot falls back to check/call."
           >
             <span className="text-zinc-500">Hold&apos;em Fallbacks:</span>
@@ -133,8 +141,50 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
         </div>
       </div>
 
-      {/* Right Controls: History Modal Toggle, 4-Color, Audio, Reset */}
+      {/* Right Controls: Stack Mode Toggle, BotCheck, History, 4-Color, Audio, Reset */}
       <div className="flex items-center gap-2">
+        {/* Stack Auto Rebuy Toggle */}
+        <button
+          onClick={onToggleAutoRebuy}
+          className={`px-2.5 py-1 text-xs font-mono rounded border flex items-center gap-1.5 transition-colors cursor-pointer ${
+            autoRebuy
+              ? "bg-zinc-850 border-zinc-700 text-zinc-300"
+              : "bg-emerald-950/80 border-emerald-600 text-emerald-200"
+          }`}
+          title={
+            autoRebuy
+              ? "Auto Reset 10k: Stacks reset to 10,000 every hand. Click to switch to Persistent."
+              : "Persistent Stacks: Stacks carry over until bust (<100 chips), then rebuys 10,000 chips. Click to switch to Reset."
+          }
+        >
+          <Coins className="w-3.5 h-3.5" />
+          <span className="hidden sm:inline">Stack:</span>
+          <span className={`font-bold ${autoRebuy ? "text-zinc-400" : "text-emerald-300"}`}>
+            {autoRebuy ? "Reset 10k" : "Persistent"}
+          </span>
+        </button>
+
+        {/* BotCheck Mode Toggle */}
+        <button
+          onClick={onToggleBotCheck}
+          className={`px-2.5 py-1 text-xs font-mono rounded border flex items-center gap-1.5 transition-colors cursor-pointer ${
+            botCheckEnabled
+              ? "bg-amber-950/80 border-amber-600/90 text-amber-200"
+              : "bg-zinc-900 border-zinc-750 text-zinc-400 hover:text-zinc-200"
+          }`}
+          title="BotCheck Mode: reveal bot hole cards in side window whenever bot or you fold"
+        >
+          {botCheckEnabled ? (
+            <Eye className="w-3.5 h-3.5 text-amber-400" />
+          ) : (
+            <EyeOff className="w-3.5 h-3.5 text-zinc-500" />
+          )}
+          <span className="hidden sm:inline">BotCheck:</span>
+          <span className={`font-bold ${botCheckEnabled ? "text-amber-300" : "text-zinc-500"}`}>
+            {botCheckEnabled ? "ON" : "OFF"}
+          </span>
+        </button>
+
         {/* Dedicated History Button */}
         <button
           onClick={onToggleHistory}
@@ -143,7 +193,7 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
               ? "bg-emerald-950 border-emerald-600 text-emerald-200"
               : "bg-zinc-900 border-zinc-750 text-zinc-300 hover:bg-zinc-850"
           }`}
-          title="Open Hand History Log"
+          title="Open Hand History Log (H)"
         >
           <History className="w-3.5 h-3.5" />
           <span>History</span>
