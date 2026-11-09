@@ -30,8 +30,12 @@ class GameState {
 public:
     // Rigged deal, for tests: cards = p0 hole(2), p1 hole(2), board(5).
     GameState(const GameConfig& cfg, int button, const std::array<Card, 9>& cards);
+    GameState(const GameConfig& cfg, int button, const std::array<Card, 9>& cards,
+              const std::array<int, 2>& starting_stacks);
     // Normal deal from a shuffled deck.
     GameState(const GameConfig& cfg, int button, Deck& shuffled_deck);
+    GameState(const GameConfig& cfg, int button, Deck& shuffled_deck,
+              const std::array<int, 2>& starting_stacks);
 
     bool is_terminal() const { return terminal_; }
     int current_player() const { return to_act_; }

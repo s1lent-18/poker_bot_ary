@@ -16,12 +16,19 @@ static std::array<Card, 9> deal9(Deck& d) {
 }
 
 GameState::GameState(const GameConfig& cfg, int button, Deck& d)
-    : GameState(cfg, button, deal9(d)) {}
+    : GameState(cfg, button, deal9(d), {cfg.stack, cfg.stack}) {}
+
+GameState::GameState(const GameConfig& cfg, int button, Deck& d, const std::array<int, 2>& starting_stacks)
+    : GameState(cfg, button, deal9(d), starting_stacks) {}
 
 GameState::GameState(const GameConfig& cfg, int button, const std::array<Card, 9>& cards)
+    : GameState(cfg, button, cards, {cfg.stack, cfg.stack}) {}
+
+GameState::GameState(const GameConfig& cfg, int button, const std::array<Card, 9>& cards,
+                     const std::array<int, 2>& starting_stacks)
     : cfg_(cfg), button_(button) {
     if (button < 0 || button > 1) throw std::invalid_argument("button must be 0 or 1");
-    if (cfg.small_blind <= 0 || cfg.small_blind > cfg.big_blind || cfg.stack <= cfg.big_blind)
+    if (cfg.small_blind <= 0 || cfg.small_blind > cfg.big_blind)
         throw std::invalid_argument("bad GameConfig");
 
     std::set<int> seen;
@@ -32,7 +39,7 @@ GameState::GameState(const GameConfig& cfg, int button, const std::array<Card, 9
     hole_[1] = {cards[2], cards[3]};
     for (int i = 0; i < 5; ++i) board_[i] = cards[4 + i];
 
-    stack_ = {cfg.stack, cfg.stack};
+    stack_ = starting_stacks;
     post_blind(button_, cfg.small_blind);      // heads-up: button = small blind
     post_blind(1 - button_, cfg.big_blind);
 

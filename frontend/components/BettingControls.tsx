@@ -1,5 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { LegalAction } from "@/lib/types";
+import { sound } from "@/lib/audio";
+import { Clock } from "lucide-react";
 
 interface BettingControlsProps {
   legalActions: LegalAction[];
@@ -12,7 +14,10 @@ interface BettingControlsProps {
   onAction: (action: "fold" | "check" | "call" | "raise", amount?: number) => void;
   onNextHand: () => void;
   isPending: boolean;
+  street: string;
 }
+
+const ACTION_TIME_LIMIT = 30; // 30 seconds to act
 
 export const BettingControls: React.FC<BettingControlsProps> = ({
   legalActions,
@@ -24,16 +29,65 @@ export const BettingControls: React.FC<BettingControlsProps> = ({
   onAction,
   onNextHand,
   isPending,
+  street,
 }) => {
   const canFold = legalActions.some((a) => a.type === "fold");
   const canCheck = legalActions.some((a) => a.type === "check");
   const callAction = legalActions.find((a) => a.type === "call");
   const raiseActions = legalActions.filter((a) => a.type === "raise");
 
+  // 30-second timer state
+  const [timeLeft, setTimeLeft] = useState<number>(ACTION_TIME_LIMIT);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const isHeroTurn = toAct === "hero" && !isTerminal && !isPending;
+
+  // Reset timer whenever it becomes hero's turn or street changes
+  useEffect(() => {
+    if (isHeroTurn) {
+      setTimeLeft(ACTION_TIME_LIMIT);
+
+      if (timerRef.current) clearInterval(timerRef.current);
+
+      timerRef.current = setInterval(() => {
+        setTimeLeft((prev) => {
+          if (prev <= 1) {
+            // Time ran out!
+            if (timerRef.current) clearInterval(timerRef.current);
+            return 0;
+          }
+          if (prev <= 6) {
+            sound.playTick();
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    } else {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+    }
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [isHeroTurn, street, toCall]);
+
+  // Handle timeout auto-action
+  useEffect(() => {
+    if (isHeroTurn && timeLeft === 0) {
+      if (canCheck) {
+        onAction("check");
+      } else if (canFold) {
+        onAction("fold");
+      }
+    }
+  }, [timeLeft, isHeroTurn, canCheck, canFold, onAction]);
+
   // Keyboard shortcut listener
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Ignore if user is inside an input
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
         return;
       }
@@ -90,10 +144,8 @@ export const BettingControls: React.FC<BettingControlsProps> = ({
     );
   }
 
-  const isHeroTurn = toAct === "hero";
-
   // When not Hero's turn
-  if (!isHeroTurn) {
+  if (!isHeroTurn && toAct !== "hero") {
     return (
       <div className="w-full max-w-xl mx-auto py-4 px-4 flex items-center justify-center text-zinc-400 font-mono text-xs select-none">
         <div className="flex items-center gap-2 bg-zinc-900 border border-zinc-800 rounded-full px-4 py-1.5 animate-pulse">
@@ -104,11 +156,41 @@ export const BettingControls: React.FC<BettingControlsProps> = ({
     );
   }
 
-  // Pre-calculate raise descriptions
   const potAfterCall = pot + toCall;
 
+  // Shot clock color
+  const timerColor =
+    timeLeft <= 5
+      ? "text-red-400 border-red-800/80 bg-red-950/60"
+      : timeLeft <= 10
+      ? "text-amber-400 border-amber-800/80 bg-amber-950/40"
+      : "text-zinc-300 border-zinc-800 bg-zinc-900";
+
   return (
-    <div className="w-full max-w-3xl mx-auto py-3 px-3 sm:px-4 flex flex-col gap-2 select-none">
+    <div className="w-full max-w-3xl mx-auto py-2.5 px-3 sm:px-4 flex flex-col gap-2.5 select-none">
+      {/* 30-Second Shot Clock Bar */}
+      <div className="flex items-center justify-between text-xs font-mono px-1">
+        <div className="flex items-center gap-2">
+          <div className={`flex items-center gap-1.5 px-2.5 py-0.5 rounded border ${timerColor} font-bold transition-colors`}>
+            <Clock className={`w-3.5 h-3.5 ${timeLeft <= 5 ? "animate-spin" : ""}`} />
+            <span>0:{timeLeft < 10 ? `0${timeLeft}` : timeLeft}</span>
+          </div>
+          <span className="text-zinc-500 text-[11px]">
+            {timeLeft <= 5 ? "Auto-acting soon..." : "Your turn to act"}
+          </span>
+        </div>
+
+        {/* Shot Clock Progress Line */}
+        <div className="w-32 sm:w-48 h-1 bg-zinc-800 rounded-full overflow-hidden">
+          <div
+            className={`h-full transition-all duration-1000 ${
+              timeLeft <= 5 ? "bg-red-500" : timeLeft <= 10 ? "bg-amber-400" : "bg-emerald-500"
+            }`}
+            style={{ width: `${(timeLeft / ACTION_TIME_LIMIT) * 100}%` }}
+          />
+        </div>
+      </div>
+
       {/* Primary Actions Grid */}
       <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
         {/* Fold Button */}
@@ -152,7 +234,6 @@ export const BettingControls: React.FC<BettingControlsProps> = ({
           const isAllIn = raiseAct.isAllIn || idx === raiseActions.length - 1;
           const additionalChips = raiseAct.amount - heroBet;
 
-          // Estimate pot fraction label
           let sizeLabel = "";
           if (isAllIn) {
             sizeLabel = "All-In";

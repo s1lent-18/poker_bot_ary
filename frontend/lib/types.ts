@@ -20,12 +20,16 @@ export interface PlayerState {
   bet: number;
   isButton: boolean;
   hole: CardData[] | null;
+  actualHole?: CardData[] | null;
+  actualHandRank?: string;
+  folded?: boolean;
+  foldedPlayer?: "hero" | "bot" | "none";
   handRank?: string;
   name?: string;
 }
 
 export interface GameEvent {
-  type: "deal" | "action" | "street_deal" | "hand_complete";
+  type: "deal" | "action" | "street_deal" | "hand_complete" | "rebuy";
   actor?: "hero" | "bot";
   action?: string;
   amount?: number;
@@ -35,6 +39,9 @@ export interface GameEvent {
   heroPayoff?: number;
   botPayoff?: number;
   winner?: "hero" | "bot" | "split";
+  folded?: boolean;
+  foldedPlayer?: "hero" | "bot" | "none";
+  player?: "hero" | "bot";
   handNumber?: number;
   button?: number;
   sb?: number;
@@ -49,6 +56,9 @@ export interface SessionStats {
   holdenDecisions: number;
   holdenFallbacks: number;
   holdenFallbackPct: number;
+  autoRebuy?: boolean;
+  heroBankroll?: number;
+  botBankroll?: number;
 }
 
 export interface GameState {
