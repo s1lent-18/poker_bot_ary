@@ -1,0 +1,9 @@
+nohup: ignoring input
+Hold'em CFR: stack 100bb, raise menu pot + all-in, 12 buckets/street, seed 1
+Calibrating card buckets... done (2.7 s)
+     85000 iterations     2833.2 it/s        5539 info sets      30.0 s
+
+Finished: 100000 iterations, 5539 info sets, 35.4 s (2822.4 it/s)
+Saved versions/run2.cfr
+Saved final snapshot versions/run2_000100000.cfr
+Next: ./build/poker_cli --sim 5000 --hero cfr --bot rule --strategy versions/run2.cfr

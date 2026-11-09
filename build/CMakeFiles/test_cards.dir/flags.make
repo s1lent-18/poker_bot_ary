@@ -4,9 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/aaryangharat/Desktop/Project_Poker/src -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/aaryan/poker_bot_ary/src -isystem /home/aaryan/poker_bot_ary/build/_deps/googletest-src/googletest/include -isystem /home/aaryan/poker_bot_ary/build/_deps/googletest-src/googletest
 
-CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64
-
-CXX_FLAGS = -g -std=gnu++17 -arch arm64
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17
 

@@ -1,9 +1,9 @@
-include("/opt/homebrew/share/cmake/Modules/GoogleTestAddTests.cmake")
+include("/usr/share/cmake/Modules/GoogleTestAddTests.cmake")
 gtest_discover_tests_impl(
   TEST_TARGET [==[test_cards]==]
-  TEST_EXECUTABLE [==[/Users/aaryangharat/Desktop/Project_Poker/build/test_cards]==]
+  TEST_EXECUTABLE [==[/home/aaryan/poker_bot_ary/build/test_cards]==]
   TEST_EXECUTOR [==[]==]
-  TEST_WORKING_DIR [==[/Users/aaryangharat/Desktop/Project_Poker/build]==]
+  TEST_WORKING_DIR [==[/home/aaryan/poker_bot_ary/build]==]
   TEST_EXTRA_ARGS [==[]==]
   TEST_PROPERTIES [==[]==]
   TEST_PREFIX [==[]==]
@@ -12,9 +12,9 @@ gtest_discover_tests_impl(
   NO_PRETTY_TYPES [==[FALSE]==]
   NO_PRETTY_VALUES [==[FALSE]==]
   TEST_LIST [==[test_cards_TESTS]==]
-  CTEST_FILE [==[/Users/aaryangharat/Desktop/Project_Poker/build/test_cards_e3b0c442_tests.cmake]==]
+  CTEST_FILE [==[/home/aaryan/poker_bot_ary/build/test_cards_e3b0c442_tests.cmake]==]
   TEST_DISCOVERY_TIMEOUT [==[5]==]
   TEST_DISCOVERY_EXTRA_ARGS [==[]==]
   TEST_XML_OUTPUT_DIR [==[]==]
-  TEST_JSON_OUTPUT_DIR [==[/Users/aaryangharat/Desktop/Project_Poker/build]==]
+  TEST_JSON_OUTPUT_DIR [==[/home/aaryan/poker_bot_ary/build]==]
 )

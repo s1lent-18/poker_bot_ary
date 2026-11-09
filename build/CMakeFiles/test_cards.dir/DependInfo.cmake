@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/aaryangharat/Desktop/Project_Poker/tests/test_cards.cpp" "CMakeFiles/test_cards.dir/tests/test_cards.cpp.o" "gcc" "CMakeFiles/test_cards.dir/tests/test_cards.cpp.o.d"
+  "/home/aaryan/poker_bot_ary/tests/test_cards.cpp" "CMakeFiles/test_cards.dir/tests/test_cards.cpp.o" "gcc" "CMakeFiles/test_cards.dir/tests/test_cards.cpp.o.d"
+  "" "test_cards" "gcc" "CMakeFiles/test_cards.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
