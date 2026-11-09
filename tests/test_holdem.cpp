@@ -223,3 +223,54 @@ TEST(CfrAgent, UnseenInfoSetsFallBackToCheckOrCall) {
     EXPECT_GT(bot.decisions(), 0);
     EXPECT_EQ(bot.fallbacks(), bot.decisions());
 }
+
+#include "agents/duel.h"
+
+TEST(HoldemStrategy, IterationCountSurvivesSaveAndOldFilesStillLoad) {
+    HoldemStrategy s = quick_strategy();
+    s.iterations = 12345;
+    std::stringstream ss;
+    s.save(ss);
+    const std::string text = ss.str();
+    const std::string header = "HOLDEM_CFR 2\nmeta 12345\n";
+    ASSERT_EQ(text.rfind(header, 0), 0u);
+
+    std::stringstream a(text);
+    EXPECT_EQ(HoldemStrategy::load(a).iterations, 12345);
+
+    // A version-1 file (no meta line) must still load.
+    std::stringstream b("HOLDEM_CFR 1\n" + text.substr(header.size()));
+    const HoldemStrategy t = HoldemStrategy::load(b);
+    EXPECT_EQ(t.iterations, 0);
+    EXPECT_EQ(t.table.size(), s.table.size());
+}
+
+namespace {
+class CheckCallAgent : public Agent {
+public:
+    Action act(const Observation&, const std::vector<Action>& legal) override {
+        for (const Action& a : legal)
+            if (a.type == ActionType::Check) return a;
+        for (const Action& a : legal)
+            if (a.type == ActionType::Call) return a;
+        return legal[0];
+    }
+    std::string name() const override { return "CheckCall"; }
+};
+}  // namespace
+
+TEST(Duel, DuplicateFormatCancelsCardLuckExactly) {
+    // Two identical check/call players: whoever wins a deal one way loses it the other way.
+    CheckCallAgent a, b;
+    const DuelResult r = duel(a, b, holdem_config(1, 100), 2000, 7, true);
+    EXPECT_EQ(r.hands, 2000);
+    EXPECT_DOUBLE_EQ(r.bb_per_hand, 0.0);
+    EXPECT_DOUBLE_EQ(r.ci95, 0.0);
+}
+
+TEST(Duel, NonDuplicateCountsHandsAndIsZeroSum) {
+    CheckCallAgent a, b;
+    const DuelResult r = duel(a, b, holdem_config(1, 100), 1000, 7, false);
+    EXPECT_EQ(r.hands, 1000);
+    EXPECT_GT(r.ci95, 0.0);  // plain luck does not cancel
+}

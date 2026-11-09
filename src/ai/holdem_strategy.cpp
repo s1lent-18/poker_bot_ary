@@ -6,7 +6,8 @@
 namespace poker {
 
 void HoldemStrategy::save(std::ostream& os) const {
-    os << "HOLDEM_CFR 1\n";
+    os << "HOLDEM_CFR 2\n";
+    os << "meta " << iterations << '\n';
     os << "cfg " << cfg.stack << ' ' << cfg.small_blind << ' ' << cfg.big_blind << ' '
        << cfg.num_raise_fractions;
     for (double f : cfg.raise_fractions) os << ' ' << f;
@@ -24,10 +25,12 @@ void HoldemStrategy::save(std::ostream& os) const {
 HoldemStrategy HoldemStrategy::load(std::istream& is) {
     std::string magic, tag;
     int version = 0;
-    if (!(is >> magic >> version) || magic != "HOLDEM_CFR" || version != 1)
+    if (!(is >> magic >> version) || magic != "HOLDEM_CFR" || (version != 1 && version != 2))
         throw std::runtime_error("not a Hold'em strategy file");
 
     HoldemStrategy out;
+    if (version == 2 && (!(is >> tag >> out.iterations) || tag != "meta"))
+        throw std::runtime_error("missing meta line");
     if (!(is >> tag) || tag != "cfg") throw std::runtime_error("missing cfg line");
     GameConfig& c = out.cfg;
     if (!(is >> c.stack >> c.small_blind >> c.big_blind >> c.num_raise_fractions))

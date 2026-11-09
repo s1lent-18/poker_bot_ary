@@ -95,6 +95,7 @@ HoldemStrategy HoldemMccfr::export_strategy() const {
     HoldemStrategy out;
     out.cfg = cfg_;
     out.bucketer = bucketer_;
+    out.iterations = iterations_;
     out.table.reserve(info_.size());
     for (const auto& kv : info_) {
         const Info& info = kv.second;

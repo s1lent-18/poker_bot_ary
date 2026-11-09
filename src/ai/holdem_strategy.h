@@ -72,6 +72,7 @@ struct HoldemStrategy {
     GameConfig cfg;
     Bucketer bucketer;
     std::unordered_map<std::string, std::vector<float>> table;  // key -> P(action), legal order
+    long long iterations = 0;  // training iterations behind this strategy (0 = unknown)
 
     void save(std::ostream& os) const;
     static HoldemStrategy load(std::istream& is);

@@ -15,12 +15,13 @@ namespace poker {
 // to check/call and counts it, so you can see how well training covered real play.
 class CfrAgent : public Agent {
 public:
-    explicit CfrAgent(std::shared_ptr<const HoldemStrategy> strategy, uint64_t seed = 1)
-        : strat_(std::move(strategy)), rng_(seed) {
+    explicit CfrAgent(std::shared_ptr<const HoldemStrategy> strategy, uint64_t seed = 1,
+                      std::string label = "CfrBot")
+        : strat_(std::move(strategy)), rng_(seed), label_(std::move(label)) {
         if (!strat_) throw std::invalid_argument("CfrAgent: no strategy");
     }
 
-    std::string name() const override { return "CfrBot"; }
+    std::string name() const override { return label_; }
     long long decisions() const { return decisions_; }
     long long fallbacks() const { return fallbacks_; }
 
@@ -55,6 +56,7 @@ private:
 
     std::shared_ptr<const HoldemStrategy> strat_;
     Rng rng_;
+    std::string label_;
     long long decisions_ = 0;
     long long fallbacks_ = 0;
 };
