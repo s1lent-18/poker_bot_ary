@@ -393,6 +393,19 @@ holdem_train/fast:
 .PHONY : holdem_train/fast
 
 #=============================================================================
+# Target rules for targets named poker_server
+
+# Build rule for target.
+poker_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poker_server
+.PHONY : poker_server
+
+# fast build rule for target.
+poker_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_server.dir/build.make CMakeFiles/poker_server.dir/build
+.PHONY : poker_server/fast
+
+#=============================================================================
 # Target rules for targets named test_holdem
 
 # Build rule for target.
@@ -672,6 +685,30 @@ src/app/main.s: src/app/main.cpp.s
 src/app/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_cli.dir/build.make CMakeFiles/poker_cli.dir/src/app/main.cpp.s
 .PHONY : src/app/main.cpp.s
+
+src/app/poker_server.o: src/app/poker_server.cpp.o
+.PHONY : src/app/poker_server.o
+
+# target to build an object file
+src/app/poker_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_server.dir/build.make CMakeFiles/poker_server.dir/src/app/poker_server.cpp.o
+.PHONY : src/app/poker_server.cpp.o
+
+src/app/poker_server.i: src/app/poker_server.cpp.i
+.PHONY : src/app/poker_server.i
+
+# target to preprocess a source file
+src/app/poker_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_server.dir/build.make CMakeFiles/poker_server.dir/src/app/poker_server.cpp.i
+.PHONY : src/app/poker_server.cpp.i
+
+src/app/poker_server.s: src/app/poker_server.cpp.s
+.PHONY : src/app/poker_server.s
+
+# target to generate assembly for a file
+src/app/poker_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poker_server.dir/build.make CMakeFiles/poker_server.dir/src/app/poker_server.cpp.s
+.PHONY : src/app/poker_server.cpp.s
 
 src/engine/game_state.o: src/engine/game_state.cpp.o
 .PHONY : src/engine/game_state.o
@@ -963,6 +1000,7 @@ help:
 	@echo "... poker_engine"
 	@echo "... poker_eval"
 	@echo "... poker_holdem"
+	@echo "... poker_server"
 	@echo "... test_agents"
 	@echo "... test_cards"
 	@echo "... test_cfr"
@@ -999,6 +1037,9 @@ help:
 	@echo "... src/app/main.o"
 	@echo "... src/app/main.i"
 	@echo "... src/app/main.s"
+	@echo "... src/app/poker_server.o"
+	@echo "... src/app/poker_server.i"
+	@echo "... src/app/poker_server.s"
 	@echo "... src/engine/game_state.o"
 	@echo "... src/engine/game_state.i"
 	@echo "... src/engine/game_state.s"
