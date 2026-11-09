@@ -1,0 +1,2415 @@
+Loaded cfr:run2.cfr: 5539 info sets, 100000 iterations
+Watching A(cfr:run2.cfr) vs B(RuleBot)  (seed 1, stacks 10000, blinds 50/100)
+
+=========== Hand #1 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m3♦[0m [31m2♦[0m
+B(RuleBot): K♣ Q♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: [31m7♦[0m [31mA♦[0m 7♣
+  [Flop, pot 600] B(RuleBot): check
+  [Flop, pot 600] A(cfr:run2.cfr): raise to 600
+  [Flop, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): 300 chips (3 bb/hand over 1 hands)
+
+=========== Hand #2 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): K♠ [31m9♥[0m
+B(RuleBot): [31mA♥[0m [31mK♥[0m
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): call
+  ** Board: 4♠ [31m2♥[0m Q♣
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: 4♠ [31m2♥[0m Q♣ 7♠
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): check
+  ** Board: 4♠ [31m2♥[0m Q♣ 7♠ J♠
+  [River, pot 600] A(cfr:run2.cfr): check
+  [River, pot 600] B(RuleBot): check
+--- Showdown ---
+Board: 4♠ [31m2♥[0m Q♣ 7♠ J♠
+A(cfr:run2.cfr): K♠ [31m9♥[0m  (High Card)
+B(RuleBot): [31mA♥[0m [31mK♥[0m  (High Card)
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): 0 chips (0 bb/hand over 2 hands)
+
+=========== Hand #3 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m2♦[0m A♠
+B(RuleBot): [31mJ♥[0m 7♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: J♠ 3♣ [31mA♥[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  ** Board: J♠ 3♣ [31mA♥[0m [31m4♦[0m
+  [Turn, pot 200] B(RuleBot): raise to 200
+  [Turn, pot 400] A(cfr:run2.cfr): call
+  ** Board: J♠ 3♣ [31mA♥[0m [31m4♦[0m [31m5♦[0m
+  [River, pot 600] B(RuleBot): check
+  [River, pot 600] A(cfr:run2.cfr): raise to 600
+  [River, pot 1200] B(RuleBot): call
+--- Showdown ---
+Board: J♠ 3♣ [31mA♥[0m [31m4♦[0m [31m5♦[0m
+A(cfr:run2.cfr): [31m2♦[0m A♠  (Straight)
+B(RuleBot): [31mJ♥[0m 7♣  (Pair)
+=> A(cfr:run2.cfr) wins 900 chips
+Running total for A(cfr:run2.cfr): 900 chips (3 bb/hand over 3 hands)
+
+=========== Hand #4 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 2♠ [31m6♥[0m
+B(RuleBot): [31m3♦[0m [31mK♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): 950 chips (2.375 bb/hand over 4 hands)
+
+=========== Hand #5 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 2♠ K♣
+B(RuleBot): 5♣ 8♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): 900 chips (1.8 bb/hand over 5 hands)
+
+=========== Hand #6 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): T♠ [31m3♦[0m
+B(RuleBot): K♣ 9♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 7♠ A♠ [31mJ♥[0m
+  [Flop, pot 600] A(cfr:run2.cfr): raise to 600
+  [Flop, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): 1200 chips (2 bb/hand over 6 hands)
+
+=========== Hand #7 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 9♣ T♣
+B(RuleBot): [31mQ♦[0m [31mJ♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): 1150 chips (1.64286 bb/hand over 7 hands)
+
+=========== Hand #8 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m4♥[0m J♣
+B(RuleBot): K♣ 3♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m6♥[0m 7♠ [31m4♦[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31m6♥[0m 7♠ [31m4♦[0m 5♣
+  [Turn, pot 200] A(cfr:run2.cfr): raise to 9900 (ALL-IN)
+  [Turn, pot 10100] B(RuleBot): call (ALL-IN)
+  ** Board: [31m6♥[0m 7♠ [31m4♦[0m 5♣ 3♠
+--- Showdown ---
+Board: [31m6♥[0m 7♠ [31m4♦[0m 5♣ 3♠
+A(cfr:run2.cfr): [31m4♥[0m J♣  (Straight)
+B(RuleBot): K♣ 3♣  (Straight)
+=> split pot
+Running total for A(cfr:run2.cfr): 1150 chips (1.4375 bb/hand over 8 hands)
+
+=========== Hand #9 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m8♥[0m [31m5♥[0m
+B(RuleBot): [31mA♦[0m [31m6♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): 1100 chips (1.22222 bb/hand over 9 hands)
+
+=========== Hand #10 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 9♠ 4♣
+B(RuleBot): [31m8♥[0m T♠
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m6♥[0m [31m9♦[0m [31mQ♦[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31m6♥[0m [31m9♦[0m [31mQ♦[0m [31m9♥[0m
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): raise to 200
+  [Turn, pot 400] A(cfr:run2.cfr): raise to 800
+  [Turn, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): 1400 chips (1.4 bb/hand over 10 hands)
+
+=========== Hand #11 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 8♣ [31mQ♥[0m
+B(RuleBot): Q♣ [31m5♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): 1350 chips (1.22727 bb/hand over 11 hands)
+
+=========== Hand #12 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mT♦[0m [31mQ♥[0m
+B(RuleBot): [31m3♥[0m 3♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m4♥[0m [31mK♥[0m [31m5♦[0m
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): call
+  ** Board: [31m4♥[0m [31mK♥[0m [31m5♦[0m J♠
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): check
+  ** Board: [31m4♥[0m [31mK♥[0m [31m5♦[0m J♠ [31m2♦[0m
+  [River, pot 600] A(cfr:run2.cfr): check
+  [River, pot 600] B(RuleBot): check
+--- Showdown ---
+Board: [31m4♥[0m [31mK♥[0m [31m5♦[0m J♠ [31m2♦[0m
+A(cfr:run2.cfr): [31mT♦[0m [31mQ♥[0m  (High Card)
+B(RuleBot): [31m3♥[0m 3♣  (Pair)
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): 1050 chips (0.875 bb/hand over 12 hands)
+
+=========== Hand #13 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mJ♦[0m [31mK♥[0m
+B(RuleBot): Q♣ 7♠
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31mT♥[0m 4♣ [31m7♦[0m
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): call
+  ** Board: [31mT♥[0m 4♣ [31m7♦[0m [31m9♥[0m
+  [Turn, pot 600] B(RuleBot): raise to 600
+  [Turn, pot 1200] A(cfr:run2.cfr): call
+  ** Board: [31mT♥[0m 4♣ [31m7♦[0m [31m9♥[0m 6♠
+  [River, pot 1800] B(RuleBot): raise to 1800
+  [River, pot 3600] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 900 chips
+Running total for A(cfr:run2.cfr): 150 chips (0.115385 bb/hand over 13 hands)
+
+=========== Hand #14 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): A♠ J♠
+B(RuleBot): [31m4♥[0m [31m2♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): 200 chips (0.142857 bb/hand over 14 hands)
+
+=========== Hand #15 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m9♦[0m [31mK♥[0m
+B(RuleBot): [31mQ♥[0m A♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: 3♠ 5♠ [31m9♥[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 9900 (ALL-IN)
+  [Flop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): 300 chips (0.2 bb/hand over 15 hands)
+
+=========== Hand #16 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m8♦[0m [31mK♥[0m
+B(RuleBot): [31m6♥[0m [31m3♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): 350 chips (0.21875 bb/hand over 16 hands)
+
+=========== Hand #17 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m5♥[0m K♠
+B(RuleBot): [31mQ♦[0m [31m3♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): 300 chips (0.176471 bb/hand over 17 hands)
+
+=========== Hand #18 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 4♠ T♣
+B(RuleBot): [31m4♥[0m [31mQ♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): 350 chips (0.194444 bb/hand over 18 hands)
+
+=========== Hand #19 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m4♦[0m A♠
+B(RuleBot): [31mQ♥[0m [31mA♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: K♣ 4♠ [31m7♦[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): 450 chips (0.236842 bb/hand over 19 hands)
+
+=========== Hand #20 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 8♣ 5♣
+B(RuleBot): [31m8♦[0m [31mK♦[0m
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): call
+  ** Board: 8♠ [31m9♦[0m 9♣
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): raise to 600
+  [Flop, pot 1200] A(cfr:run2.cfr): call
+  ** Board: 8♠ [31m9♦[0m 9♣ [31m7♥[0m
+  [Turn, pot 1800] A(cfr:run2.cfr): raise to 1800
+  [Turn, pot 3600] B(RuleBot): raise to 7200
+  [Turn, pot 10800] A(cfr:run2.cfr): call
+  ** Board: 8♠ [31m9♦[0m 9♣ [31m7♥[0m [31mQ♥[0m
+  [River, pot 16200] A(cfr:run2.cfr): raise to 1900 (ALL-IN)
+  [River, pot 18100] B(RuleBot): call (ALL-IN)
+--- Showdown ---
+Board: 8♠ [31m9♦[0m 9♣ [31m7♥[0m [31mQ♥[0m
+A(cfr:run2.cfr): 8♣ 5♣  (Two Pair)
+B(RuleBot): [31m8♦[0m [31mK♦[0m  (Two Pair)
+=> B(RuleBot) wins 10000 chips
+Running total for A(cfr:run2.cfr): -9550 chips (-4.775 bb/hand over 20 hands)
+
+=========== Hand #21 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): J♣ [31m2♥[0m
+B(RuleBot): 6♣ [31mJ♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -9600 chips (-4.57143 bb/hand over 21 hands)
+
+=========== Hand #22 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 2♠ 2♣
+B(RuleBot): K♣ [31m7♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -9550 chips (-4.34091 bb/hand over 22 hands)
+
+=========== Hand #23 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 8♠ 5♣
+B(RuleBot): A♠ 9♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 9♠ 7♣ T♣
+  [Flop, pot 600] B(RuleBot): check
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  ** Board: 9♠ 7♣ T♣ 6♠
+  [Turn, pot 600] B(RuleBot): check
+  [Turn, pot 600] A(cfr:run2.cfr): raise to 600
+  [Turn, pot 1200] B(RuleBot): call
+  ** Board: 9♠ 7♣ T♣ 6♠ T♠
+  [River, pot 1800] B(RuleBot): raise to 1800
+  [River, pot 3600] A(cfr:run2.cfr): call
+--- Showdown ---
+Board: 9♠ 7♣ T♣ 6♠ T♠
+A(cfr:run2.cfr): 8♠ 5♣  (Straight)
+B(RuleBot): A♠ 9♣  (Two Pair)
+=> A(cfr:run2.cfr) wins 2700 chips
+Running total for A(cfr:run2.cfr): -6850 chips (-2.97826 bb/hand over 23 hands)
+
+=========== Hand #24 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): Q♣ [31m8♦[0m
+B(RuleBot): [31m5♥[0m 9♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -6800 chips (-2.83333 bb/hand over 24 hands)
+
+=========== Hand #25 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): J♣ [31mA♦[0m
+B(RuleBot): [31m2♥[0m [31m8♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: T♣ [31m3♥[0m 8♣
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): call
+  ** Board: T♣ [31m3♥[0m 8♣ 9♣
+  [Turn, pot 600] B(RuleBot): check
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  ** Board: T♣ [31m3♥[0m 8♣ 9♣ [31m3♦[0m
+  [River, pot 600] B(RuleBot): raise to 600
+  [River, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -7100 chips (-2.84 bb/hand over 25 hands)
+
+=========== Hand #26 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): A♣ [31mJ♥[0m
+B(RuleBot): [31mA♥[0m [31m9♥[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: [31mT♥[0m Q♣ T♣
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: [31mT♥[0m Q♣ T♣ [31m8♥[0m
+  [Turn, pot 600] A(cfr:run2.cfr): raise to 600
+  [Turn, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -6800 chips (-2.61538 bb/hand over 26 hands)
+
+=========== Hand #27 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mQ♥[0m [31m3♦[0m
+B(RuleBot): Q♣ A♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -6850 chips (-2.53704 bb/hand over 27 hands)
+
+=========== Hand #28 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 9♠ [31mT♥[0m
+B(RuleBot): 2♠ [31m7♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -6800 chips (-2.42857 bb/hand over 28 hands)
+
+=========== Hand #29 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m9♦[0m 6♠
+B(RuleBot): [31mK♦[0m T♠
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -6850 chips (-2.36207 bb/hand over 29 hands)
+
+=========== Hand #30 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 2♠ [31m5♦[0m
+B(RuleBot): 5♣ [31mK♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -6800 chips (-2.26667 bb/hand over 30 hands)
+
+=========== Hand #31 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 9♣ 4♠
+B(RuleBot): [31m6♥[0m Q♠
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -6850 chips (-2.20968 bb/hand over 31 hands)
+
+=========== Hand #32 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 3♠ K♠
+B(RuleBot): [31m3♦[0m 7♣
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -6800 chips (-2.125 bb/hand over 32 hands)
+
+=========== Hand #33 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mK♥[0m [31m4♦[0m
+B(RuleBot): 5♠ [31m3♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: 2♠ [31m9♥[0m K♠
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -6700 chips (-2.0303 bb/hand over 33 hands)
+
+=========== Hand #34 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): A♠ 3♣
+B(RuleBot): [31mA♦[0m [31mJ♥[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 6♣ [31m5♥[0m K♠
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: 6♣ [31m5♥[0m K♠ [31m6♥[0m
+  [Turn, pot 600] A(cfr:run2.cfr): raise to 600
+  [Turn, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -6400 chips (-1.88235 bb/hand over 34 hands)
+
+=========== Hand #35 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m7♥[0m [31m2♥[0m
+B(RuleBot): 5♠ A♠
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -6450 chips (-1.84286 bb/hand over 35 hands)
+
+=========== Hand #36 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 5♣ [31mA♦[0m
+B(RuleBot): [31mA♥[0m [31mJ♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: [31m3♥[0m Q♣ 4♣
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: [31m3♥[0m Q♣ 4♣ [31m6♦[0m
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): check
+  ** Board: [31m3♥[0m Q♣ 4♣ [31m6♦[0m J♠
+  [River, pot 600] A(cfr:run2.cfr): check
+  [River, pot 600] B(RuleBot): raise to 600
+  [River, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -6750 chips (-1.875 bb/hand over 36 hands)
+
+=========== Hand #37 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mA♥[0m [31m8♦[0m
+B(RuleBot): [31m7♥[0m 2♠
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: T♠ 8♠ [31mQ♦[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -6650 chips (-1.7973 bb/hand over 37 hands)
+
+=========== Hand #38 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m8♥[0m [31mA♦[0m
+B(RuleBot): [31mK♦[0m [31mQ♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 3♣ T♠ 3♠
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: 3♣ T♠ 3♠ [31m2♥[0m
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): check
+  ** Board: 3♣ T♠ 3♠ [31m2♥[0m [31m5♥[0m
+  [River, pot 600] A(cfr:run2.cfr): check
+  [River, pot 600] B(RuleBot): check
+--- Showdown ---
+Board: 3♣ T♠ 3♠ [31m2♥[0m [31m5♥[0m
+A(cfr:run2.cfr): [31m8♥[0m [31mA♦[0m  (Pair)
+B(RuleBot): [31mK♦[0m [31mQ♦[0m  (Pair)
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -6350 chips (-1.67105 bb/hand over 38 hands)
+
+=========== Hand #39 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): A♣ 9♣
+B(RuleBot): [31m2♥[0m 2♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -6250 chips (-1.60256 bb/hand over 39 hands)
+
+=========== Hand #40 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m7♦[0m [31m4♥[0m
+B(RuleBot): Q♣ [31mQ♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m3♦[0m A♣ [31m5♥[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31m3♦[0m A♣ [31m5♥[0m [31mJ♥[0m
+  [Turn, pot 200] A(cfr:run2.cfr): raise to 200
+  [Turn, pot 400] B(RuleBot): call
+  ** Board: [31m3♦[0m A♣ [31m5♥[0m [31mJ♥[0m 7♣
+  [River, pot 600] A(cfr:run2.cfr): check
+  [River, pot 600] B(RuleBot): raise to 600
+  [River, pot 1200] A(cfr:run2.cfr): call
+--- Showdown ---
+Board: [31m3♦[0m A♣ [31m5♥[0m [31mJ♥[0m 7♣
+A(cfr:run2.cfr): [31m7♦[0m [31m4♥[0m  (Pair)
+B(RuleBot): Q♣ [31mQ♦[0m  (Pair)
+=> B(RuleBot) wins 900 chips
+Running total for A(cfr:run2.cfr): -7150 chips (-1.7875 bb/hand over 40 hands)
+
+=========== Hand #41 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 8♣ 7♣
+B(RuleBot): [31m7♦[0m [31mA♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -7200 chips (-1.7561 bb/hand over 41 hands)
+
+=========== Hand #42 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 5♠ T♣
+B(RuleBot): A♠ [31mT♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31mJ♥[0m [31mJ♦[0m Q♣
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31mJ♥[0m [31mJ♦[0m Q♣ K♣
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): raise to 200
+  [Turn, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -7300 chips (-1.7381 bb/hand over 42 hands)
+
+=========== Hand #43 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 9♣ Q♠
+B(RuleBot): [31mK♦[0m 6♠
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: A♠ [31m8♥[0m 8♣
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -7200 chips (-1.67442 bb/hand over 43 hands)
+
+=========== Hand #44 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m5♦[0m 8♠
+B(RuleBot): 4♣ [31m4♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m4♥[0m 2♣ 7♠
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31m4♥[0m 2♣ 7♠ J♣
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): raise to 200
+  [Turn, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -7300 chips (-1.65909 bb/hand over 44 hands)
+
+=========== Hand #45 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m9♦[0m [31m5♥[0m
+B(RuleBot): 5♠ [31m7♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -7350 chips (-1.63333 bb/hand over 45 hands)
+
+=========== Hand #46 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m6♦[0m 6♠
+B(RuleBot): [31mQ♥[0m Q♠
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10300] B(RuleBot): call (ALL-IN)
+  ** Board: 9♣ [31m3♥[0m A♠ [31m7♥[0m [31m9♦[0m
+--- Showdown ---
+Board: 9♣ [31m3♥[0m A♠ [31m7♥[0m [31m9♦[0m
+A(cfr:run2.cfr): [31m6♦[0m 6♠  (Two Pair)
+B(RuleBot): [31mQ♥[0m Q♠  (Two Pair)
+=> B(RuleBot) wins 10000 chips
+Running total for A(cfr:run2.cfr): -17350 chips (-3.77174 bb/hand over 46 hands)
+
+=========== Hand #47 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 4♣ J♠
+B(RuleBot): Q♣ [31m7♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -17400 chips (-3.70213 bb/hand over 47 hands)
+
+=========== Hand #48 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mT♦[0m A♠
+B(RuleBot): K♣ 6♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: A♣ J♠ [31m6♥[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): raise to 800
+  [Flop, pot 1200] B(RuleBot): call
+  ** Board: A♣ J♠ [31m6♥[0m 4♣
+  [Turn, pot 1800] A(cfr:run2.cfr): check
+  [Turn, pot 1800] B(RuleBot): check
+  ** Board: A♣ J♠ [31m6♥[0m 4♣ [31m9♥[0m
+  [River, pot 1800] A(cfr:run2.cfr): check
+  [River, pot 1800] B(RuleBot): check
+--- Showdown ---
+Board: A♣ J♠ [31m6♥[0m 4♣ [31m9♥[0m
+A(cfr:run2.cfr): [31mT♦[0m A♠  (Pair)
+B(RuleBot): K♣ 6♣  (Pair)
+=> A(cfr:run2.cfr) wins 900 chips
+Running total for A(cfr:run2.cfr): -16500 chips (-3.4375 bb/hand over 48 hands)
+
+=========== Hand #49 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): J♣ [31mQ♥[0m
+B(RuleBot): [31m3♦[0m 6♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31mK♦[0m T♠ [31m2♥[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -16400 chips (-3.34694 bb/hand over 49 hands)
+
+=========== Hand #50 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mQ♥[0m [31m6♦[0m
+B(RuleBot): 6♠ 4♣
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -16350 chips (-3.27 bb/hand over 50 hands)
+
+=========== Hand #51 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mQ♦[0m 9♣
+B(RuleBot): [31m2♦[0m K♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31m9♦[0m [31m4♥[0m 3♠
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m9♦[0m [31m4♥[0m 3♠ [31mQ♥[0m
+  [Turn, pot 200] B(RuleBot): check
+  [Turn, pot 200] A(cfr:run2.cfr): raise to 200
+  [Turn, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -16250 chips (-3.18627 bb/hand over 51 hands)
+
+=========== Hand #52 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mJ♦[0m Q♠
+B(RuleBot): [31m2♦[0m T♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -16200 chips (-3.11538 bb/hand over 52 hands)
+
+=========== Hand #53 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mA♦[0m [31m4♥[0m
+B(RuleBot): [31mK♦[0m 7♠
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: K♣ 6♠ [31mQ♥[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  ** Board: K♣ 6♠ [31mQ♥[0m [31mK♥[0m
+  [Turn, pot 200] B(RuleBot): raise to 200
+  [Turn, pot 400] A(cfr:run2.cfr): call
+  ** Board: K♣ 6♠ [31mQ♥[0m [31mK♥[0m 3♣
+  [River, pot 600] B(RuleBot): raise to 600
+  [River, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -16500 chips (-3.11321 bb/hand over 53 hands)
+
+=========== Hand #54 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m3♦[0m 3♠
+B(RuleBot): 5♣ A♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: J♣ Q♠ 4♠
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: J♣ Q♠ 4♠ K♠
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): check
+  ** Board: J♣ Q♠ 4♠ K♠ [31mT♦[0m
+  [River, pot 600] A(cfr:run2.cfr): check
+  [River, pot 600] B(RuleBot): check
+--- Showdown ---
+Board: J♣ Q♠ 4♠ K♠ [31mT♦[0m
+A(cfr:run2.cfr): [31m3♦[0m 3♠  (Pair)
+B(RuleBot): 5♣ A♣  (Straight)
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -16800 chips (-3.11111 bb/hand over 54 hands)
+
+=========== Hand #55 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 8♣ 2♣
+B(RuleBot): 6♣ [31mQ♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -16850 chips (-3.06364 bb/hand over 55 hands)
+
+=========== Hand #56 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m2♥[0m 2♣
+B(RuleBot): [31m7♥[0m [31mK♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -16800 chips (-3 bb/hand over 56 hands)
+
+=========== Hand #57 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m6♦[0m [31mK♥[0m
+B(RuleBot): T♣ [31m4♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -16700 chips (-2.92982 bb/hand over 57 hands)
+
+=========== Hand #58 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 7♠ 4♠
+B(RuleBot): 5♣ 8♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: 9♠ [31mA♦[0m 4♣
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -16600 chips (-2.86207 bb/hand over 58 hands)
+
+=========== Hand #59 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 4♣ Q♠
+B(RuleBot): [31m8♥[0m A♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -16650 chips (-2.82203 bb/hand over 59 hands)
+
+=========== Hand #60 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mJ♥[0m [31mJ♦[0m
+B(RuleBot): T♠ 7♣
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -16600 chips (-2.76667 bb/hand over 60 hands)
+
+=========== Hand #61 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m5♦[0m Q♣
+B(RuleBot): [31m3♥[0m 2♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -16650 chips (-2.72951 bb/hand over 61 hands)
+
+=========== Hand #62 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 2♠ [31m2♦[0m
+B(RuleBot): 3♠ K♠
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 8♣ [31mQ♦[0m [31m2♥[0m
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: 8♣ [31mQ♦[0m [31m2♥[0m [31m6♥[0m
+  [Turn, pot 600] A(cfr:run2.cfr): raise to 600
+  [Turn, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -16350 chips (-2.6371 bb/hand over 62 hands)
+
+=========== Hand #63 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m4♦[0m 3♠
+B(RuleBot): 8♠ Q♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -16400 chips (-2.60317 bb/hand over 63 hands)
+
+=========== Hand #64 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m4♥[0m [31m5♥[0m
+B(RuleBot): 2♣ 5♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -16350 chips (-2.55469 bb/hand over 64 hands)
+
+=========== Hand #65 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 8♣ 7♠
+B(RuleBot): Q♣ [31m5♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -16250 chips (-2.5 bb/hand over 65 hands)
+
+=========== Hand #66 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): Q♠ 3♣
+B(RuleBot): A♣ T♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31mA♥[0m [31m2♥[0m 7♣
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -16350 chips (-2.47727 bb/hand over 66 hands)
+
+=========== Hand #67 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 9♠ T♠
+B(RuleBot): [31mK♦[0m K♠
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -16400 chips (-2.44776 bb/hand over 67 hands)
+
+=========== Hand #68 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m8♦[0m [31m3♥[0m
+B(RuleBot): 5♠ Q♠
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -16500 chips (-2.42647 bb/hand over 68 hands)
+
+=========== Hand #69 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 8♣ [31m9♦[0m
+B(RuleBot): [31m5♦[0m 7♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -16400 chips (-2.37681 bb/hand over 69 hands)
+
+=========== Hand #70 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mA♥[0m Q♠
+B(RuleBot): 4♣ K♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -16350 chips (-2.33571 bb/hand over 70 hands)
+
+=========== Hand #71 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m7♥[0m 6♠
+B(RuleBot): [31m2♥[0m 3♠
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31mJ♦[0m [31m9♥[0m 5♣
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31mJ♦[0m [31m9♥[0m 5♣ [31m4♦[0m
+  [Turn, pot 200] B(RuleBot): raise to 200
+  [Turn, pot 400] A(cfr:run2.cfr): raise to 800
+  [Turn, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -16050 chips (-2.26056 bb/hand over 71 hands)
+
+=========== Hand #72 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): K♣ J♣
+B(RuleBot): 3♣ A♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31mQ♦[0m [31m7♦[0m 2♣
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31mQ♦[0m [31m7♦[0m 2♣ [31m8♦[0m
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): check
+  ** Board: [31mQ♦[0m [31m7♦[0m 2♣ [31m8♦[0m 4♠
+  [River, pot 200] A(cfr:run2.cfr): check
+  [River, pot 200] B(RuleBot): raise to 200
+  [River, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -16150 chips (-2.24306 bb/hand over 72 hands)
+
+=========== Hand #73 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m8♦[0m [31mA♥[0m
+B(RuleBot): 8♣ [31mK♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -16050 chips (-2.19863 bb/hand over 73 hands)
+
+=========== Hand #74 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): Q♠ [31mT♥[0m
+B(RuleBot): 8♣ [31m7♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m8♦[0m [31mQ♦[0m 5♠
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): call
+  ** Board: [31m8♦[0m [31mQ♦[0m 5♠ [31m2♦[0m
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): raise to 600
+  [Turn, pot 1200] A(cfr:run2.cfr): call
+  ** Board: [31m8♦[0m [31mQ♦[0m 5♠ [31m2♦[0m [31m6♥[0m
+  [River, pot 1800] A(cfr:run2.cfr): check
+  [River, pot 1800] B(RuleBot): check
+--- Showdown ---
+Board: [31m8♦[0m [31mQ♦[0m 5♠ [31m2♦[0m [31m6♥[0m
+A(cfr:run2.cfr): Q♠ [31mT♥[0m  (Pair)
+B(RuleBot): 8♣ [31m7♦[0m  (Pair)
+=> A(cfr:run2.cfr) wins 900 chips
+Running total for A(cfr:run2.cfr): -15150 chips (-2.0473 bb/hand over 74 hands)
+
+=========== Hand #75 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 2♠ [31mK♥[0m
+B(RuleBot): [31m2♦[0m [31mT♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -15200 chips (-2.02667 bb/hand over 75 hands)
+
+=========== Hand #76 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): A♠ [31mJ♥[0m
+B(RuleBot): A♣ [31m7♥[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: [31mK♦[0m [31mK♥[0m Q♣
+  [Flop, pot 600] A(cfr:run2.cfr): raise to 600
+  [Flop, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -14900 chips (-1.96053 bb/hand over 76 hands)
+
+=========== Hand #77 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 3♠ 3♣
+B(RuleBot): 4♣ [31m3♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -14800 chips (-1.92208 bb/hand over 77 hands)
+
+=========== Hand #78 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 2♣ 3♣
+B(RuleBot): K♣ T♠
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 4♠ A♠ [31m3♥[0m
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): raise to 600
+  [Flop, pot 1200] A(cfr:run2.cfr): call
+  ** Board: 4♠ A♠ [31m3♥[0m [31mQ♦[0m
+  [Turn, pot 1800] A(cfr:run2.cfr): check
+  [Turn, pot 1800] B(RuleBot): check
+  ** Board: 4♠ A♠ [31m3♥[0m [31mQ♦[0m Q♣
+  [River, pot 1800] A(cfr:run2.cfr): check
+  [River, pot 1800] B(RuleBot): raise to 1800
+  [River, pot 3600] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 900 chips
+Running total for A(cfr:run2.cfr): -15700 chips (-2.01282 bb/hand over 78 hands)
+
+=========== Hand #79 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): K♣ [31mQ♦[0m
+B(RuleBot): [31m7♦[0m [31m3♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -15600 chips (-1.97468 bb/hand over 79 hands)
+
+=========== Hand #80 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mK♥[0m 9♠
+B(RuleBot): [31mT♥[0m [31m3♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -15550 chips (-1.94375 bb/hand over 80 hands)
+
+=========== Hand #81 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m2♥[0m [31mK♦[0m
+B(RuleBot): [31mA♥[0m [31mQ♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -15600 chips (-1.92593 bb/hand over 81 hands)
+
+=========== Hand #82 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m2♥[0m [31mJ♥[0m
+B(RuleBot): 9♣ K♠
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): call
+  ** Board: [31m5♦[0m [31m4♥[0m [31mK♦[0m
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: [31m5♦[0m [31m4♥[0m [31mK♦[0m 4♠
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): raise to 600
+  [Turn, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -15900 chips (-1.93902 bb/hand over 82 hands)
+
+=========== Hand #83 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m5♦[0m 8♠
+B(RuleBot): [31mK♥[0m [31m6♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -15950 chips (-1.92169 bb/hand over 83 hands)
+
+=========== Hand #84 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 4♣ 8♣
+B(RuleBot): 8♠ [31m2♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -15900 chips (-1.89286 bb/hand over 84 hands)
+
+=========== Hand #85 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): A♠ [31mJ♥[0m
+B(RuleBot): 3♠ T♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31m9♦[0m 6♣ 5♣
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -15800 chips (-1.85882 bb/hand over 85 hands)
+
+=========== Hand #86 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): Q♠ A♠
+B(RuleBot): [31m5♥[0m 5♠
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -15700 chips (-1.82558 bb/hand over 86 hands)
+
+=========== Hand #87 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): T♣ [31m8♥[0m
+B(RuleBot): [31m8♦[0m 8♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): call (ALL-IN)
+  ** Board: [31m2♦[0m 5♣ [31mQ♥[0m J♠ 6♣
+--- Showdown ---
+Board: [31m2♦[0m 5♣ [31mQ♥[0m J♠ 6♣
+A(cfr:run2.cfr): T♣ [31m8♥[0m  (High Card)
+B(RuleBot): [31m8♦[0m 8♣  (Pair)
+=> B(RuleBot) wins 10000 chips
+Running total for A(cfr:run2.cfr): -25700 chips (-2.95402 bb/hand over 87 hands)
+
+=========== Hand #88 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m8♦[0m 8♠
+B(RuleBot): 6♣ [31m5♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -25600 chips (-2.90909 bb/hand over 88 hands)
+
+=========== Hand #89 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 6♣ [31m2♥[0m
+B(RuleBot): Q♠ [31mQ♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -25650 chips (-2.88202 bb/hand over 89 hands)
+
+=========== Hand #90 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m2♦[0m [31mK♥[0m
+B(RuleBot): [31m7♥[0m Q♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -25600 chips (-2.84444 bb/hand over 90 hands)
+
+=========== Hand #91 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 2♠ 6♠
+B(RuleBot): [31m2♥[0m K♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: J♠ [31m3♥[0m [31mT♥[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -25500 chips (-2.8022 bb/hand over 91 hands)
+
+=========== Hand #92 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mQ♥[0m 4♠
+B(RuleBot): K♣ 3♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m4♦[0m [31mT♥[0m Q♠
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -25400 chips (-2.76087 bb/hand over 92 hands)
+
+=========== Hand #93 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m2♦[0m A♠
+B(RuleBot): [31m8♥[0m [31mA♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -25450 chips (-2.73656 bb/hand over 93 hands)
+
+=========== Hand #94 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m5♥[0m [31mJ♥[0m
+B(RuleBot): [31mQ♥[0m 5♠
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10300] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -25150 chips (-2.67553 bb/hand over 94 hands)
+
+=========== Hand #95 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): T♣ [31mT♥[0m
+B(RuleBot): 3♣ [31m4♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31m3♥[0m [31m9♥[0m [31m5♦[0m
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): call
+  ** Board: [31m3♥[0m [31m9♥[0m [31m5♦[0m [31m8♥[0m
+  [Turn, pot 600] B(RuleBot): raise to 600
+  [Turn, pot 1200] A(cfr:run2.cfr): call
+  ** Board: [31m3♥[0m [31m9♥[0m [31m5♦[0m [31m8♥[0m A♠
+  [River, pot 1800] B(RuleBot): raise to 1800
+  [River, pot 3600] A(cfr:run2.cfr): call
+--- Showdown ---
+Board: [31m3♥[0m [31m9♥[0m [31m5♦[0m [31m8♥[0m A♠
+A(cfr:run2.cfr): T♣ [31mT♥[0m  (Pair)
+B(RuleBot): 3♣ [31m4♦[0m  (Pair)
+=> A(cfr:run2.cfr) wins 2700 chips
+Running total for A(cfr:run2.cfr): -22450 chips (-2.36316 bb/hand over 95 hands)
+
+=========== Hand #96 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): J♠ 2♠
+B(RuleBot): 4♠ 2♣
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -22400 chips (-2.33333 bb/hand over 96 hands)
+
+=========== Hand #97 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mQ♥[0m Q♠
+B(RuleBot): [31m2♥[0m Q♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -22300 chips (-2.29897 bb/hand over 97 hands)
+
+=========== Hand #98 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 6♠ 8♣
+B(RuleBot): 3♣ K♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -22250 chips (-2.27041 bb/hand over 98 hands)
+
+=========== Hand #99 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m2♥[0m [31mQ♦[0m
+B(RuleBot): 4♠ T♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: 3♣ A♣ [31m3♥[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  ** Board: 3♣ A♣ [31m3♥[0m 2♣
+  [Turn, pot 200] B(RuleBot): raise to 200
+  [Turn, pot 400] A(cfr:run2.cfr): call
+  ** Board: 3♣ A♣ [31m3♥[0m 2♣ K♣
+  [River, pot 600] B(RuleBot): raise to 600
+  [River, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -22550 chips (-2.27778 bb/hand over 99 hands)
+
+=========== Hand #100 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 5♠ [31mT♥[0m
+B(RuleBot): 2♠ K♠
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -22650 chips (-2.265 bb/hand over 100 hands)
+
+=========== Hand #101 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mK♦[0m T♣
+B(RuleBot): [31m3♦[0m [31m2♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -22550 chips (-2.23267 bb/hand over 101 hands)
+
+=========== Hand #102 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mT♥[0m Q♣
+B(RuleBot): T♠ [31m8♥[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: 8♠ [31mA♥[0m [31mQ♦[0m
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): call
+  ** Board: 8♠ [31mA♥[0m [31mQ♦[0m [31m5♥[0m
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): raise to 600
+  [Turn, pot 1200] A(cfr:run2.cfr): call
+  ** Board: 8♠ [31mA♥[0m [31mQ♦[0m [31m5♥[0m [31m2♥[0m
+  [River, pot 1800] A(cfr:run2.cfr): check
+  [River, pot 1800] B(RuleBot): raise to 1800
+  [River, pot 3600] A(cfr:run2.cfr): call
+--- Showdown ---
+Board: 8♠ [31mA♥[0m [31mQ♦[0m [31m5♥[0m [31m2♥[0m
+A(cfr:run2.cfr): [31mT♥[0m Q♣  (Pair)
+B(RuleBot): T♠ [31m8♥[0m  (Pair)
+=> A(cfr:run2.cfr) wins 2700 chips
+Running total for A(cfr:run2.cfr): -19850 chips (-1.94608 bb/hand over 102 hands)
+
+=========== Hand #103 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m5♦[0m 6♣
+B(RuleBot): [31mQ♦[0m 4♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -19900 chips (-1.93204 bb/hand over 103 hands)
+
+=========== Hand #104 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m3♥[0m [31m7♥[0m
+B(RuleBot): [31m9♦[0m [31m5♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -19850 chips (-1.90865 bb/hand over 104 hands)
+
+=========== Hand #105 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m6♦[0m [31m8♥[0m
+B(RuleBot): [31m3♦[0m 7♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -19900 chips (-1.89524 bb/hand over 105 hands)
+
+=========== Hand #106 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 7♠ [31m8♥[0m
+B(RuleBot): 2♠ [31m3♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -19850 chips (-1.87264 bb/hand over 106 hands)
+
+=========== Hand #107 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 3♠ 7♠
+B(RuleBot): 5♠ A♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 7♣ 8♣ J♠
+  [Flop, pot 600] B(RuleBot): check
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  ** Board: 7♣ 8♣ J♠ T♣
+  [Turn, pot 600] B(RuleBot): check
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  ** Board: 7♣ 8♣ J♠ T♣ [31m6♥[0m
+  [River, pot 600] B(RuleBot): check
+  [River, pot 600] A(cfr:run2.cfr): check
+--- Showdown ---
+Board: 7♣ 8♣ J♠ T♣ [31m6♥[0m
+A(cfr:run2.cfr): 3♠ 7♠  (Pair)
+B(RuleBot): 5♠ A♠  (High Card)
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -19550 chips (-1.8271 bb/hand over 107 hands)
+
+=========== Hand #108 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mA♥[0m 5♠
+B(RuleBot): 2♣ [31m6♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -19500 chips (-1.80556 bb/hand over 108 hands)
+
+=========== Hand #109 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m6♥[0m [31m6♦[0m
+B(RuleBot): T♣ A♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -19400 chips (-1.77982 bb/hand over 109 hands)
+
+=========== Hand #110 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): T♣ [31m8♥[0m
+B(RuleBot): [31m4♦[0m [31m9♦[0m
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): call
+  ** Board: 3♣ [31mJ♦[0m [31m9♥[0m
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: 3♣ [31mJ♦[0m [31m9♥[0m [31mT♦[0m
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): raise to 600
+  [Turn, pot 1200] A(cfr:run2.cfr): raise to 9700 (ALL-IN)
+  [Turn, pot 10900] B(RuleBot): call (ALL-IN)
+  ** Board: 3♣ [31mJ♦[0m [31m9♥[0m [31mT♦[0m 4♣
+--- Showdown ---
+Board: 3♣ [31mJ♦[0m [31m9♥[0m [31mT♦[0m 4♣
+A(cfr:run2.cfr): T♣ [31m8♥[0m  (Pair)
+B(RuleBot): [31m4♦[0m [31m9♦[0m  (Two Pair)
+=> B(RuleBot) wins 10000 chips
+Running total for A(cfr:run2.cfr): -29400 chips (-2.67273 bb/hand over 110 hands)
+
+=========== Hand #111 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): J♣ 4♣
+B(RuleBot): 8♣ [31mK♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -29300 chips (-2.63964 bb/hand over 111 hands)
+
+=========== Hand #112 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 7♠ [31m6♥[0m
+B(RuleBot): K♣ 9♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: T♠ [31mK♦[0m A♠
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -29400 chips (-2.625 bb/hand over 112 hands)
+
+=========== Hand #113 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m3♦[0m K♣
+B(RuleBot): 6♣ 4♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -29300 chips (-2.59292 bb/hand over 113 hands)
+
+=========== Hand #114 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m3♦[0m 9♠
+B(RuleBot): [31mJ♥[0m [31mA♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m2♦[0m [31mJ♦[0m [31m2♥[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -29400 chips (-2.57895 bb/hand over 114 hands)
+
+=========== Hand #115 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 7♣ [31mK♥[0m
+B(RuleBot): [31mT♥[0m 3♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -29300 chips (-2.54783 bb/hand over 115 hands)
+
+=========== Hand #116 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 3♠ [31mT♥[0m
+B(RuleBot): 6♠ 7♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: 5♠ J♠ [31mA♥[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: 5♠ J♠ [31mA♥[0m [31mK♦[0m
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): check
+  ** Board: 5♠ J♠ [31mA♥[0m [31mK♦[0m [31m9♦[0m
+  [River, pot 200] A(cfr:run2.cfr): check
+  [River, pot 200] B(RuleBot): check
+--- Showdown ---
+Board: 5♠ J♠ [31mA♥[0m [31mK♦[0m [31m9♦[0m
+A(cfr:run2.cfr): 3♠ [31mT♥[0m  (High Card)
+B(RuleBot): 6♠ 7♣  (High Card)
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -29200 chips (-2.51724 bb/hand over 116 hands)
+
+=========== Hand #117 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 4♠ 4♣
+B(RuleBot): J♠ 7♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -29100 chips (-2.48718 bb/hand over 117 hands)
+
+=========== Hand #118 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m3♦[0m 2♠
+B(RuleBot): [31m7♦[0m 4♣
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -29050 chips (-2.46186 bb/hand over 118 hands)
+
+=========== Hand #119 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): J♠ 9♠
+B(RuleBot): [31mK♦[0m 5♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -29100 chips (-2.44538 bb/hand over 119 hands)
+
+=========== Hand #120 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mK♥[0m 2♣
+B(RuleBot): [31mA♥[0m [31m3♦[0m
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): call
+  ** Board: A♣ [31mK♦[0m [31m8♥[0m
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): raise to 600
+  [Flop, pot 1200] A(cfr:run2.cfr): call
+  ** Board: A♣ [31mK♦[0m [31m8♥[0m [31mJ♥[0m
+  [Turn, pot 1800] A(cfr:run2.cfr): check
+  [Turn, pot 1800] B(RuleBot): raise to 1800
+  [Turn, pot 3600] A(cfr:run2.cfr): raise to 9100 (ALL-IN)
+  [Turn, pot 12700] B(RuleBot): call (ALL-IN)
+  ** Board: A♣ [31mK♦[0m [31m8♥[0m [31mJ♥[0m 5♠
+--- Showdown ---
+Board: A♣ [31mK♦[0m [31m8♥[0m [31mJ♥[0m 5♠
+A(cfr:run2.cfr): [31mK♥[0m 2♣  (Pair)
+B(RuleBot): [31mA♥[0m [31m3♦[0m  (Pair)
+=> B(RuleBot) wins 10000 chips
+Running total for A(cfr:run2.cfr): -39100 chips (-3.25833 bb/hand over 120 hands)
+
+=========== Hand #121 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 2♣ [31m4♥[0m
+B(RuleBot): 5♠ K♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -39000 chips (-3.22314 bb/hand over 121 hands)
+
+=========== Hand #122 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 2♣ [31m6♦[0m
+B(RuleBot): 4♠ 8♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -38950 chips (-3.19262 bb/hand over 122 hands)
+
+=========== Hand #123 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): T♣ [31m2♥[0m
+B(RuleBot): A♣ [31m6♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -39000 chips (-3.17073 bb/hand over 123 hands)
+
+=========== Hand #124 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mK♥[0m 4♣
+B(RuleBot): [31mA♦[0m [31mK♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: J♣ T♠ A♠
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: J♣ T♠ A♠ [31mT♦[0m
+  [Turn, pot 200] A(cfr:run2.cfr): raise to 200
+  [Turn, pot 400] B(RuleBot): raise to 800
+  [Turn, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -39300 chips (-3.16935 bb/hand over 124 hands)
+
+=========== Hand #125 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m3♦[0m [31mK♥[0m
+B(RuleBot): 2♠ [31m5♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: Q♠ A♣ T♣
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  ** Board: Q♠ A♣ T♣ [31m8♥[0m
+  [Turn, pot 200] B(RuleBot): check
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  ** Board: Q♠ A♣ T♣ [31m8♥[0m [31m6♦[0m
+  [River, pot 200] B(RuleBot): check
+  [River, pot 200] A(cfr:run2.cfr): check
+--- Showdown ---
+Board: Q♠ A♣ T♣ [31m8♥[0m [31m6♦[0m
+A(cfr:run2.cfr): [31m3♦[0m [31mK♥[0m  (High Card)
+B(RuleBot): 2♠ [31m5♥[0m  (High Card)
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -39200 chips (-3.136 bb/hand over 125 hands)
+
+=========== Hand #126 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): T♣ 3♣
+B(RuleBot): [31m6♦[0m [31m4♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -39150 chips (-3.10714 bb/hand over 126 hands)
+
+=========== Hand #127 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m7♥[0m [31mA♥[0m
+B(RuleBot): Q♣ [31m2♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -39050 chips (-3.0748 bb/hand over 127 hands)
+
+=========== Hand #128 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 4♠ [31m2♦[0m
+B(RuleBot): Q♠ [31m4♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -39000 chips (-3.04688 bb/hand over 128 hands)
+
+=========== Hand #129 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mA♥[0m 4♣
+B(RuleBot): Q♣ [31m9♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31m8♥[0m [31mJ♦[0m 4♠
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -38900 chips (-3.0155 bb/hand over 129 hands)
+
+=========== Hand #130 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m8♥[0m 7♣
+B(RuleBot): [31m4♥[0m Q♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -38850 chips (-2.98846 bb/hand over 130 hands)
+
+=========== Hand #131 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 9♣ K♠
+B(RuleBot): [31m8♦[0m K♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: A♣ [31mQ♦[0m 2♣
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -38750 chips (-2.95802 bb/hand over 131 hands)
+
+=========== Hand #132 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 7♣ [31m6♥[0m
+B(RuleBot): [31m8♦[0m J♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: J♠ 3♣ K♣
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -38850 chips (-2.94318 bb/hand over 132 hands)
+
+=========== Hand #133 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m6♦[0m 4♠
+B(RuleBot): 3♣ K♠
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -38900 chips (-2.92481 bb/hand over 133 hands)
+
+=========== Hand #134 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mK♦[0m [31m6♦[0m
+B(RuleBot): 9♠ [31m7♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: [31m4♥[0m [31m5♦[0m K♠
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  [Flop, pot 600] B(RuleBot): check
+  ** Board: [31m4♥[0m [31m5♦[0m K♠ J♣
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  [Turn, pot 600] B(RuleBot): check
+  ** Board: [31m4♥[0m [31m5♦[0m K♠ J♣ [31mT♥[0m
+  [River, pot 600] A(cfr:run2.cfr): raise to 600
+  [River, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -38600 chips (-2.8806 bb/hand over 134 hands)
+
+=========== Hand #135 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): Q♣ 9♠
+B(RuleBot): [31m3♦[0m Q♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -38500 chips (-2.85185 bb/hand over 135 hands)
+
+=========== Hand #136 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m2♦[0m [31mQ♦[0m
+B(RuleBot): 8♣ K♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m7♥[0m 8♠ 9♠
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -38600 chips (-2.83824 bb/hand over 136 hands)
+
+=========== Hand #137 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mK♥[0m 8♣
+B(RuleBot): [31m4♦[0m 5♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: T♠ Q♠ 6♣
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): call
+  ** Board: T♠ Q♠ 6♣ 7♣
+  [Turn, pot 600] B(RuleBot): check
+  [Turn, pot 600] A(cfr:run2.cfr): raise to 600
+  [Turn, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -38300 chips (-2.79562 bb/hand over 137 hands)
+
+=========== Hand #138 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m7♦[0m [31m4♥[0m
+B(RuleBot): 2♣ 5♣
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -38250 chips (-2.77174 bb/hand over 138 hands)
+
+=========== Hand #139 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m3♦[0m [31mJ♦[0m
+B(RuleBot): [31mT♦[0m [31m4♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: 6♣ 8♣ 5♠
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -38150 chips (-2.7446 bb/hand over 139 hands)
+
+=========== Hand #140 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): A♣ [31mQ♦[0m
+B(RuleBot): 5♣ 4♠
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -38050 chips (-2.71786 bb/hand over 140 hands)
+
+=========== Hand #141 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m8♥[0m 9♠
+B(RuleBot): [31m7♦[0m T♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -37950 chips (-2.69149 bb/hand over 141 hands)
+
+=========== Hand #142 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 6♣ [31mT♥[0m
+B(RuleBot): [31m3♦[0m [31m3♥[0m
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): call
+  ** Board: [31mT♦[0m [31m7♦[0m 5♣
+  [Flop, pot 600] A(cfr:run2.cfr): raise to 600
+  [Flop, pot 1200] B(RuleBot): call
+  ** Board: [31mT♦[0m [31m7♦[0m 5♣ [31mJ♦[0m
+  [Turn, pot 1800] A(cfr:run2.cfr): check
+  [Turn, pot 1800] B(RuleBot): check
+  ** Board: [31mT♦[0m [31m7♦[0m 5♣ [31mJ♦[0m J♠
+  [River, pot 1800] A(cfr:run2.cfr): check
+  [River, pot 1800] B(RuleBot): raise to 1800
+  [River, pot 3600] A(cfr:run2.cfr): call
+--- Showdown ---
+Board: [31mT♦[0m [31m7♦[0m 5♣ [31mJ♦[0m J♠
+A(cfr:run2.cfr): 6♣ [31mT♥[0m  (Two Pair)
+B(RuleBot): [31m3♦[0m [31m3♥[0m  (Two Pair)
+=> A(cfr:run2.cfr) wins 2700 chips
+Running total for A(cfr:run2.cfr): -35250 chips (-2.48239 bb/hand over 142 hands)
+
+=========== Hand #143 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 7♣ [31mT♥[0m
+B(RuleBot): 2♠ 8♠
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31m7♥[0m 9♠ [31mJ♥[0m
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): call
+  ** Board: [31m7♥[0m 9♠ [31mJ♥[0m [31mA♦[0m
+  [Turn, pot 600] B(RuleBot): raise to 600
+  [Turn, pot 1200] A(cfr:run2.cfr): call
+  ** Board: [31m7♥[0m 9♠ [31mJ♥[0m [31mA♦[0m [31m8♥[0m
+  [River, pot 1800] B(RuleBot): raise to 1800
+  [River, pot 3600] A(cfr:run2.cfr): call
+--- Showdown ---
+Board: [31m7♥[0m 9♠ [31mJ♥[0m [31mA♦[0m [31m8♥[0m
+A(cfr:run2.cfr): 7♣ [31mT♥[0m  (Straight)
+B(RuleBot): 2♠ 8♠  (Pair)
+=> A(cfr:run2.cfr) wins 2700 chips
+Running total for A(cfr:run2.cfr): -32550 chips (-2.27622 bb/hand over 143 hands)
+
+=========== Hand #144 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 5♠ [31m6♦[0m
+B(RuleBot): [31m8♦[0m [31m3♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -32500 chips (-2.25694 bb/hand over 144 hands)
+
+=========== Hand #145 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 7♠ J♠
+B(RuleBot): A♠ [31m9♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -32550 chips (-2.24483 bb/hand over 145 hands)
+
+=========== Hand #146 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m4♥[0m [31mT♥[0m
+B(RuleBot): [31m8♥[0m 2♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -32500 chips (-2.22603 bb/hand over 146 hands)
+
+=========== Hand #147 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m8♦[0m [31mJ♥[0m
+B(RuleBot): [31m4♥[0m K♣
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: J♠ A♣ [31m7♥[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -32400 chips (-2.20408 bb/hand over 147 hands)
+
+=========== Hand #148 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m4♦[0m K♣
+B(RuleBot): [31m4♥[0m [31mQ♥[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31mT♦[0m A♣ 5♠
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31mT♦[0m A♣ 5♠ Q♠
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): check
+  ** Board: [31mT♦[0m A♣ 5♠ Q♠ [31m9♥[0m
+  [River, pot 200] A(cfr:run2.cfr): check
+  [River, pot 200] B(RuleBot): raise to 200
+  [River, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -32500 chips (-2.19595 bb/hand over 148 hands)
+
+=========== Hand #149 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mK♥[0m K♠
+B(RuleBot): 2♣ 8♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -32400 chips (-2.1745 bb/hand over 149 hands)
+
+=========== Hand #150 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): Q♠ 5♣
+B(RuleBot): 5♠ [31m6♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31mQ♥[0m 3♠ [31m8♥[0m
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -32300 chips (-2.15333 bb/hand over 150 hands)
+
+=========== Hand #151 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mK♦[0m [31mK♥[0m
+B(RuleBot): [31mJ♦[0m [31mT♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): raise to 900
+  [Preflop, pot 1200] B(RuleBot): call
+  ** Board: [31mJ♥[0m A♠ J♠
+  [Flop, pot 1800] B(RuleBot): raise to 1800
+  [Flop, pot 3600] A(cfr:run2.cfr): raise to 9100 (ALL-IN)
+  [Flop, pot 12700] B(RuleBot): call (ALL-IN)
+  ** Board: [31mJ♥[0m A♠ J♠ 7♣ 6♣
+--- Showdown ---
+Board: [31mJ♥[0m A♠ J♠ 7♣ 6♣
+A(cfr:run2.cfr): [31mK♦[0m [31mK♥[0m  (Two Pair)
+B(RuleBot): [31mJ♦[0m [31mT♦[0m  (Three of a Kind)
+=> B(RuleBot) wins 10000 chips
+Running total for A(cfr:run2.cfr): -42300 chips (-2.80132 bb/hand over 151 hands)
+
+=========== Hand #152 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m4♦[0m [31m5♦[0m
+B(RuleBot): 9♠ [31mA♥[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: 2♣ 3♠ [31m8♥[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: 2♣ 3♠ [31m8♥[0m [31mQ♦[0m
+  [Turn, pot 200] A(cfr:run2.cfr): raise to 200
+  [Turn, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -42200 chips (-2.77632 bb/hand over 152 hands)
+
+=========== Hand #153 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m2♦[0m 8♠
+B(RuleBot): [31m4♦[0m [31m5♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -42250 chips (-2.76144 bb/hand over 153 hands)
+
+=========== Hand #154 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): T♣ 8♣
+B(RuleBot): 2♠ [31m5♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -42200 chips (-2.74026 bb/hand over 154 hands)
+
+=========== Hand #155 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mJ♥[0m 5♠
+B(RuleBot): K♣ [31m9♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -42250 chips (-2.72581 bb/hand over 155 hands)
+
+=========== Hand #156 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m4♦[0m [31m7♦[0m
+B(RuleBot): [31m9♦[0m J♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -42150 chips (-2.70192 bb/hand over 156 hands)
+
+=========== Hand #157 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mA♦[0m [31m8♦[0m
+B(RuleBot): 9♠ [31m3♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -42050 chips (-2.67834 bb/hand over 157 hands)
+
+=========== Hand #158 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mK♥[0m 5♠
+B(RuleBot): A♣ [31m9♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: K♠ [31m8♦[0m Q♠
+  [Flop, pot 600] A(cfr:run2.cfr): raise to 600
+  [Flop, pot 1200] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -41750 chips (-2.64241 bb/hand over 158 hands)
+
+=========== Hand #159 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 8♣ 7♣
+B(RuleBot): 6♣ [31m7♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 8♠ 4♣ A♠
+  [Flop, pot 600] B(RuleBot): check
+  [Flop, pot 600] A(cfr:run2.cfr): check
+  ** Board: 8♠ 4♣ A♠ T♠
+  [Turn, pot 600] B(RuleBot): check
+  [Turn, pot 600] A(cfr:run2.cfr): check
+  ** Board: 8♠ 4♣ A♠ T♠ Q♣
+  [River, pot 600] B(RuleBot): check
+  [River, pot 600] A(cfr:run2.cfr): check
+--- Showdown ---
+Board: 8♠ 4♣ A♠ T♠ Q♣
+A(cfr:run2.cfr): 8♣ 7♣  (Pair)
+B(RuleBot): 6♣ [31m7♥[0m  (High Card)
+=> A(cfr:run2.cfr) wins 300 chips
+Running total for A(cfr:run2.cfr): -41450 chips (-2.60692 bb/hand over 159 hands)
+
+=========== Hand #160 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mK♦[0m A♣
+B(RuleBot): 2♣ 5♣
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -41400 chips (-2.5875 bb/hand over 160 hands)
+
+=========== Hand #161 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mQ♥[0m 7♠
+B(RuleBot): 2♣ 9♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -41450 chips (-2.57453 bb/hand over 161 hands)
+
+=========== Hand #162 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mQ♥[0m 4♠
+B(RuleBot): [31m9♥[0m [31mK♥[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: 7♠ [31m5♥[0m 9♠
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: 7♠ [31m5♥[0m 9♠ 8♣
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): check
+  ** Board: 7♠ [31m5♥[0m 9♠ 8♣ [31mA♥[0m
+  [River, pot 200] A(cfr:run2.cfr): check
+  [River, pot 200] B(RuleBot): raise to 200
+  [River, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -41550 chips (-2.56481 bb/hand over 162 hands)
+
+=========== Hand #163 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mA♦[0m 8♣
+B(RuleBot): [31m2♦[0m [31m3♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -41450 chips (-2.54294 bb/hand over 163 hands)
+
+=========== Hand #164 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mT♦[0m 7♠
+B(RuleBot): T♣ 3♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -41400 chips (-2.52439 bb/hand over 164 hands)
+
+=========== Hand #165 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m8♥[0m T♣
+B(RuleBot): Q♠ [31m4♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: 4♣ [31m3♥[0m 5♠
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -41500 chips (-2.51515 bb/hand over 165 hands)
+
+=========== Hand #166 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m7♦[0m [31mT♥[0m
+B(RuleBot): [31m5♥[0m 9♣
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -41450 chips (-2.49699 bb/hand over 166 hands)
+
+=========== Hand #167 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): A♣ 4♠
+B(RuleBot): [31mT♥[0m [31m9♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31mT♦[0m 5♣ T♣
+  [Flop, pot 200] B(RuleBot): raise to 200
+  [Flop, pot 400] A(cfr:run2.cfr): call
+  ** Board: [31mT♦[0m 5♣ T♣ 4♣
+  [Turn, pot 600] B(RuleBot): raise to 600
+  [Turn, pot 1200] A(cfr:run2.cfr): call
+  ** Board: [31mT♦[0m 5♣ T♣ 4♣ [31mA♦[0m
+  [River, pot 1800] B(RuleBot): raise to 1800
+  [River, pot 3600] A(cfr:run2.cfr): call
+--- Showdown ---
+Board: [31mT♦[0m 5♣ T♣ 4♣ [31mA♦[0m
+A(cfr:run2.cfr): A♣ 4♠  (Two Pair)
+B(RuleBot): [31mT♥[0m [31m9♥[0m  (Three of a Kind)
+=> B(RuleBot) wins 2700 chips
+Running total for A(cfr:run2.cfr): -44150 chips (-2.64371 bb/hand over 167 hands)
+
+=========== Hand #168 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mT♦[0m 2♠
+B(RuleBot): T♠ J♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31mA♥[0m A♣ T♣
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31mA♥[0m A♣ T♣ [31m9♦[0m
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): check
+  ** Board: [31mA♥[0m A♣ T♣ [31m9♦[0m [31mK♥[0m
+  [River, pot 200] A(cfr:run2.cfr): raise to 200
+  [River, pot 400] B(RuleBot): raise to 800
+  [River, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -44450 chips (-2.64583 bb/hand over 168 hands)
+
+=========== Hand #169 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 6♣ 2♠
+B(RuleBot): [31mA♦[0m 7♠
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -44500 chips (-2.63314 bb/hand over 169 hands)
+
+=========== Hand #170 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mQ♥[0m 6♠
+B(RuleBot): [31mK♦[0m [31m8♥[0m
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -44600 chips (-2.62353 bb/hand over 170 hands)
+
+=========== Hand #171 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 7♣ 2♠
+B(RuleBot): [31m4♦[0m [31m9♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -44650 chips (-2.61111 bb/hand over 171 hands)
+
+=========== Hand #172 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m9♦[0m K♠
+B(RuleBot): J♠ 8♣
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m8♦[0m [31m7♦[0m [31mJ♦[0m
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): raise to 800
+  [Flop, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -44950 chips (-2.61337 bb/hand over 172 hands)
+
+=========== Hand #173 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mQ♥[0m 9♣
+B(RuleBot): A♣ 6♠
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: 9♠ [31m3♦[0m [31m9♦[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -44850 chips (-2.59249 bb/hand over 173 hands)
+
+=========== Hand #174 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mA♦[0m 9♣
+B(RuleBot): 9♠ J♠
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): raise to 900
+  [Preflop, pot 1200] B(RuleBot): call
+  ** Board: J♣ [31m3♦[0m T♣
+  [Flop, pot 1800] A(cfr:run2.cfr): check
+  [Flop, pot 1800] B(RuleBot): raise to 1800
+  [Flop, pot 3600] A(cfr:run2.cfr): raise to 7200
+  [Flop, pot 10800] B(RuleBot): call
+  ** Board: J♣ [31m3♦[0m T♣ [31m6♦[0m
+  [Turn, pot 16200] A(cfr:run2.cfr): raise to 1900 (ALL-IN)
+  [Turn, pot 18100] B(RuleBot): call (ALL-IN)
+  ** Board: J♣ [31m3♦[0m T♣ [31m6♦[0m [31m3♥[0m
+--- Showdown ---
+Board: J♣ [31m3♦[0m T♣ [31m6♦[0m [31m3♥[0m
+A(cfr:run2.cfr): [31mA♦[0m 9♣  (Pair)
+B(RuleBot): 9♠ J♠  (Two Pair)
+=> B(RuleBot) wins 10000 chips
+Running total for A(cfr:run2.cfr): -54850 chips (-3.1523 bb/hand over 174 hands)
+
+=========== Hand #175 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mT♦[0m A♠
+B(RuleBot): 9♠ [31m4♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -54750 chips (-3.12857 bb/hand over 175 hands)
+
+=========== Hand #176 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m9♥[0m [31m3♥[0m
+B(RuleBot): 9♣ Q♠
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m4♥[0m [31m2♦[0m [31m5♦[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31m4♥[0m [31m2♦[0m [31m5♦[0m A♣
+  [Turn, pot 200] A(cfr:run2.cfr): raise to 200
+  [Turn, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -54650 chips (-3.10511 bb/hand over 176 hands)
+
+=========== Hand #177 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 8♠ [31mK♥[0m
+B(RuleBot): [31m2♥[0m 3♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -54700 chips (-3.0904 bb/hand over 177 hands)
+
+=========== Hand #178 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31mT♥[0m 9♠
+B(RuleBot): [31m7♦[0m 4♠
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -54650 chips (-3.07022 bb/hand over 178 hands)
+
+=========== Hand #179 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): A♠ [31m8♦[0m
+B(RuleBot): [31m4♥[0m T♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -54550 chips (-3.04749 bb/hand over 179 hands)
+
+=========== Hand #180 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): T♠ [31mQ♥[0m
+B(RuleBot): [31mA♦[0m [31m5♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: [31m2♥[0m [31mJ♥[0m [31mQ♦[0m
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: [31m2♥[0m [31mJ♥[0m [31mQ♦[0m T♣
+  [Turn, pot 200] A(cfr:run2.cfr): raise to 200
+  [Turn, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -54450 chips (-3.025 bb/hand over 180 hands)
+
+=========== Hand #181 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 2♠ 7♠
+B(RuleBot): 4♠ [31mQ♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -54500 chips (-3.01105 bb/hand over 181 hands)
+
+=========== Hand #182 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): A♠ 9♠
+B(RuleBot): 8♣ [31mA♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -54400 chips (-2.98901 bb/hand over 182 hands)
+
+=========== Hand #183 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mT♥[0m [31m4♦[0m
+B(RuleBot): 8♣ [31m4♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -54450 chips (-2.97541 bb/hand over 183 hands)
+
+=========== Hand #184 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m6♥[0m 7♠
+B(RuleBot): [31m5♥[0m [31m8♥[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: 7♣ [31mA♥[0m 6♣
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -54350 chips (-2.9538 bb/hand over 184 hands)
+
+=========== Hand #185 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m2♦[0m [31mK♥[0m
+B(RuleBot): [31mA♥[0m T♣
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -54400 chips (-2.94054 bb/hand over 185 hands)
+
+=========== Hand #186 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 9♣ 5♣
+B(RuleBot): [31mT♦[0m [31m6♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -54350 chips (-2.92204 bb/hand over 186 hands)
+
+=========== Hand #187 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31mQ♥[0m Q♠
+B(RuleBot): K♣ [31mA♦[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): call
+  [Preflop, pot 200] B(RuleBot): check
+  ** Board: [31m9♥[0m [31m4♥[0m [31m7♦[0m
+  [Flop, pot 200] B(RuleBot): check
+  [Flop, pot 200] A(cfr:run2.cfr): raise to 200
+  [Flop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -54250 chips (-2.90107 bb/hand over 187 hands)
+
+=========== Hand #188 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 4♣ [31mQ♦[0m
+B(RuleBot): [31m2♥[0m [31mT♥[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -54200 chips (-2.88298 bb/hand over 188 hands)
+
+=========== Hand #189 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m5♦[0m [31mQ♥[0m
+B(RuleBot): A♣ 6♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: [31m7♦[0m [31mJ♦[0m [31m6♦[0m
+  [Flop, pot 600] B(RuleBot): raise to 600
+  [Flop, pot 1200] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 300 chips
+Running total for A(cfr:run2.cfr): -54500 chips (-2.8836 bb/hand over 189 hands)
+
+=========== Hand #190 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 5♠ [31mT♦[0m
+B(RuleBot): A♠ [31m2♦[0m
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): call
+  ** Board: 6♣ K♣ [31m2♥[0m
+  [Flop, pot 600] A(cfr:run2.cfr): raise to 600
+  [Flop, pot 1200] B(RuleBot): call
+  ** Board: 6♣ K♣ [31m2♥[0m [31m9♦[0m
+  [Turn, pot 1800] A(cfr:run2.cfr): check
+  [Turn, pot 1800] B(RuleBot): raise to 1800
+  [Turn, pot 3600] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 900 chips
+Running total for A(cfr:run2.cfr): -55400 chips (-2.91579 bb/hand over 190 hands)
+
+=========== Hand #191 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m8♥[0m A♣
+B(RuleBot): Q♣ K♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10100] B(RuleBot): call (ALL-IN)
+  ** Board: J♣ [31m4♦[0m 4♣ 9♠ [31mK♦[0m
+--- Showdown ---
+Board: J♣ [31m4♦[0m 4♣ 9♠ [31mK♦[0m
+A(cfr:run2.cfr): [31m8♥[0m A♣  (Pair)
+B(RuleBot): Q♣ K♠  (Two Pair)
+=> B(RuleBot) wins 10000 chips
+Running total for A(cfr:run2.cfr): -65400 chips (-3.42408 bb/hand over 191 hands)
+
+=========== Hand #192 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m8♥[0m T♣
+B(RuleBot): A♣ 2♠
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -65500 chips (-3.41146 bb/hand over 192 hands)
+
+=========== Hand #193 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m4♦[0m 3♣
+B(RuleBot): [31m5♥[0m J♠
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -65550 chips (-3.39637 bb/hand over 193 hands)
+
+=========== Hand #194 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): 7♣ 2♠
+B(RuleBot): [31mJ♦[0m 8♠
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -65450 chips (-3.37371 bb/hand over 194 hands)
+
+=========== Hand #195 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 7♠ [31m6♦[0m
+B(RuleBot): [31m2♦[0m [31m4♥[0m
+  [Preflop, pot 150] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 50 chips
+Running total for A(cfr:run2.cfr): -65500 chips (-3.35897 bb/hand over 195 hands)
+
+=========== Hand #196 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): T♠ A♣
+B(RuleBot): [31mT♦[0m [31mJ♦[0m
+  [Preflop, pot 150] B(RuleBot): raise to 300
+  [Preflop, pot 400] A(cfr:run2.cfr): raise to 10000 (ALL-IN)
+  [Preflop, pot 10300] B(RuleBot): call (ALL-IN)
+  ** Board: [31m9♥[0m K♠ [31m6♥[0m [31m5♦[0m [31mT♥[0m
+--- Showdown ---
+Board: [31m9♥[0m K♠ [31m6♥[0m [31m5♦[0m [31mT♥[0m
+A(cfr:run2.cfr): T♠ A♣  (Pair)
+B(RuleBot): [31mT♦[0m [31mJ♦[0m  (Pair)
+=> A(cfr:run2.cfr) wins 10000 chips
+Running total for A(cfr:run2.cfr): -55500 chips (-2.83163 bb/hand over 196 hands)
+
+=========== Hand #197 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): [31m2♦[0m [31m8♦[0m
+B(RuleBot): Q♣ 8♠
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -55400 chips (-2.81218 bb/hand over 197 hands)
+
+=========== Hand #198 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m9♥[0m 6♣
+B(RuleBot): 4♠ 2♠
+  [Preflop, pot 150] B(RuleBot): call
+  [Preflop, pot 200] A(cfr:run2.cfr): check
+  ** Board: A♣ [31m5♥[0m 5♠
+  [Flop, pot 200] A(cfr:run2.cfr): check
+  [Flop, pot 200] B(RuleBot): check
+  ** Board: A♣ [31m5♥[0m 5♠ 7♠
+  [Turn, pot 200] A(cfr:run2.cfr): check
+  [Turn, pot 200] B(RuleBot): check
+  ** Board: A♣ [31m5♥[0m 5♠ 7♠ K♠
+  [River, pot 200] A(cfr:run2.cfr): check
+  [River, pot 200] B(RuleBot): raise to 200
+  [River, pot 400] A(cfr:run2.cfr): fold
+=> B(RuleBot) wins 100 chips
+Running total for A(cfr:run2.cfr): -55500 chips (-2.80303 bb/hand over 198 hands)
+
+=========== Hand #199 ===========
+Button/SB: A(cfr:run2.cfr)   BB: B(RuleBot)
+A(cfr:run2.cfr): 9♠ K♠
+B(RuleBot): [31m6♥[0m J♣
+  [Preflop, pot 150] A(cfr:run2.cfr): raise to 300
+  [Preflop, pot 400] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 100 chips
+Running total for A(cfr:run2.cfr): -55400 chips (-2.78392 bb/hand over 199 hands)
+
+=========== Hand #200 ===========
+Button/SB: B(RuleBot)   BB: A(cfr:run2.cfr)
+A(cfr:run2.cfr): [31m8♦[0m 2♠
+B(RuleBot): [31m3♥[0m [31m7♦[0m
+  [Preflop, pot 150] B(RuleBot): fold
+=> A(cfr:run2.cfr) wins 50 chips
+Running total for A(cfr:run2.cfr): -55350 chips (-2.7675 bb/hand over 200 hands)
+
+Final: A(cfr:run2.cfr) -55350 chips over 200 hands (-2.7675 bb/hand)
+  cfr:run2.cfr fell back to check/call on 0 of 356 decisions

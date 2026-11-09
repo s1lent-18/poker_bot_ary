@@ -1,0 +1,199 @@
+nohup: ignoring input
+Hold'em CFR: stack 100bb, raise menu pot + all-in, 12 buckets/street, seed 1
+Calibrating card buckets... done (2.7 s)
+     84980 iterations     2832.4 it/s        5539 info sets      30.0 s
+    164800 iterations     2746.2 it/s        5539 info sets      60.0 s
+    239260 iterations     2658.0 it/s        5540 info sets      90.0 s
+    308260 iterations     2568.5 it/s        5540 info sets     120.0 s
+    373060 iterations     2486.7 it/s        5540 info sets     150.0 s
+    435360 iterations     2418.3 it/s        5540 info sets     180.0 s
+    495860 iterations     2360.9 it/s        5540 info sets     210.0 s
+    555540 iterations     2314.4 it/s        5540 info sets     240.0 s
+    614520 iterations     2275.6 it/s        5540 info sets     270.0 s
+    672980 iterations     2242.8 it/s        5540 info sets     300.1 s
+    731000 iterations     2214.7 it/s        5540 info sets     330.1 s
+    788680 iterations     2190.3 it/s        5540 info sets     360.1 s
+    846160 iterations     2169.2 it/s        5540 info sets     390.1 s
+    903400 iterations     2150.5 it/s        5540 info sets     420.1 s
+    960240 iterations     2133.5 it/s        5540 info sets     450.1 s
+   1016980 iterations     2118.3 it/s        5540 info sets     480.1 s
+   1073860 iterations     2105.2 it/s        5540 info sets     510.1 s
+   1130480 iterations     2093.1 it/s        5540 info sets     540.1 s
+   1186920 iterations     2081.9 it/s        5540 info sets     570.1 s
+  (autosaved versions/run4.cfr)
+   1243380 iterations     2071.9 it/s        5540 info sets     600.1 s
+   1299880 iterations     2062.9 it/s        5540 info sets     630.1 s
+   1356260 iterations     2054.5 it/s        5540 info sets     660.1 s
+   1412580 iterations     2046.8 it/s        5540 info sets     690.1 s
+   1468860 iterations     2039.6 it/s        5540 info sets     720.2 s
+   1525160 iterations     2033.1 it/s        5540 info sets     750.2 s
+   1581420 iterations     2027.0 it/s        5540 info sets     780.2 s
+   1637600 iterations     2021.3 it/s        5540 info sets     810.2 s
+   1693700 iterations     2015.9 it/s        5540 info sets     840.2 s
+   1749720 iterations     2010.8 it/s        5540 info sets     870.2 s
+  (snapshot versions/run4_001805360.cfr)
+   1805680 iterations     2005.9 it/s        5540 info sets     900.2 s
+   1861660 iterations     2001.4 it/s        5540 info sets     930.2 s
+   1917680 iterations     1997.2 it/s        5540 info sets     960.2 s
+   1973540 iterations     1993.1 it/s        5540 info sets     990.2 s
+   2029220 iterations     1989.0 it/s        5540 info sets    1020.2 s
+   2084960 iterations     1985.3 it/s        5540 info sets    1050.2 s
+   2140580 iterations     1981.6 it/s        5540 info sets    1080.2 s
+   2196140 iterations     1978.1 it/s        5540 info sets    1110.2 s
+   2251580 iterations     1974.7 it/s        5540 info sets    1140.2 s
+   2306800 iterations     1971.2 it/s        5540 info sets    1170.2 s
+  (autosaved versions/run4.cfr)
+   2362040 iterations     1968.0 it/s        5540 info sets    1200.2 s
+   2417360 iterations     1964.9 it/s        5540 info sets    1230.2 s
+   2472520 iterations     1961.9 it/s        5540 info sets    1260.2 s
+   2527780 iterations     1959.1 it/s        5540 info sets    1290.3 s
+   2583020 iterations     1956.4 it/s        5540 info sets    1320.3 s
+   2638220 iterations     1953.8 it/s        5540 info sets    1350.3 s
+   2693360 iterations     1951.3 it/s        5540 info sets    1380.3 s
+   2748500 iterations     1948.9 it/s        5540 info sets    1410.3 s
+   2803680 iterations     1946.6 it/s        5540 info sets    1440.3 s
+   2858820 iterations     1944.4 it/s        5540 info sets    1470.3 s
+   2913860 iterations     1942.2 it/s        5540 info sets    1500.3 s
+   2968980 iterations     1940.1 it/s        5540 info sets    1530.3 s
+   3024120 iterations     1938.2 it/s        5540 info sets    1560.3 s
+   3079280 iterations     1936.3 it/s        5540 info sets    1590.3 s
+   3134420 iterations     1934.4 it/s        5540 info sets    1620.3 s
+   3189600 iterations     1932.7 it/s        5540 info sets    1650.3 s
+   3244760 iterations     1931.0 it/s        5540 info sets    1680.3 s
+   3299960 iterations     1929.4 it/s        5540 info sets    1710.3 s
+   3355180 iterations     1927.9 it/s        5540 info sets    1740.4 s
+   3410420 iterations     1926.4 it/s        5540 info sets    1770.4 s
+  (autosaved versions/run4.cfr)
+  (snapshot versions/run4_003464960.cfr)
+   3465580 iterations     1924.9 it/s        5540 info sets    1800.4 s
+   3520800 iterations     1923.6 it/s        5540 info sets    1830.4 s
+   3576080 iterations     1922.2 it/s        5540 info sets    1860.4 s
+   3631380 iterations     1921.0 it/s        5540 info sets    1890.4 s
+   3686680 iterations     1919.8 it/s        5540 info sets    1920.4 s
+   3741980 iterations     1918.6 it/s        5540 info sets    1950.4 s
+   3797260 iterations     1917.4 it/s        5540 info sets    1980.4 s
+   3852560 iterations     1916.3 it/s        5540 info sets    2010.4 s
+   3907760 iterations     1915.2 it/s        5540 info sets    2040.4 s
+   3962940 iterations     1914.1 it/s        5540 info sets    2070.4 s
+   4018060 iterations     1913.0 it/s        5540 info sets    2100.4 s
+   4073160 iterations     1911.9 it/s        5540 info sets    2130.4 s
+   4128280 iterations     1910.9 it/s        5540 info sets    2160.4 s
+   4183420 iterations     1909.9 it/s        5540 info sets    2190.4 s
+   4238580 iterations     1908.9 it/s        5540 info sets    2220.4 s
+   4293740 iterations     1908.0 it/s        5540 info sets    2250.4 s
+   4348880 iterations     1907.0 it/s        5540 info sets    2280.4 s
+   4404020 iterations     1906.1 it/s        5540 info sets    2310.4 s
+   4459160 iterations     1905.3 it/s        5540 info sets    2340.4 s
+   4514300 iterations     1904.4 it/s        5540 info sets    2370.4 s
+  (autosaved versions/run4.cfr)
+   4569420 iterations     1903.6 it/s        5540 info sets    2400.5 s
+   4624560 iterations     1902.8 it/s        5540 info sets    2430.5 s
+   4679640 iterations     1901.9 it/s        5540 info sets    2460.5 s
+   4734720 iterations     1901.1 it/s        5540 info sets    2490.5 s
+   4789880 iterations     1900.4 it/s        5540 info sets    2520.5 s
+   4845020 iterations     1899.6 it/s        5540 info sets    2550.5 s
+   4900120 iterations     1898.9 it/s        5540 info sets    2580.5 s
+   4955200 iterations     1898.2 it/s        5540 info sets    2610.5 s
+   5010260 iterations     1897.5 it/s        5540 info sets    2640.5 s
+   5065300 iterations     1896.8 it/s        5540 info sets    2670.5 s
+  (snapshot versions/run4_005119400.cfr)
+   5120300 iterations     1896.0 it/s        5540 info sets    2700.5 s
+   5175260 iterations     1895.3 it/s        5540 info sets    2730.5 s
+   5230240 iterations     1894.7 it/s        5540 info sets    2760.5 s
+   5285260 iterations     1894.0 it/s        5540 info sets    2790.5 s
+   5340260 iterations     1893.4 it/s        5540 info sets    2820.5 s
+   5395280 iterations     1892.7 it/s        5540 info sets    2850.5 s
+   5450260 iterations     1892.1 it/s        5540 info sets    2880.5 s
+   5505260 iterations     1891.5 it/s        5540 info sets    2910.5 s
+   5560260 iterations     1890.9 it/s        5540 info sets    2940.5 s
+   5615220 iterations     1890.3 it/s        5540 info sets    2970.6 s
+  (autosaved versions/run4.cfr)
+   5670160 iterations     1889.7 it/s        5540 info sets    3000.6 s
+   5725180 iterations     1889.1 it/s        5540 info sets    3030.6 s
+   5780200 iterations     1888.6 it/s        5540 info sets    3060.6 s
+   5835300 iterations     1888.1 it/s        5540 info sets    3090.6 s
+   5890400 iterations     1887.6 it/s        5540 info sets    3120.6 s
+   5945500 iterations     1887.1 it/s        5540 info sets    3150.6 s
+   6000520 iterations     1886.6 it/s        5540 info sets    3180.6 s
+   6055520 iterations     1886.1 it/s        5540 info sets    3210.6 s
+   6110540 iterations     1885.6 it/s        5540 info sets    3240.6 s
+   6165560 iterations     1885.1 it/s        5540 info sets    3270.6 s
+   6220580 iterations     1884.7 it/s        5540 info sets    3300.6 s
+   6275500 iterations     1884.2 it/s        5540 info sets    3330.6 s
+   6330420 iterations     1883.7 it/s        5540 info sets    3360.6 s
+   6385400 iterations     1883.3 it/s        5540 info sets    3390.6 s
+   6440380 iterations     1882.8 it/s        5540 info sets    3420.6 s
+   6495360 iterations     1882.4 it/s        5540 info sets    3450.6 s
+   6550380 iterations     1881.9 it/s        5540 info sets    3480.6 s
+   6605420 iterations     1881.5 it/s        5540 info sets    3510.6 s
+   6660520 iterations     1881.2 it/s        5540 info sets    3540.7 s
+   6715600 iterations     1880.8 it/s        5540 info sets    3570.7 s
+  (autosaved versions/run4.cfr)
+  (snapshot versions/run4_006769500.cfr)
+   6770660 iterations     1880.4 it/s        5540 info sets    3600.7 s
+   6825740 iterations     1880.0 it/s        5540 info sets    3630.7 s
+   6880820 iterations     1879.7 it/s        5540 info sets    3660.7 s
+   6935940 iterations     1879.3 it/s        5540 info sets    3690.7 s
+   6991100 iterations     1879.0 it/s        5540 info sets    3720.7 s
+   7046240 iterations     1878.7 it/s        5540 info sets    3750.7 s
+   7101420 iterations     1878.3 it/s        5540 info sets    3780.7 s
+   7156580 iterations     1878.0 it/s        5540 info sets    3810.7 s
+   7211780 iterations     1877.7 it/s        5540 info sets    3840.7 s
+   7266900 iterations     1877.4 it/s        5540 info sets    3870.7 s
+   7322000 iterations     1877.1 it/s        5540 info sets    3900.7 s
+   7377080 iterations     1876.8 it/s        5540 info sets    3930.7 s
+   7432120 iterations     1876.5 it/s        5540 info sets    3960.7 s
+   7487160 iterations     1876.1 it/s        5540 info sets    3990.7 s
+   7542220 iterations     1875.8 it/s        5540 info sets    4020.7 s
+   7597260 iterations     1875.5 it/s        5540 info sets    4050.7 s
+   7652320 iterations     1875.2 it/s        5540 info sets    4080.7 s
+   7707420 iterations     1874.9 it/s        5540 info sets    4110.7 s
+   7762540 iterations     1874.7 it/s        5540 info sets    4140.7 s
+   7817640 iterations     1874.4 it/s        5540 info sets    4170.8 s
+  (autosaved versions/run4.cfr)
+   7872740 iterations     1874.1 it/s        5540 info sets    4200.8 s
+   7927840 iterations     1873.8 it/s        5540 info sets    4230.8 s
+   7982980 iterations     1873.6 it/s        5540 info sets    4260.8 s
+   8038180 iterations     1873.4 it/s        5540 info sets    4290.8 s
+   8093360 iterations     1873.1 it/s        5540 info sets    4320.8 s
+   8148560 iterations     1872.9 it/s        5540 info sets    4350.8 s
+   8203800 iterations     1872.7 it/s        5540 info sets    4380.8 s
+   8259100 iterations     1872.5 it/s        5540 info sets    4410.8 s
+   8314380 iterations     1872.3 it/s        5540 info sets    4440.8 s
+   8369720 iterations     1872.1 it/s        5540 info sets    4470.8 s
+  (snapshot versions/run4_008423600.cfr)
+   8425060 iterations     1871.9 it/s        5540 info sets    4500.8 s
+   8480380 iterations     1871.7 it/s        5540 info sets    4530.8 s
+   8535680 iterations     1871.5 it/s        5540 info sets    4560.8 s
+   8590980 iterations     1871.3 it/s        5540 info sets    4590.9 s
+   8646260 iterations     1871.1 it/s        5540 info sets    4620.9 s
+   8701520 iterations     1870.9 it/s        5540 info sets    4650.9 s
+   8756780 iterations     1870.8 it/s        5540 info sets    4680.9 s
+   8812020 iterations     1870.6 it/s        5540 info sets    4710.9 s
+   8867280 iterations     1870.4 it/s        5540 info sets    4740.9 s
+   8922580 iterations     1870.2 it/s        5540 info sets    4770.9 s
+  (autosaved versions/run4.cfr)
+   8977840 iterations     1870.0 it/s        5540 info sets    4800.9 s
+   9033120 iterations     1869.9 it/s        5540 info sets    4830.9 s
+   9088340 iterations     1869.7 it/s        5540 info sets    4860.9 s
+   9143560 iterations     1869.5 it/s        5540 info sets    4890.9 s
+   9198780 iterations     1869.3 it/s        5540 info sets    4920.9 s
+   9254040 iterations     1869.2 it/s        5540 info sets    4950.9 s
+   9309300 iterations     1869.0 it/s        5540 info sets    4980.9 s
+   9364500 iterations     1868.8 it/s        5540 info sets    5010.9 s
+   9419700 iterations     1868.6 it/s        5540 info sets    5040.9 s
+   9474900 iterations     1868.5 it/s        5540 info sets    5070.9 s
+   9530120 iterations     1868.3 it/s        5540 info sets    5101.0 s
+   9585340 iterations     1868.1 it/s        5540 info sets    5131.0 s
+   9640460 iterations     1868.0 it/s        5540 info sets    5161.0 s
+   9695620 iterations     1867.8 it/s        5540 info sets    5191.0 s
+   9750780 iterations     1867.6 it/s        5540 info sets    5221.0 s
+   9805920 iterations     1867.4 it/s        5540 info sets    5251.0 s
+   9861060 iterations     1867.3 it/s        5540 info sets    5281.0 s
+   9916220 iterations     1867.1 it/s        5540 info sets    5311.0 s
+   9971420 iterations     1867.0 it/s        5540 info sets    5341.0 s
+
+Finished: 10000000 iterations, 5540 info sets, 5356.5 s (1866.9 it/s)
+Saved versions/run4.cfr
+Saved final snapshot versions/run4_010000000.cfr
+Next: ./build/poker_cli --sim 5000 --hero cfr --bot rule --strategy versions/run4.cfr

@@ -91,6 +91,9 @@ target_link_libraries(poker_agents INTERFACE poker_holdem)
 add_executable(holdem_train src/app/holdem_train_main.cpp)
 target_link_libraries(holdem_train PRIVATE poker_holdem)
 
+add_executable(poker_server src/app/poker_server.cpp)
+target_link_libraries(poker_server PRIVATE poker_agents)
+
 add_executable(test_holdem tests/test_holdem.cpp)
 target_link_libraries(test_holdem PRIVATE poker_agents GTest::gtest_main)
 gtest_discover_tests(test_holdem)

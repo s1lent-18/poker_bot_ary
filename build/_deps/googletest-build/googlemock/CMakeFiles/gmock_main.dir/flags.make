@@ -4,9 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googlemock -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest/include -isystem /Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -isystem /home/aaryan/poker_bot_ary/build/_deps/googletest-src/googlemock/include -isystem /home/aaryan/poker_bot_ary/build/_deps/googletest-src/googlemock -isystem /home/aaryan/poker_bot_ary/build/_deps/googletest-src/googletest/include -isystem /home/aaryan/poker_bot_ary/build/_deps/googletest-src/googletest
 
-CXX_FLAGSarm64 = -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1  
-
-CXX_FLAGS = -g -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1  
+CXX_FLAGS = -O3 -DNDEBUG -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
 

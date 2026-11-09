@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/aaryangharat/Desktop/Project_Poker/build/_deps/googletest-subbuild/cmake_install.cmake"
+		"/home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
