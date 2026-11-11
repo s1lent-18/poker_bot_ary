@@ -19,8 +19,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/ExternalProject/RepositoryInfo.txt.in"
   "/usr/share/cmake/Modules/ExternalProject/UpdateInfo.txt.in"
   "/usr/share/cmake/Modules/ExternalProject/cfgcmd.txt.in"
-  "/usr/share/cmake/Modules/ExternalProject/download.cmake.in"
-  "/usr/share/cmake/Modules/ExternalProject/extractfile.cmake.in"
   "/usr/share/cmake/Modules/ExternalProject/mkdirs.cmake.in"
   "/usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake"
   "/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake"
@@ -37,10 +35,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake"
-  "googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake"
-  "googletest-populate-prefix/src/googletest-populate-stamp/verify-googletest-populate.cmake"
-  "googletest-populate-prefix/src/googletest-populate-stamp/extract-googletest-populate.cmake"
-  "googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-urlinfo.txt"
+  "googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-source_dirinfo.txt"
   "googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update-info.txt"
   "googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch-info.txt"
   "googletest-populate-prefix/tmp/googletest-populate-cfgcmd.txt"

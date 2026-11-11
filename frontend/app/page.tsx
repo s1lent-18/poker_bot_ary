@@ -1,12 +1,14 @@
 "use client";
 
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import { GameState, BotOption, GameEvent, CardData } from "@/lib/types";
+import { GameState, BotOption, GameEvent } from "@/lib/types";
 import { HeaderBar } from "@/components/HeaderBar";
 import { PokerTable } from "@/components/PokerTable";
 import { BettingControls } from "@/components/BettingControls";
 import { ActionHistoryLog } from "@/components/ActionHistoryLog";
 import { BotCheckPanel } from "@/components/BotCheckPanel";
+import { MatchReadyModal } from "@/components/MatchReadyModal";
+import { MatchOverModal } from "@/components/MatchOverModal";
 import { sound } from "@/lib/audio";
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -15,6 +17,11 @@ export default function PokerApp() {
   const [bots, setBots] = useState<BotOption[]>([]);
   const [selectedBotId, setSelectedBotId] = useState<string>("cfr");
   const [selectedVersion, setSelectedVersion] = useState<string>("versions/run4.cfr");
+
+  // Game mode: "infinite" (default continuous mode) vs "match" (10k elimination duel)
+  const [gameMode, setGameMode] = useState<"infinite" | "match">("infinite");
+  const [isMatchReadyOpen, setIsMatchReadyOpen] = useState<boolean>(false);
+  const [isMatchOverOpen, setIsMatchOverOpen] = useState<boolean>(false);
 
   const [gameState, setGameState] = useState<GameState | null>(null);
   const [isPending, setIsPending] = useState<boolean>(false);
@@ -28,7 +35,7 @@ export default function PokerApp() {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [rebuyAlert, setRebuyAlert] = useState<string | null>(null);
 
-  // Stack mode: false = persistent stacks across rounds (default), true = auto reset 10k each round
+  // Stack mode for Infinite mode: false = persistent stacks across rounds, true = auto reset 10k each round
   const [autoRebuy, setAutoRebuy] = useState<boolean>(false);
 
   // BotCheck mode state
@@ -122,12 +129,25 @@ export default function PokerApp() {
           await sleep(260);
         } else if (evt.type === "hand_complete") {
           await sleep(450);
-          if (evt.winner === "hero") {
+
+          // Check if match mode elimination occurred!
+          if (evt.isMatchOver || finalState.match?.isMatchOver) {
+            const winner = evt.matchWinner || finalState.match?.matchWinner;
+            if (winner === "hero") {
+              sound.playMatchVictory();
+            } else {
+              sound.playMatchDefeat();
+            }
+            // Delay popup slightly so user can view final showdown hand
+            setTimeout(() => {
+              setIsMatchOverOpen(true);
+            }, 1000);
+          } else if (evt.winner === "hero") {
             sound.playWin();
           }
 
           // If someone folded and BotCheck mode is enabled, open the side window!
-          if (evt.folded && botCheckEnabled) {
+          if (evt.folded && botCheckEnabled && !evt.isMatchOver) {
             setIsBotCheckOpen(true);
           }
         }
@@ -140,19 +160,31 @@ export default function PokerApp() {
     [botCheckEnabled]
   );
 
-  // Start new match
+  // Start new game
   const startNewGame = useCallback(
-    async (botId: string, versionId: string, rebuyMode: boolean) => {
+    async (
+      botId: string,
+      versionId: string,
+      rebuyMode: boolean,
+      mode: "infinite" | "match" = "infinite"
+    ) => {
       setIsPending(true);
       setErrorMsg(null);
       setRebuyAlert(null);
       setBotLastActionText(null);
       displayedBoardCountRef.current = 0;
+      setGameMode(mode);
+
       try {
         const res = await fetch("/api/game/new", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ bot: botId, version: versionId, autoRebuy: rebuyMode }),
+          body: JSON.stringify({
+            bot: botId,
+            version: versionId,
+            autoRebuy: rebuyMode,
+            gameMode: mode,
+          }),
         });
         if (!res.ok) throw new Error("Failed to start game");
         const data: GameState = await res.json();
@@ -173,6 +205,10 @@ export default function PokerApp() {
 
         setGameState(data);
         setHistoryEvents(data.events || []);
+
+        if (data.match?.isMatchOver) {
+          setIsMatchOverOpen(true);
+        }
       } catch (err: unknown) {
         console.error("Error starting game:", err);
         setErrorMsg("Failed to start game with engine.");
@@ -183,12 +219,12 @@ export default function PokerApp() {
     []
   );
 
-  // Initial game start once bots loaded
+  // Initial game start once bots loaded (starts in infinite mode)
   const initialStartedRef = useRef(false);
   useEffect(() => {
     if (bots.length > 0 && !initialStartedRef.current) {
       initialStartedRef.current = true;
-      startNewGame(selectedBotId, selectedVersion, autoRebuy);
+      startNewGame(selectedBotId, selectedVersion, autoRebuy, "infinite");
     }
   }, [bots, selectedBotId, selectedVersion, autoRebuy, startNewGame]);
 
@@ -234,6 +270,13 @@ export default function PokerApp() {
   // Handle Next Hand
   const handleNextHand = async () => {
     if (isPending) return;
+
+    // In match mode, if match is already over, show the match results
+    if (gameState?.match?.isMatchOver) {
+      setIsMatchOverOpen(true);
+      return;
+    }
+
     setIsPending(true);
     setBotLastActionText(null);
     setErrorMsg(null);
@@ -243,18 +286,31 @@ export default function PokerApp() {
       const res = await fetch("/api/game/next", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ autoRebuy }),
+        body: JSON.stringify({ autoRebuy, gameMode }),
       });
       if (!res.ok) throw new Error("Failed to deal next hand");
       const data: GameState = await res.json();
 
       sound.playCardDeal();
 
-      // Check for rebuy events
+      // Check for rebuy events (in infinite mode)
       const rebuyEvt = data.events.find((e) => e.type === "rebuy");
       if (rebuyEvt) {
         const pName = rebuyEvt.player === "hero" ? "You" : "Bot";
         setRebuyAlert(`${pName} was under 100 chips and automatically rebought 10,000 chips.`);
+      }
+
+      // Check if match mode reached terminal immediately (e.g. from all-in blind)
+      if (data.match?.isMatchOver) {
+        const winner = data.match.matchWinner;
+        if (winner === "hero") {
+          sound.playMatchVictory();
+        } else {
+          sound.playMatchDefeat();
+        }
+        setTimeout(() => {
+          setIsMatchOverOpen(true);
+        }, 1000);
       }
 
       // If bot acted first preflop, show pacing
@@ -278,16 +334,63 @@ export default function PokerApp() {
     }
   };
 
+  // Handle Mode Selection from HeaderBar
+  const handleSelectGameMode = (newMode: "infinite" | "match") => {
+    if (newMode === "match") {
+      // Show confirmation / ready popup first!
+      setIsMatchReadyOpen(true);
+    } else {
+      setGameMode("infinite");
+      setIsMatchOverOpen(false);
+      startNewGame(selectedBotId, selectedVersion, autoRebuy, "infinite");
+    }
+  };
+
+  // Confirm Start Match from MatchReadyModal
+  const handleConfirmStartMatch = () => {
+    setIsMatchReadyOpen(false);
+    setIsMatchOverOpen(false);
+    setHistoryEvents([]);
+    startNewGame(selectedBotId, selectedVersion, false, "match");
+  };
+
+  // Cancel Match Mode from MatchReadyModal
+  const handleCancelMatchReady = () => {
+    setIsMatchReadyOpen(false);
+  };
+
+  // Play Again from MatchOverModal
+  const handlePlayAgainMatch = () => {
+    setIsMatchOverOpen(false);
+    // Open the ready confirmation popup to confirm starting a new match
+    setIsMatchReadyOpen(true);
+  };
+
+  // Play Infinite Mode from MatchOverModal
+  const handlePlayInfiniteFromModal = () => {
+    setIsMatchOverOpen(false);
+    setGameMode("infinite");
+    startNewGame(selectedBotId, selectedVersion, autoRebuy, "infinite");
+  };
+
   // Handle Bot Selector change
   const handleSelectBot = (newBotId: string) => {
     setSelectedBotId(newBotId);
-    startNewGame(newBotId, selectedVersion, autoRebuy);
+    if (gameMode === "match") {
+      setIsMatchReadyOpen(true);
+    } else {
+      startNewGame(newBotId, selectedVersion, autoRebuy, "infinite");
+    }
   };
 
   // Handle Hold'em Version Selector change
   const handleSelectVersion = (newVersion: string) => {
     setSelectedVersion(newVersion);
-    startNewGame(selectedBotId, newVersion, autoRebuy);
+    if (gameMode === "match") {
+      setIsMatchReadyOpen(true);
+    } else {
+      startNewGame(selectedBotId, newVersion, autoRebuy, "infinite");
+    }
   };
 
   // Handle Auto Rebuy Stack Mode toggle
@@ -305,10 +408,14 @@ export default function PokerApp() {
     }
   };
 
-  // Reset Match
+  // Reset Session
   const handleResetSession = () => {
     setHistoryEvents([]);
-    startNewGame(selectedBotId, selectedVersion, autoRebuy);
+    if (gameMode === "match") {
+      setIsMatchReadyOpen(true);
+    } else {
+      startNewGame(selectedBotId, selectedVersion, autoRebuy, "infinite");
+    }
   };
 
   // Sound mute toggle
@@ -342,6 +449,8 @@ export default function PokerApp() {
     botBankroll: 10000,
   };
 
+  const botName = gameState?.bot?.name || "Opponent";
+
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col justify-between font-sans selection:bg-emerald-500/30 selection:text-emerald-200">
       {/* Top Header */}
@@ -365,6 +474,9 @@ export default function PokerApp() {
         onToggleBotCheck={handleToggleBotCheck}
         autoRebuy={autoRebuy}
         onToggleAutoRebuy={handleToggleAutoRebuy}
+        gameMode={gameMode}
+        onSelectGameMode={handleSelectGameMode}
+        matchInfo={gameState?.match}
       />
 
       {/* Rebuy or error alerts */}
@@ -399,7 +511,7 @@ export default function PokerApp() {
           isTerminal={gameState?.isTerminal || false}
           isOpen={isBotCheckOpen}
           onClose={() => setIsBotCheckOpen(false)}
-          botName={gameState?.bot?.name || "Bot"}
+          botName={botName}
           fourColor={fourColor}
         />
       </main>
@@ -408,6 +520,7 @@ export default function PokerApp() {
       <footer className="w-full bg-zinc-950/95 border-t border-zinc-850 py-1">
         {gameState && (
           <BettingControls
+            key={gameState.handNumber}
             legalActions={gameState.legalActions || []}
             toAct={gameState.toAct}
             isTerminal={gameState.isTerminal}
@@ -419,15 +532,37 @@ export default function PokerApp() {
             onNextHand={handleNextHand}
             isPending={isPending}
             street={gameState.street}
+            isMatchOver={gameState.match?.isMatchOver}
+            onOpenMatchOver={() => setIsMatchOverOpen(true)}
           />
         )}
       </footer>
 
-      {/* Separate Slide-Over History Log Modal */}
+      {/* Slide-Over History Log Modal */}
       <ActionHistoryLog
         events={historyEvents}
         isOpen={isHistoryOpen}
         onClose={() => setIsHistoryOpen(false)}
+      />
+
+      {/* Match Mode: Pre-match "Ready?" Modal */}
+      <MatchReadyModal
+        isOpen={isMatchReadyOpen}
+        botName={botName}
+        onConfirmStart={handleConfirmStartMatch}
+        onCancelToInfinite={handleCancelMatchReady}
+      />
+
+      {/* Match Mode: Post-match "Match Over" Modal */}
+      <MatchOverModal
+        isOpen={isMatchOverOpen}
+        winner={gameState?.match?.matchWinner || "none"}
+        botName={botName}
+        handsPlayed={gameState?.match?.matchHandNumber || gameState?.session?.handsPlayed || 0}
+        heroBankroll={gameState?.session?.heroBankroll || 0}
+        botBankroll={gameState?.session?.botBankroll || 0}
+        onPlayAgain={handlePlayAgainMatch}
+        onPlayInfinite={handlePlayInfiniteFromModal}
       />
     </div>
   );

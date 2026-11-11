@@ -46,6 +46,8 @@ export interface GameEvent {
   button?: number;
   sb?: number;
   bb?: number;
+  isMatchOver?: boolean;
+  matchWinner?: "hero" | "bot" | string;
 }
 
 export interface SessionStats {
@@ -59,6 +61,18 @@ export interface SessionStats {
   autoRebuy?: boolean;
   heroBankroll?: number;
   botBankroll?: number;
+}
+
+export interface MatchInfo {
+  isMatchMode: boolean;
+  matchHandNumber: number;
+  sb: number;
+  bb: number;
+  nextIncreaseHand: number;
+  nextSb: number;
+  nextBb: number;
+  isMatchOver: boolean;
+  matchWinner?: "hero" | "bot" | string;
 }
 
 export interface GameState {
@@ -78,6 +92,8 @@ export interface GameState {
   session: SessionStats;
   payoffs?: [number, number];
   winner?: "hero" | "bot" | "split";
+  gameMode?: "infinite" | "match";
+  match?: MatchInfo;
 }
 
 export interface CfrVersion {

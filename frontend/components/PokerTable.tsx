@@ -128,6 +128,21 @@ export const PokerTable: React.FC<PokerTableProps> = ({
 
         {/* ----------------- 2. CENTER: POT & BOARD ----------------- */}
         <div className="relative z-10 flex flex-col items-center justify-center my-auto gap-2.5">
+          {/* Game Mode & Blinds Badge on Felt */}
+          {gameState.gameMode === "match" && gameState.match ? (
+            <div className="flex items-center gap-2 bg-amber-950/70 border border-amber-600/80 rounded-full px-3.5 py-0.5 text-[11px] font-mono font-bold text-amber-300 shadow-sm">
+              <span>🏆 Match Hand #{gameState.match.matchHandNumber}</span>
+              <span className="text-amber-500">•</span>
+              <span>Blinds {gameState.match.sb.toLocaleString()} / {gameState.match.bb.toLocaleString()}</span>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 bg-zinc-950/60 border border-zinc-800 rounded-full px-3 py-0.5 text-[11px] font-mono text-zinc-400">
+              <span>Infinite Mode</span>
+              <span className="text-zinc-600">•</span>
+              <span>Blinds 50 / 100</span>
+            </div>
+          )}
+
           {/* Pot & Street Pill */}
           <div className="flex items-center gap-2.5 bg-zinc-950 border border-zinc-700 rounded-full px-5 py-1.5 font-mono shadow-sm">
             <span className="text-zinc-400 text-xs uppercase tracking-wider font-medium">Pot</span>

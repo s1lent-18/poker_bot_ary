@@ -153,8 +153,26 @@ static std::shared_ptr<const HoldemStrategy> get_strategy(const std::string& pat
     }
 }
 
+static int get_match_small_blind(int hand) {
+    if (hand <= 5) return 250;
+    if (hand <= 9) return 1000;
+    if (hand <= 15) return 2500;
+    return 5000;
+}
+
+static int get_match_big_blind(int hand) {
+    if (hand <= 5) return 500;
+    if (hand <= 9) return 2000;
+    if (hand <= 15) return 5000;
+    return 10000;
+}
+
 // Global active game session
 struct Session {
+    std::string game_mode = "infinite"; // "infinite" or "match"
+    bool match_over = false;
+    std::string match_winner = "";
+
     std::string bot_type = "cfr";
     std::string bot_version = "versions/run4.cfr";
     std::string bot_label = "Holden (run4.cfr)";
@@ -246,6 +264,22 @@ static std::string state_to_json(const std::vector<std::string>& new_events = {}
     out += json_int("toCall", std::max(0, s.bet(1) - s.bet(0))) + ",";
     out += json_str("toAct", is_term ? "none" : (s.current_player() == 0 ? "hero" : "bot")) + ",";
     out += json_bool("isTerminal", is_term) + ",";
+    out += json_str("gameMode", g_session.game_mode) + ",";
+    out += "\"match\":{";
+    out += json_bool("isMatchMode", g_session.game_mode == "match") + ",";
+    out += json_int("matchHandNumber", g_session.hand_number + 1) + ",";
+    out += json_int("sb", g_session.cfg.small_blind) + ",";
+    out += json_int("bb", g_session.cfg.big_blind) + ",";
+    int cur_hand = g_session.hand_number + 1;
+    int next_hand = cur_hand <= 5 ? 6 : (cur_hand <= 9 ? 10 : (cur_hand <= 15 ? 16 : 0));
+    int next_sb = next_hand > 0 ? get_match_small_blind(next_hand) : 0;
+    int next_bb = next_hand > 0 ? get_match_big_blind(next_hand) : 0;
+    out += json_int("nextIncreaseHand", next_hand) + ",";
+    out += json_int("nextSb", next_sb) + ",";
+    out += json_int("nextBb", next_bb) + ",";
+    out += json_bool("isMatchOver", g_session.match_over) + ",";
+    out += json_str("matchWinner", g_session.match_winner);
+    out += "},";
 
     // Hero
     out += "\"hero\":{";
@@ -376,33 +410,45 @@ static std::string state_to_json(const std::vector<std::string>& new_events = {}
 }
 
 static void deal_new_hand(std::vector<std::string>& events) {
-    g_session.deck.shuffle(g_session.rng);
-    g_session.button = g_session.hand_number % 2;
-
-    if (g_session.auto_rebuy) {
-        g_session.hero_bankroll = 10000;
-        g_session.bot_bankroll = 10000;
-    } else {
-        // Persistent stacks: Rebuy if a player drops below the big blind (min buy-in 100 chips)
-        if (g_session.hero_bankroll < g_session.cfg.big_blind) {
-            g_session.hero_bankroll = 10000;
-            std::string r_evt = "{";
-            r_evt += json_str("type", "rebuy") + ",";
-            r_evt += json_str("player", "hero") + ",";
-            r_evt += json_int("amount", 10000);
-            r_evt += "}";
-            events.push_back(r_evt);
+    if (g_session.game_mode == "match") {
+        if (g_session.hero_bankroll <= 0 || g_session.bot_bankroll <= 0) {
+            g_session.match_over = true;
+            g_session.match_winner = (g_session.hero_bankroll > 0) ? "hero" : "bot";
+            return;
         }
-        if (g_session.bot_bankroll < g_session.cfg.big_blind) {
+        g_session.auto_rebuy = false;
+        int hand = g_session.hand_number + 1;
+        g_session.cfg.small_blind = get_match_small_blind(hand);
+        g_session.cfg.big_blind = get_match_big_blind(hand);
+    } else {
+        if (g_session.auto_rebuy) {
+            g_session.hero_bankroll = 10000;
             g_session.bot_bankroll = 10000;
-            std::string r_evt = "{";
-            r_evt += json_str("type", "rebuy") + ",";
-            r_evt += json_str("player", "bot") + ",";
-            r_evt += json_int("amount", 10000);
-            r_evt += "}";
-            events.push_back(r_evt);
+        } else {
+            // Persistent stacks: Rebuy if a player drops below the big blind (min buy-in 100 chips)
+            if (g_session.hero_bankroll < g_session.cfg.big_blind) {
+                g_session.hero_bankroll = 10000;
+                std::string r_evt = "{";
+                r_evt += json_str("type", "rebuy") + ",";
+                r_evt += json_str("player", "hero") + ",";
+                r_evt += json_int("amount", 10000);
+                r_evt += "}";
+                events.push_back(r_evt);
+            }
+            if (g_session.bot_bankroll < g_session.cfg.big_blind) {
+                g_session.bot_bankroll = 10000;
+                std::string r_evt = "{";
+                r_evt += json_str("type", "rebuy") + ",";
+                r_evt += json_str("player", "bot") + ",";
+                r_evt += json_int("amount", 10000);
+                r_evt += "}";
+                events.push_back(r_evt);
+            }
         }
     }
+
+    g_session.deck.shuffle(g_session.rng);
+    g_session.button = g_session.hand_number % 2;
 
     g_session.state = std::make_unique<GameState>(
         g_session.cfg, g_session.button, g_session.deck,
@@ -486,6 +532,20 @@ static void run_game_loop(std::vector<std::string>& events) {
         g_session.hero_bankroll += pay[0];
         g_session.bot_bankroll += pay[1];
 
+        if (g_session.game_mode == "match") {
+            if (g_session.hero_bankroll <= 0) {
+                g_session.hero_bankroll = 0;
+                g_session.bot_bankroll = 20000;
+                g_session.match_over = true;
+                g_session.match_winner = "bot";
+            } else if (g_session.bot_bankroll <= 0) {
+                g_session.bot_bankroll = 0;
+                g_session.hero_bankroll = 20000;
+                g_session.match_over = true;
+                g_session.match_winner = "hero";
+            }
+        }
+
         bool folded = !s.history().empty() && s.history().back() == 'f';
         std::string folded_player = folded ? (pay[0] > 0 ? "bot" : "hero") : "none";
 
@@ -495,7 +555,9 @@ static void run_game_loop(std::vector<std::string>& events) {
         term_evt += json_int("botPayoff", pay[1]) + ",";
         term_evt += json_str("winner", pay[0] > 0 ? "hero" : (pay[0] < 0 ? "bot" : "split")) + ",";
         term_evt += json_bool("folded", folded) + ",";
-        term_evt += json_str("foldedPlayer", folded_player);
+        term_evt += json_str("foldedPlayer", folded_player) + ",";
+        term_evt += json_bool("isMatchOver", g_session.match_over) + ",";
+        term_evt += json_str("matchWinner", g_session.match_winner);
         term_evt += "}";
         events.push_back(term_evt);
     }
@@ -606,19 +668,47 @@ static void handle_client(int client_fd) {
         std::string version = parse_json_string(body, "version");
         if (version.empty()) version = "versions/run4.cfr";
 
-        if (body.find("autoRebuy") != std::string::npos) {
-            g_session.auto_rebuy = parse_json_bool(body, "autoRebuy", false);
+        std::string mode = parse_json_string(body, "gameMode");
+        if (mode.empty()) mode = "infinite";
+        g_session.game_mode = mode;
+        g_session.match_over = false;
+        g_session.match_winner = "";
+
+        if (mode == "match") {
+            g_session.auto_rebuy = false;
+            g_session.hero_bankroll = 10000;
+            g_session.bot_bankroll = 10000;
+            g_session.hand_number = 0;
+            g_session.total_chips_won = 0;
+            g_session.hands_played = 0;
+            g_session.cfg.small_blind = get_match_small_blind(1);
+            g_session.cfg.big_blind = get_match_big_blind(1);
+        } else {
+            g_session.cfg.small_blind = 50;
+            g_session.cfg.big_blind = 100;
+            if (body.find("autoRebuy") != std::string::npos) {
+                g_session.auto_rebuy = parse_json_bool(body, "autoRebuy", false);
+            }
+            g_session.hero_bankroll = 10000;
+            g_session.bot_bankroll = 10000;
+            g_session.hand_number = 0;
+            g_session.total_chips_won = 0;
+            g_session.hands_played = 0;
         }
-        g_session.hero_bankroll = 10000;
-        g_session.bot_bankroll = 10000;
 
         g_session.bot_type = bot_type;
         g_session.bot_version = version;
-        g_session.hand_number = 0;
-        g_session.total_chips_won = 0;
-        g_session.hands_played = 0;
 
         init_bot();
+
+        // Ensure blinds match the chosen game mode
+        if (mode == "match") {
+            g_session.cfg.small_blind = get_match_small_blind(1);
+            g_session.cfg.big_blind = get_match_big_blind(1);
+        } else {
+            g_session.cfg.small_blind = 50;
+            g_session.cfg.big_blind = 100;
+        }
 
         std::vector<std::string> events;
         deal_new_hand(events);
@@ -679,6 +769,11 @@ static void handle_client(int client_fd) {
 
     // Route: POST /api/game/next
     if (method == "POST" && path == "/api/game/next") {
+        if (g_session.game_mode == "match" && g_session.match_over) {
+            send_http_response(client_fd, 200, "OK", "application/json", state_to_json({}));
+            close(client_fd);
+            return;
+        }
         if (body.find("autoRebuy") != std::string::npos) {
             g_session.auto_rebuy = parse_json_bool(body, "autoRebuy", g_session.auto_rebuy);
         }

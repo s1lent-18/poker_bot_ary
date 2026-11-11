@@ -203,3 +203,29 @@ TEST(Engine, RandomPlayoutsConserveChipsAndTerminate) {
         ASSERT_LE(std::abs(pay[0]), cfg.stack);
     }
 }
+
+TEST(Engine, SmallBlindShortAllInGoesToShowdownDirectly) {
+    GameConfig cfg;
+    cfg.small_blind = 250;
+    cfg.big_blind = 500;
+    // p0 has only 100 chips and is SB (button 0), p1 has 19900 chips and is BB
+    GameState s(cfg, 0, cards(P0_WINS), {100, 19900});
+    EXPECT_TRUE(s.is_terminal());
+    EXPECT_EQ(s.street(), Street::Showdown);
+    EXPECT_EQ(s.board_visible(), 5);
+    // p0 wins, contested amount is 100
+    EXPECT_EQ(s.payoffs(), (std::array<int, 2>{100, -100}));
+}
+
+TEST(Engine, BigBlindShortAllInGoesToShowdownDirectly) {
+    GameConfig cfg;
+    cfg.small_blind = 250;
+    cfg.big_blind = 500;
+    // p0 has 19950 chips and is SB (posts 250), p1 has 50 chips and is BB (posts 50)
+    GameState s(cfg, 0, cards(P0_WINS), {19950, 50});
+    EXPECT_TRUE(s.is_terminal());
+    EXPECT_EQ(s.street(), Street::Showdown);
+    EXPECT_EQ(s.board_visible(), 5);
+    // p0 wins, contested amount is 50
+    EXPECT_EQ(s.payoffs(), (std::array<int, 2>{50, -50}));
+}

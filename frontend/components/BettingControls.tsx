@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { LegalAction } from "@/lib/types";
 import { sound } from "@/lib/audio";
-import { Clock } from "lucide-react";
+import { Clock, Trophy } from "lucide-react";
 
 interface BettingControlsProps {
   legalActions: LegalAction[];
@@ -15,6 +15,8 @@ interface BettingControlsProps {
   onNextHand: () => void;
   isPending: boolean;
   street: string;
+  isMatchOver?: boolean;
+  onOpenMatchOver?: () => void;
 }
 
 const ACTION_TIME_LIMIT = 30; // 30 seconds to act
@@ -30,11 +32,21 @@ export const BettingControls: React.FC<BettingControlsProps> = ({
   onNextHand,
   isPending,
   street,
+  isMatchOver,
+  onOpenMatchOver,
 }) => {
   const canFold = legalActions.some((a) => a.type === "fold");
   const canCheck = legalActions.some((a) => a.type === "check");
   const callAction = legalActions.find((a) => a.type === "call");
   const raiseActions = legalActions.filter((a) => a.type === "raise");
+
+  // Keep latest action handlers and legal actions in refs for timer callbacks
+  const onActionRef = useRef(onAction);
+  onActionRef.current = onAction;
+  const canCheckRef = useRef(canCheck);
+  canCheckRef.current = canCheck;
+  const canFoldRef = useRef(canFold);
+  canFoldRef.current = canFold;
 
   // 30-second timer state
   const [timeLeft, setTimeLeft] = useState<number>(ACTION_TIME_LIMIT);
@@ -42,48 +54,53 @@ export const BettingControls: React.FC<BettingControlsProps> = ({
 
   const isHeroTurn = toAct === "hero" && !isTerminal && !isPending;
 
-  // Reset timer whenever it becomes hero's turn or street changes
+  // Reset and manage shot clock timer strictly during hero's active turn
   useEffect(() => {
-    if (isHeroTurn) {
-      setTimeLeft(ACTION_TIME_LIMIT);
-
-      if (timerRef.current) clearInterval(timerRef.current);
-
-      timerRef.current = setInterval(() => {
-        setTimeLeft((prev) => {
-          if (prev <= 1) {
-            // Time ran out!
-            if (timerRef.current) clearInterval(timerRef.current);
-            return 0;
-          }
-          if (prev <= 6) {
-            sound.playTick();
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    } else {
+    // If not hero's turn (hand complete, opponent acting, or action pending), stop timer and reset
+    if (!isHeroTurn) {
       if (timerRef.current) {
         clearInterval(timerRef.current);
         timerRef.current = null;
       }
+      setTimeLeft(ACTION_TIME_LIMIT);
+      return;
     }
+
+    // Hero's turn in an active hand: start fresh 30-second countdown
+    setTimeLeft(ACTION_TIME_LIMIT);
+    if (timerRef.current) clearInterval(timerRef.current);
+
+    timerRef.current = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          // Time expired! Stop timer immediately
+          if (timerRef.current) {
+            clearInterval(timerRef.current);
+            timerRef.current = null;
+          }
+          // Trigger auto-action directly from timer expiration
+          if (canCheckRef.current) {
+            onActionRef.current("check");
+          } else if (canFoldRef.current) {
+            onActionRef.current("fold");
+          }
+          return 0;
+        }
+
+        if (prev <= 6) {
+          sound.playTick();
+        }
+        return prev - 1;
+      });
+    }, 1000);
 
     return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [isHeroTurn, street, toCall]);
-
-  // Handle timeout auto-action
-  useEffect(() => {
-    if (isHeroTurn && timeLeft === 0) {
-      if (canCheck) {
-        onAction("check");
-      } else if (canFold) {
-        onAction("fold");
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
       }
-    }
-  }, [timeLeft, isHeroTurn, canCheck, canFold, onAction]);
+    };
+  }, [isHeroTurn, street, toCall, isTerminal]);
 
   // Keyboard shortcut listener
   useEffect(() => {
@@ -126,8 +143,22 @@ export const BettingControls: React.FC<BettingControlsProps> = ({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isTerminal, toAct, isPending, canFold, canCheck, callAction, raiseActions, onAction, onNextHand]);
 
-  // Terminal state: Big clean "Next Hand" button
+  // Terminal state: Big clean "Next Hand" button or "Match Over"
   if (isTerminal) {
+    if (isMatchOver) {
+      return (
+        <div className="w-full max-w-xl mx-auto py-3 px-4 flex items-center justify-center select-none">
+          <button
+            onClick={onOpenMatchOver}
+            className="w-full sm:w-auto min-w-[260px] px-8 py-3.5 bg-amber-600 hover:bg-amber-500 active:bg-amber-700 text-zinc-100 font-bold font-mono rounded-lg border border-amber-400 text-sm uppercase tracking-wider transition-colors shadow-lg shadow-amber-950/50 cursor-pointer flex items-center justify-center gap-2"
+          >
+            <Trophy className="w-4 h-4 text-amber-200" />
+            <span>Match Over — View Results</span>
+          </button>
+        </div>
+      );
+    }
+
     return (
       <div className="w-full max-w-xl mx-auto py-3 px-4 flex items-center justify-center select-none">
         <button

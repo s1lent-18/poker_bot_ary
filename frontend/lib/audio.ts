@@ -204,6 +204,52 @@ class SoundManager {
     osc.start();
     osc.stop(ctx.currentTime + 0.32);
   }
+
+  // Match Victory Fanfare
+  public playMatchVictory() {
+    const ctx = this.getContext();
+    if (!ctx) return;
+
+    const notes = [523.25, 659.25, 783.99, 1046.5]; // C5, E5, G5, C6
+    notes.forEach((freq, idx) => {
+      setTimeout(() => {
+        if (!this.ctx || this.muted) return;
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = "triangle";
+        osc.frequency.setValueAtTime(freq, this.ctx.currentTime);
+        gain.gain.setValueAtTime(0.25, this.ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + (idx === 3 ? 0.8 : 0.3));
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start();
+        osc.stop(this.ctx.currentTime + (idx === 3 ? 0.85 : 0.35));
+      }, idx * 110);
+    });
+  }
+
+  // Match Defeat Tone
+  public playMatchDefeat() {
+    const ctx = this.getContext();
+    if (!ctx) return;
+
+    const notes = [440, 392, 349.23, 293.66]; // A4, G4, F4, D4 descending
+    notes.forEach((freq, idx) => {
+      setTimeout(() => {
+        if (!this.ctx || this.muted) return;
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = "sawtooth";
+        osc.frequency.setValueAtTime(freq, this.ctx.currentTime);
+        gain.gain.setValueAtTime(0.18, this.ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.4);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.45);
+      }, idx * 140);
+    });
+  }
 }
 
 export const sound = new SoundManager();

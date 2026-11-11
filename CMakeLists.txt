@@ -13,10 +13,17 @@ target_include_directories(poker_core INTERFACE ${CMAKE_SOURCE_DIR}/src)
 
 # GoogleTest
 include(FetchContent)
-FetchContent_Declare(
-  googletest
-  URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
-)
+if(EXISTS "${CMAKE_SOURCE_DIR}/build/_deps/googletest-src")
+  FetchContent_Declare(
+    googletest
+    SOURCE_DIR "${CMAKE_SOURCE_DIR}/build/_deps/googletest-src"
+  )
+else()
+  FetchContent_Declare(
+    googletest
+    URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+  )
+endif()
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)  # needed on Windows/MSVC
 FetchContent_MakeAvailable(googletest)
 

@@ -93,14 +93,11 @@ googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-con
 	cd /home/aaryan/poker_bot_ary/build/_deps/googletest-build && /usr/bin/cmake -E echo_append
 	cd /home/aaryan/poker_bot_ary/build/_deps/googletest-build && /usr/bin/cmake -E touch /home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure
 
-googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download: googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake
-googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-urlinfo.txt
+googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-source_dirinfo.txt
 googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'googletest-populate'"
-	cd /home/aaryan/poker_bot_ary/build/_deps && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake
-	cd /home/aaryan/poker_bot_ary/build/_deps && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/verify-googletest-populate.cmake
-	cd /home/aaryan/poker_bot_ary/build/_deps && /usr/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/extract-googletest-populate.cmake
-	cd /home/aaryan/poker_bot_ary/build/_deps && /usr/bin/cmake -E touch /home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'googletest-populate'"
+	/usr/bin/cmake -E echo_append
+	/usr/bin/cmake -E touch /home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download
 
 googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aaryan/poker_bot_ary/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'googletest-populate'"

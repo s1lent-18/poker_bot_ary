@@ -47,6 +47,15 @@ GameState::GameState(const GameConfig& cfg, int button, const std::array<Card, 9
     last_raise_ = cfg.big_blind;
     need_action_ = {true, true};  // the big blind gets an option even if SB limps
     to_act_ = button_;            // SB acts first preflop
+
+    // If a player went all-in posting blinds and bet is covered/matched:
+    if (stack_[button_] == 0) {
+        street_ = Street::Showdown;
+        terminal_ = true;
+    } else if (stack_[1 - button_] == 0 && bet_[button_] >= bet_[1 - button_]) {
+        street_ = Street::Showdown;
+        terminal_ = true;
+    }
 }
 
 void GameState::post_blind(int p, int amount) {
@@ -174,20 +183,22 @@ std::array<int, 2> GameState::payoffs() const {
     if (folded_ >= 0) {
         int w = 1 - folded_;
         std::array<int, 2> r{};
-        r[w] = total_[folded_];
-        r[folded_] = -total_[folded_];
+        int amt = std::min(total_[folded_], total_[w]);
+        r[w] = amt;
+        r[folded_] = -amt;
         return r;
     }
 
-    // Showdown: both players have equal chips in, so the winner nets the other's total.
+    // Showdown: winner nets contested chips up to the smaller total commitment.
     HandScore score[2];
     for (int p = 0; p < 2; ++p) {
         Card seven[7] = {hole_[p][0], hole_[p][1], board_[0], board_[1],
                          board_[2],   board_[3],   board_[4]};
         score[p] = evaluate(seven, 7);
     }
-    if (score[0] > score[1]) return {total_[1], -total_[1]};
-    if (score[1] > score[0]) return {-total_[0], total_[0]};
+    int contested = std::min(total_[0], total_[1]);
+    if (score[0] > score[1]) return {contested, -contested};
+    if (score[1] > score[0]) return {-contested, contested};
     return {0, 0};
 }
 
